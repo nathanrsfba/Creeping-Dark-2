@@ -1,0 +1,62 @@
+# Generic backup and garbage files
+*~
+*.bak
+*.swp
+config.bak.json
+
+
+# Various crap that generally lives in the minecraft folder
+*.dll
+/.ReAuth.cfg
+/.mixin.out
+/BotaniaVars.dat
+/TombManyGraves
+/astralsorcery
+/backups
+/betweenlands_gallery
+/crafttweaker.log
+/crash-reports
+/fonts
+/journeymap
+/local
+/logs
+/manifest.json
+/mods
+/modrepo
+/natives
+/options.txt
+/patchouli_data.json
+/resourcepacks
+/saves
+/screenshots
+/servers.dat
+/tv-cache
+/usercache.json
+/usernamecache.json
+icon.png
+libraries/
+minecraftinstance.json
+modmg.bat
+hs_err_*.log
+knownkeys.txt
+config.json
+
+# Server-related stuff
+banned-ips.json
+banned-players.json
+eula.txt
+forge-*.jar
+minecraft_server.*.jar
+ops.json
+server.bat
+server.properties
+whitelist.json
+/world
+
+# Don't even know where this one came from
+/encyclopedia-servers
+
+# Junctions to other local repositories
+/master
+/test
+
