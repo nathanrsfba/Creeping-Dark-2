@@ -1,4 +1,5 @@
 import crafttweaker.api.tag.MCTag;
+import crafttweaker.api.ILogger;
 
 /* Remove the raw ore blocks from the storage_blocks tags, as those tags
    should only be used for smelted metal */
