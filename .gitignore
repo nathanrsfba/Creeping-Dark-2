@@ -42,6 +42,7 @@ knownkeys.txt
 config.json
 reauth.toml
 ddd_cache.json
+/config/tellme
 
 # Server-related stuff
 banned-ips.json
