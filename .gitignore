@@ -41,6 +41,7 @@ hs_err_*.log
 knownkeys.txt
 config.json
 reauth.toml
+ddd_cache.json
 
 # Server-related stuff
 banned-ips.json
