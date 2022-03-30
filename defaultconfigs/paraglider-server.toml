@@ -8,7 +8,7 @@ ascendingWinds = true
 windSources = ["fire", "soul_fire", "campfire#lit=true", "soul_campfire#lit=true"]
 #Horizontal movement speed while paragliding.
 #Range: 0.2 ~ 10.0
-paraglidingSpeed = 1.0
+paraglidingSpeed = 2.0
 #Durability of Paragliders. Set to zero to disable durability.
 #Range: > 0
 paragliderDurability = 0
@@ -47,7 +47,7 @@ paragliderInTowersOfTheWild = "DEFAULT"
 
 [stamina]
 	#Paragliding and ascending will consume stamina.
-	paraglidingConsumesStamina = true
+	paraglidingConsumesStamina = false
 	#Actions other than paragliding or ascending will consume stamina.
 	runningAndSwimmingConsumesStamina = false
 
