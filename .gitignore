@@ -59,7 +59,5 @@ whitelist.json
 # Don't even know where this one came from
 /encyclopedia-servers
 
-# Junctions to other local repositories
-/master
-/test
-
+# Windows links
+*.lnk
