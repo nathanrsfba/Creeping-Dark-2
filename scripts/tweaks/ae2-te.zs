@@ -7,7 +7,7 @@ import crafttweaker.api.ILogger;
 /* Add a recipe to create fluix in the induction smelter */
 
 <recipetype:thermal:smelter>.addRecipe("smelter_fluix", 
-    [<item:appliedenergistics2:fluix_crystal> % 100],        // Output(s)
+    [<item:appliedenergistics2:fluix_crystal> % 200],        // Output(s)
     [<item:appliedenergistics2:certus_quartz_crystal>,       // Inputs
         <item:minecraft:redstone>,
         <item:minecraft:quartz>],
