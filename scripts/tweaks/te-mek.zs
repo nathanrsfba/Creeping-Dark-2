@@ -17,16 +17,16 @@ smelter.addRecipe("steel2",
 /* Output       */ [steel],
 /* Input        */ [charcoaldust * 4, iron],
 /* XP           */ 0,
-/* Energy       */ 1000 );
+/* Energy       */ 1600 );
 
 val pulv = <recipetype:thermal:pulverizer>;
 pulv.addRecipe( "coaldust",
 /* Outputs  */ [<item:mekanism:dust_coal> % 100], 
 /* Inputs   */ coal,
 /* XP       */ 0, 
-/* Energy   */ 500);
+/* Energy   */ 2000);
 pulv.addRecipe( "charcoaldust",
 /* Outputs  */ [<item:mekanism:dust_charcoal> % 100], 
 /* Inputs   */ charcoal,
 /* XP       */ 0, 
-/* Energy   */ 500);
+/* Energy   */ 2000);
