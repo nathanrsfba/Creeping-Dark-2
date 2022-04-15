@@ -1,0 +1,76 @@
+{
+  "oreConfig": [
+    {
+      "ore": "tropicraft:azurite_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 32,
+      "maxVeinSize": 4,
+      "spawnRate": 10.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": [
+            "tropicraft:kelp_forest",
+            "tropicraft:rainforest_hills",
+            "tropicraft:rainforest_island_mountains",
+            "tropicraft:rainforest_mountains",
+            "tropicraft:rainforest_plains",
+            "tropicraft:tropics",
+            "tropicraft:tropics_beach",
+            "tropicraft:tropics_ocean",
+            "tropicraft:tropics_river",
+            "tropicraft:z_bamboo_rainforest",
+            "tropicraft:z_mangroves",
+            "tropicraft:z_osa_rainforest",
+            "tropicraft:z_overgrown_mangroves"
+      ]
+    },
+    {
+      "ore": "tropicraft:eudialyte_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 56,
+      "maxVeinSize": 8,
+      "spawnRate": 16.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": [
+            "tropicraft:kelp_forest",
+            "tropicraft:rainforest_hills",
+            "tropicraft:rainforest_island_mountains",
+            "tropicraft:rainforest_mountains",
+            "tropicraft:rainforest_plains",
+            "tropicraft:tropics",
+            "tropicraft:tropics_beach",
+            "tropicraft:tropics_ocean",
+            "tropicraft:tropics_river",
+            "tropicraft:z_bamboo_rainforest",
+            "tropicraft:z_mangroves",
+            "tropicraft:z_osa_rainforest",
+            "tropicraft:z_overgrown_mangroves"
+      ]
+    },
+    {
+      "ore": "tropicraft:zircon_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 64,
+      "maxVeinSize": 8,
+      "spawnRate": 20.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": [
+            "tropicraft:kelp_forest",
+            "tropicraft:rainforest_hills",
+            "tropicraft:rainforest_island_mountains",
+            "tropicraft:rainforest_mountains",
+            "tropicraft:rainforest_plains",
+            "tropicraft:tropics",
+            "tropicraft:tropics_beach",
+            "tropicraft:tropics_ocean",
+            "tropicraft:tropics_river",
+            "tropicraft:z_bamboo_rainforest",
+            "tropicraft:z_mangroves",
+            "tropicraft:z_osa_rainforest",
+            "tropicraft:z_overgrown_mangroves"
+      ]
+    }
+  ]
+}
