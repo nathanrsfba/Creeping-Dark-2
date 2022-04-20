@@ -43,7 +43,7 @@
 	# The strength of Creeper explosions. Default in vanilla in 3.0 for normal Creepers,
 	# and it is doubled ie. 6.0 for Charged Creepers.
 	#Range: 0.0 ~ 1000.0
-	creeperExplosionStrengthNormal = 1.5
+	creeperExplosionStrengthNormal = .5
 	# The maximum y position where Creeper explosions will do block damage,
 	# if enableCreeperAltitudeCondition is enabled.
 	#Range: -3.0E7 ~ 3.0E7
