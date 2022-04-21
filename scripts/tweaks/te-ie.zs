@@ -8,7 +8,7 @@ val iron = <item:minecraft:iron_ingot>;
 val conveyor = <item:immersiveengineering:conveyor_basic>;
 
 craftingTable.addShaped( "rubberconveyor",
-/* Output   */ conveyor,
+/* Output   */ conveyor * 8,
 /* Input    */
     [[rubber, rubber, rubber],
      [iron, redstone, iron]] );
