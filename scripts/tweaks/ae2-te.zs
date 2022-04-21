@@ -53,3 +53,13 @@ val certusdust = <item:appliedenergistics2:certus_quartz_dust>;
 /* Input        */ <item:appliedenergistics2:sky_stone_block>,
 /* XP           */ 0,
 /* Energy       */ 500) ;
+
+/* Create covered ME cables using rubber */
+
+val rubber = <item:thermal:cured_rubber>;
+val covered = <item:appliedenergistics2:fluix_covered_cable>;
+val cable = <item:appliedenergistics2:fluix_glass_cable>;
+
+craftingTable.addShapeless( "terubbercable",
+/* Output   */ covered,
+/* Inputs   */ [rubber, cable] );
