@@ -6,6 +6,36 @@ my $modfolder = 'mods';
 my $repofolder = 'modrepo';
 my $listfile = 'mods.txt';
 
+while( @ARGV && $ARGV[0] =~ /^-/ )
+{
+    my $arg = shift;
+    print "Arg is $arg\n";
+    if( $arg eq '-l' )
+    {
+        $listfile = shift;
+    }
+    elsif( $arg eq '-m' )
+    {
+        $modfolder = shift;
+    }
+    elsif( $arg eq '-r' )
+    {
+        $repofolder = shift;
+    }
+    elsif( $arg eq '-h' )
+    {
+        help();
+    }
+    elsif( $arg eq '--' )
+    {
+        last;
+    }
+    else
+    {
+        die "Unknown option: $arg\n";
+    }
+}
+
 chdir '..' if( -d "../$modfolder" && ! -d "$modfolder" );
 
 open my $f, $listfile;
@@ -51,17 +81,7 @@ elsif( lc $ARGV[0] eq 'load' )
 }
 else
 {
-    print "Updates $listfile based on $modfolder/ and vice versa, and "
-    . "archives and restores files to/from $repofolder/ as needed\n\n" .
-    "Usage:\n\n" .
-    "$0\n" .
-    "  Archive mods and display " .
-    "status of mods in $listfile and $modfolder/\n\n" .
-    "$0 save\n" .
-    "  Update $listfile from $modfolder/\n\n" .
-    "$0 load\n" .
-    "  Update $modfolder/ from $listfile using files in $repofolder/\n";
-    exit;
+    help();
 }
 
 my %modlist = map { $_ => 1 } @modlist;
@@ -171,3 +191,23 @@ else
 }
 
 exit $action;
+
+sub help
+{
+    print "Updates $listfile based on $modfolder/ and vice versa, and "
+    . "archives and restores files to/from $repofolder/ as needed\n\n" .
+    "Usage:\n\n" .
+    "$0\n" .
+    "  Archive mods and display " .
+    "status of mods in $listfile and $modfolder/\n\n" .
+    "$0 save\n" .
+    "  Update $listfile from $modfolder/\n\n" .
+    "$0 load\n" .
+    "  Update $modfolder/ from $listfile using files in $repofolder/\n\n".
+    "Options:\n".
+    "  -m modfolder     Specify folder for mods\n" .
+    "  -r repofolder    Specify folder for mod repo\n" .
+    "  -l listfile      Specify file for mod list\n" .
+    "\n";
+    exit;
+}
