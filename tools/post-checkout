@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ $3 -ne 0 ]; then
+    perl tools/modmg.pl load
+fi
