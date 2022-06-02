@@ -4,7 +4,6 @@
 *.swp
 config.bak.json
 
-
 # Various crap that generally lives in the minecraft folder
 *.dll
 /.ReAuth.cfg
@@ -43,6 +42,7 @@ config.json
 reauth.toml
 ddd_cache.json
 /config/tellme
+openloader/.cache
 
 # Server-related stuff
 banned-ips.json
