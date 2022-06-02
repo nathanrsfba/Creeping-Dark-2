@@ -1,0 +1,32 @@
+{
+  "surface_builder": "minecraft:grass",
+  "depth": 0.1,
+  "scale": 0.2,
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "precipitation": "none",
+  "category": "plains",
+  "player_spawn_friendly": true,
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 0,
+    "water_color": 0,
+    "water_fog_color": 0,
+    "grass_color": -16777216,
+    "foliage_color": 10387789
+  },
+  "starts": [
+    "creepingdark2:horned_tower",
+    "minecraft:village_plains",
+    "minecraft:mineshaft",
+    "minecraft:stronghold",
+    "minecraft:ruined_portal"
+  ],
+  "spawners": {
+  },
+  "spawn_costs": {},
+  "carvers": {
+  },
+  "features": [
+  ]
+}
