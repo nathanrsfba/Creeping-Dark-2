@@ -9,7 +9,6 @@ my $listfile = 'mods.txt';
 while( @ARGV && $ARGV[0] =~ /^-/ )
 {
     my $arg = shift;
-    print "Arg is $arg\n";
     if( $arg eq '-l' )
     {
         $listfile = shift;
