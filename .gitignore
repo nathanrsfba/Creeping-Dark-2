@@ -43,6 +43,8 @@ reauth.toml
 ddd_cache.json
 /config/tellme
 openloader/.cache
+WailaErrorOutput.txt
+chistest.txt
 
 # Server-related stuff
 banned-ips.json
