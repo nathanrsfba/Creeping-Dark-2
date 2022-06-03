@@ -56,3 +56,7 @@ new BlockBuilder().build( "exhaustplating" );
 // new BlockBuilder().build( "tapedrive" );
 // new BlockBuilder().build( "oldetimeyserveranim" );
 
+/* Laboratory */
+new BlockBuilder().build( "clearscreen" );
+new BlockBuilder().build( "largewall" );
+
