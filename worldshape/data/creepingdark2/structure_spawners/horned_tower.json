@@ -1,0 +1,12 @@
+{
+    "template": { 
+        "type": "single",
+        "id": "creepingdark2:horned_tower"
+    },
+    "placement": {
+        "type": "surface"
+    }, 
+
+    "averageSpacing": 8,
+    "dimensions": [ "minecraft:overworld" ]
+}
