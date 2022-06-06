@@ -158,4 +158,5 @@ WAWLA-1.16.5-8.0.1.jar
 Waystones_1.16.5-7.6.4.jar
 World Stripper-1.16.5-2.1.0.jar
 worldedit-mod-7.2.5-dist.jar
+worldshape-1.0.jar
 xnet-1.16-3.0.16.jar
