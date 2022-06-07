@@ -1,13 +1,14 @@
 {
     "template": { 
         "type": "single",
-        "id": "creepingdark2:horned_tower"
+        "id": "creepingdark2:underground_lab2"
     },
     "placement": {
         "type": "surface",
-        "terraform": 0
+        "terraform": 0,
+        "offset": -15
     }, 
 
     "averageSpacing": 80,
-    "dimensions": [ "dark_world:dark_dimension" ]
+    "dimensions": [ "minecraft:overworld" ]
 }
