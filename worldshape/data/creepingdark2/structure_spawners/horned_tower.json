@@ -8,6 +8,6 @@
         "terraform": 0
     }, 
 
-    "averageSpacing": 80,
+    "averageSpacing": 40,
     "dimensions": [ "dark_world:dark_dimension" ]
 }

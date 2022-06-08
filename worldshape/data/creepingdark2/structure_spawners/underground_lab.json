@@ -9,6 +9,6 @@
         "offset": -15
     }, 
 
-    "averageSpacing": 80,
+    "averageSpacing": 40,
     "dimensions": [ "minecraft:overworld" ]
 }
