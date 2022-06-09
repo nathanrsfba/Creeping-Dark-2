@@ -1,0 +1,15 @@
+{
+  "name": "creepingdark2:broken_sphere_2",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "creepingdark2:broken_sphere_2",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}
