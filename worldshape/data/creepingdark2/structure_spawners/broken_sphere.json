@@ -1,0 +1,13 @@
+{
+    "template": { 
+        "type": "pool",
+        "id": "creepingdark2:broken_sphere_1"
+    },
+    "placement": {
+        "type": "surface",
+        "terraform": 0
+    }, 
+
+    "averageSpacing": 40,
+    "dimensions": [ "tropicraft:tropics" ]
+}
