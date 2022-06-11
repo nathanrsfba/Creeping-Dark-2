@@ -1,0 +1,14 @@
+{
+    "template": { 
+        "type": "single",
+        "id": "creepingdark2:spider_dome"
+    },
+    "placement": {
+        "type": "underground",
+        "minY": 66,
+        "maxY": 67
+    }, 
+
+    "averageSpacing": 40,
+    "dimensions": [ "ddd:deep_dark" ]
+}
