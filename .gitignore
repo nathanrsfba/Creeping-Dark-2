@@ -45,6 +45,8 @@ ddd_cache.json
 openloader/.cache
 WailaErrorOutput.txt
 chistest.txt
+config/worldedit/.archive-unpack/
+config_new_temp.json
 
 # Server-related stuff
 banned-ips.json
