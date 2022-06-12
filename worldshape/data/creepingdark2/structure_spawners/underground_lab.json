@@ -1,14 +1,15 @@
 {
     "template": { 
         "type": "single",
-        "id": "creepingdark2:underground_lab2"
+        "id": "creepingdark2:underground_lab"
     },
     "placement": {
         "type": "surface",
         "terraform": 0,
-        "offset": -15
+        "offset": -16
     }, 
 
     "averageSpacing": 40,
-    "dimensions": [ "minecraft:overworld" ]
+    "dimensions": [ "minecraft:overworld" ],
+    "biomes": [ "#plains" ]
 }
