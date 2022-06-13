@@ -1,0 +1,629 @@
+{
+	id: "5BC2652C34166BAA"
+	group: ""
+	order_index: 0
+	filename: "fading_fast"
+	title: "Fading Fast"
+	icon: "minecraft:grass_block"
+	subtitle: ["Getting started in the Overworld"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Diggy Diggy Hole"
+			icon: "minecraft:iron_ore"
+			x: -1.5d
+			y: -3.0d
+			description: [
+				"You'll need a number of materials to complete your quest... time to start mining."
+				"This is by no means an exhaustive list of the materials you'll need... just the basics."
+			]
+			id: "5C6B0E20135C98CB"
+			tasks: [
+				{
+					id: "1892A05444FBBCA6"
+					type: "item"
+					title: "Iron Ore"
+					icon: "minecraft:iron_ore"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/iron"
+						}
+					}
+				}
+				{
+					id: "4C35D584C845CBC4"
+					type: "item"
+					title: "Copper Ore"
+					icon: "cavesandcliffs:copper_ore"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/copper"
+						}
+					}
+				}
+				{
+					id: "231940EE4BE06CA5"
+					type: "item"
+					title: "Gold Ore"
+					icon: "minecraft:gold_ore"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/gold"
+						}
+					}
+				}
+				{
+					id: "6A5621DA0D00E865"
+					type: "item"
+					title: "Tin Ore"
+					icon: "thermal:tin_ore"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/tin"
+						}
+					}
+				}
+				{
+					id: "767489DF3246E756"
+					type: "item"
+					title: "Silver Ore"
+					icon: "thermal:silver_ore"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/silver"
+						}
+					}
+				}
+				{
+					id: "3FE5450F3A5A5F6E"
+					type: "item"
+					title: "Lead Ore"
+					icon: "thermal:lead_ore"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/lead"
+						}
+					}
+				}
+				{
+					id: "293397734B10193E"
+					type: "item"
+					item: "minecraft:coal"
+				}
+				{
+					id: "64E831517093B825"
+					type: "item"
+					item: "minecraft:redstone"
+				}
+				{
+					id: "57941AF06FAA6D4F"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+				}
+				{
+					id: "1AC4287E102CF4B9"
+					type: "item"
+					item: "minecraft:diamond"
+				}
+			]
+			rewards: [{
+				id: "1CF531443BD325FA"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			icon: "minecraft:dragon_head"
+			x: -1.5d
+			y: -4.5d
+			description: [
+				"The Dragon was banished from the face of the Earth, but she didn't go without leaving her mark on the world."
+				""
+				"The skies themselves are cursed; diseased with a slow growth of skin that, given time, will cover the Earth in utter darkness."
+				""
+				"The only way to break the curse is to travel to the End and kill the Dragon, retrieve her egg, and place it on Earth. But the way to the End is barred, and the artifacts to reopen it are guarded by her minions, and scattered... across the Multiverse."
+			]
+			id: "6EDB96349934A1F2"
+			tasks: [{
+				id: "5CE782A5427F024F"
+				type: "checkmark"
+				title: "Introduction"
+			}]
+			rewards: [{
+				id: "28FBBF72F23AA5B4"
+				type: "item"
+				item: {
+					id: "simplybackpacks:commonbackpack"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						UUID: [I;
+							1791596
+							-948157642
+							-1140448117
+							41383064
+						]
+						display: {
+							Name: "{\"text\":\"Anti-Treepunching Bag\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Don't Breathe This"
+			icon: "thermal:iron_dust"
+			x: -3.0d
+			y: -1.5d
+			description: [
+				"You'll need a way to turn metals (and other materials) into dust. Not only are they required for crafting, but they can also double your ore output."
+				""
+				"Some early game options are the Immersive Engineering crusher, or the Integrated Dynamics squeezer."
+				""
+				"As you unlock other technologies, you'll find other, and sometimes better methods..."
+			]
+			dependencies: ["5C6B0E20135C98CB"]
+			id: "6C695A75741E59EF"
+			tasks: [
+				{
+					id: "11D25555EF11ABF3"
+					type: "item"
+					title: "Iron Dust"
+					icon: "thermal:iron_dust"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:dusts/iron"
+						}
+					}
+				}
+				{
+					id: "7149DB077F405D0A"
+					type: "item"
+					title: "Copper Dust"
+					icon: "thermal:copper_dust"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:dusts/copper"
+						}
+					}
+				}
+				{
+					id: "43E74A43BCC4DE84"
+					type: "item"
+					title: "Tin Dust"
+					icon: "thermal:tin_dust"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:dusts/tin"
+						}
+					}
+				}
+				{
+					id: "48E215C3C6A1093A"
+					type: "item"
+					title: "Silver Dust"
+					icon: "thermal:silver_dust"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:dusts/silver"
+						}
+					}
+				}
+				{
+					id: "257FCE62F44E9EBD"
+					type: "item"
+					title: "Gold Dust Woman"
+					icon: "thermal:gold_dust"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:dusts/gold"
+						}
+					}
+				}
+				{
+					id: "28FA5FD5E3399033"
+					type: "item"
+					title: "Lead Dust"
+					icon: "thermal:lead_dust"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:dusts/lead"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2ACEC5387E1BF44A"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Money!"
+			x: -1.5d
+			y: -1.5d
+			subtitle: "...get away"
+			description: ["Mine it deep underground in mountanous biomes, or sell some crap to a villager"]
+			id: "11FD5B62F37A69CB"
+			tasks: [{
+				id: "2B0471900C579541"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+			rewards: [{
+				id: "2A9202D81613E62E"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Terry Tibbs"
+			icon: "minecraft:iron_ingot"
+			x: 0.0d
+			y: -1.5d
+			description: [
+				"You'll need to smelt those metal ores into ingots to make use of them. You could just dump them in a furnace... but eventually you'll want something that will increase your ore output."
+				""
+				"One option is the various crushing machines (see the Don't Breathe This! quest). Another is the Tinker's Construct smeltery. (See the book Materials and You)"
+				""
+				"Create has its own system for multiplying ore yield as well, that works slightly differently than the usual crushing machines"
+			]
+			dependencies: ["5C6B0E20135C98CB"]
+			id: "5E527BA2C154DB72"
+			tasks: [
+				{
+					id: "77B13C90EC347382"
+					type: "item"
+					item: "minecraft:iron_ingot"
+				}
+				{
+					id: "7B584A8ADBDBC4FC"
+					type: "item"
+					title: "Lead Ingot"
+					icon: "thermal:lead_ingot"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/lead"
+						}
+					}
+				}
+				{
+					id: "6339417EA3E00E3D"
+					type: "item"
+					title: "Copper Ingot"
+					icon: "cavesandcliffs:copper_ingot"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/copper"
+						}
+					}
+				}
+				{
+					id: "7E5A449E2FD1B445"
+					type: "item"
+					title: "Tin Ingot"
+					icon: "thermal:tin_ingot"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/tin"
+						}
+					}
+				}
+				{
+					id: "1FDB00709C263560"
+					type: "item"
+					title: "Silver Ingot"
+					icon: "thermal:silver_ingot"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/silver"
+						}
+					}
+				}
+				{
+					id: "78B9B8C778DB8EFD"
+					type: "item"
+					item: "minecraft:gold_ingot"
+				}
+			]
+			rewards: [{
+				id: "2E2C9C1503430CC4"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "ONE POINT TWENTY ONE JIGGAWATTS"
+			icon: "thermal:dynamo_stirling"
+			x: -3.0d
+			y: 0.0d
+			description: [
+				"You'll need a way to generate RF power to run most of the machines you'll need."
+				""
+				"To submit energy for the quest: Craft a Task Screen, right-click on it, select this task, then pipe energy into it."
+				""
+				"Early on, you can make a water wheel using Immersive Engineering. Later on, you can make Thermal Expansion dynamos."
+				""
+				"For more power generation, you might want to look into Advanced Generators, or even a nuclear reactor"
+			]
+			dependencies: ["5E527BA2C154DB72"]
+			id: "2448BDDAD50EFD1F"
+			tasks: [{
+				id: "3682E34405C1A3BE"
+				type: "forge_energy"
+				value: 1000L
+			}]
+			rewards: [{
+				id: "3B154E5DDDCE7DA5"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "The Enemoy of my Enemoy..."
+			icon: "thermal:bronze_ingot"
+			x: -1.5d
+			y: 0.0d
+			subtitle: "...is my enemoy's enemoy, no more, no less."
+			description: ["Besides steel, there are many other alloys you'll need, which are made from a combination of metals (and sometimes other materials). Here are just a few."]
+			dependencies: ["5E527BA2C154DB72"]
+			id: "079B29A9A74393D9"
+			tasks: [
+				{
+					id: "4B012FFB5797B8EA"
+					type: "item"
+					title: "Bronze Ingot"
+					icon: "thermal:bronze_ingot"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/bronze"
+						}
+					}
+				}
+				{
+					id: "33C1C6E226EA3CB6"
+					type: "item"
+					item: "thermal:invar_ingot"
+				}
+				{
+					id: "30CB1C5FB0015D32"
+					type: "item"
+					title: "Electrum Ingot"
+					icon: "thermal:electrum_ingot"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/electrum"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "63B1B63D33287BD2"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Steel This Book"
+			icon: "mekanism:ingot_steel"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Steel is one of the most commonly used alloys, and you'll need to make some sooner rather than later."
+				""
+				"The earliest method to make steel is the Immersive Engineering blast furnace. Later on you can use the Induction Smelter or Energetic Infuser"
+			]
+			dependencies: ["5E527BA2C154DB72"]
+			id: "4874E61F350DDBE8"
+			tasks: [{
+				id: "07F4CBC998CE4137"
+				type: "item"
+				title: "Steel Ingot"
+				icon: "mekanism:ingot_steel"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
+			}]
+		}
+		{
+			title: "Radio-Activity"
+			x: 0.0d
+			y: -3.0d
+			subtitle: "Discovered by Madame Curie"
+			id: "26B39841A0EDC236"
+			tasks: [{
+				id: "0ACF72A748B02D55"
+				type: "item"
+				title: "Uranium Ingot"
+				icon: "immersiveengineering:ingot_uranium"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/uranium"
+					}
+				}
+			}]
+			rewards: [{
+				id: "23764F5EC2098CEF"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Murder!"
+			icon: "minecraft:leather"
+			x: 1.5d
+			y: -3.0d
+			description: ["Kill animals for organic resources"]
+			id: "1F09E722460DC4B9"
+			tasks: [
+				{
+					id: "715A41888F6513C7"
+					type: "kill"
+					icon: "minecraft:leather"
+					entity: "minecraft:cow"
+					value: 1L
+				}
+				{
+					id: "6A2EFD825AD87C54"
+					type: "kill"
+					icon: "minecraft:porkchop"
+					entity: "minecraft:pig"
+					value: 1L
+				}
+				{
+					id: "0E216EEF37F78D9D"
+					type: "kill"
+					icon: "minecraft:feather"
+					entity: "minecraft:chicken"
+					value: 1L
+				}
+				{
+					id: "0878906F5E7651DD"
+					type: "kill"
+					icon: "minecraft:white_wool"
+					entity: "minecraft:sheep"
+					value: 1L
+				}
+			]
+			rewards: [{
+				id: "654DC38420E4615C"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Hunt!"
+			icon: "minecraft:creeper_head"
+			x: 1.5d
+			y: -1.5d
+			description: ["Kill monsters for organic resources"]
+			id: "454CA66DDBE09581"
+			tasks: [
+				{
+					id: "7F3F92450F9197B4"
+					type: "kill"
+					icon: "minecraft:rotten_flesh"
+					entity: "minecraft:zombie"
+					value: 1L
+				}
+				{
+					id: "7B31A456DB0BF9D2"
+					type: "kill"
+					icon: "minecraft:bone"
+					entity: "minecraft:skeleton"
+					value: 1L
+				}
+				{
+					id: "4C0C196DB9CA08C3"
+					type: "kill"
+					icon: "minecraft:gunpowder"
+					entity: "minecraft:creeper"
+					value: 1L
+				}
+				{
+					id: "778408B7DA1F7D23"
+					type: "kill"
+					icon: "minecraft:spider_eye"
+					entity: "minecraft:spider"
+					value: 1L
+				}
+			]
+			rewards: [{
+				id: "37363C2F98BF8576"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "End!"
+			x: 1.5d
+			y: 0.0d
+			description: ["Kill an enderman for its pearls"]
+			id: "24354EBA95E6EF73"
+			tasks: [{
+				id: "52346956FBB6D3A2"
+				type: "kill"
+				icon: "tconstruct:enderman_head"
+				entity: "minecraft:enderman"
+				value: 1L
+			}]
+			rewards: [{
+				id: "51948BCE8DA5F0D0"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Forget Me Not"
+			icon: {
+				id: "quark:forgotten_hat"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+				ForgeCaps: {
+					"agricraft:gene_inspector": {
+						agri_flag: 0b
+					}
+				}
+			}
+			x: -1.5d
+			y: 1.5d
+			description: ["The first piece you'll need to open the End is a quartz bone, held by an old Forgotten in his underground lab in the Overworld"]
+			id: "598716F76FC20B98"
+			tasks: [{
+				id: "56ECF2DC4A32861B"
+				type: "item"
+				item: "contenttweaker:quartz_bone"
+			}]
+			rewards: [{
+				id: "39AE3FCBF2B4ADD2"
+				type: "ftbmoney:money"
+				ftb_money: 512L
+			}]
+		}
+	]
+}
