@@ -1,0 +1,150 @@
+{
+	id: "291BCFC064280DC3"
+	group: ""
+	order_index: 1
+	filename: "abandon_all_hope"
+	title: "Abandon All Hope"
+	icon: "minecraft:netherrack"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Into The Nether"
+			icon: "minecraft:obsidian"
+			x: 0.0d
+			y: -1.5d
+			description: ["To get into the Nether, you'll first need to get some Obsidian and a Flint and Steel. The simplest way to get Obsidian is to pour water onto lava and bash it out with a diamond (or better) pick, but if you're willing to dig into JEI a little you might find some machines to make it for you instead."]
+			dependencies: ["5C6B0E20135C98CB"]
+			dependency_requirement: "all_started"
+			id: "2F3DC24163F0BF02"
+			tasks: [{
+				id: "3A14557EFCB50929"
+				type: "dimension"
+				title: "Enter The Nether"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [{
+				id: "69BFEAA3F50196B5"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "The Wither"
+			x: 0.0d
+			y: 1.5d
+			description: [
+				"Plonk down 4 soul sand in a T shape, then plonk 3 wither skeleton skulls on top."
+				""
+				"Then stand back."
+				""
+				"And arm yourself to the teeth first."
+			]
+			dependencies: ["02B25897A10B850C"]
+			id: "31D2E82F3E5DEB5F"
+			tasks: [{
+				id: "31D607CB9679AEF3"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+			rewards: [{
+				id: "012D3E95D9C348DB"
+				type: "ftbmoney:money"
+				ftb_money: 4096L
+			}]
+		}
+		{
+			title: "Wither Bait"
+			icon: "minecraft:wither_skeleton_skull"
+			x: 0.0d
+			y: 0.0d
+			description: ["To summon the Wither, you'll need some soul sand and Wither skeleton skulls. You can usually find the latter in nether fortresses; a weapon with a few levels of severing might be helpful."]
+			dependencies: ["2F3DC24163F0BF02"]
+			id: "02B25897A10B850C"
+			tasks: [
+				{
+					id: "044FF6DFA7D8E629"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+				}
+				{
+					id: "18A6FA97A10306EA"
+					type: "item"
+					item: "minecraft:soul_sand"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "395D21CB4B11AB02"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Shed A Tear"
+			x: 1.5d
+			y: 0.0d
+			description: ["Kill some ghasts for their tears"]
+			dependencies: ["2F3DC24163F0BF02"]
+			id: "5CA4D09DB5945946"
+			tasks: [{
+				id: "24C8B752305ECE12"
+				type: "kill"
+				icon: "minecraft:ghast_tear"
+				entity: "minecraft:ghast"
+				value: 1L
+			}]
+			rewards: [{
+				id: "2247E9FBCDAE8CF3"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Blaze A Trail"
+			x: 1.5d
+			y: 1.5d
+			description: ["Kill some blazes for their rods"]
+			dependencies: ["2F3DC24163F0BF02"]
+			id: "039912F62EE6BF3E"
+			tasks: [{
+				id: "79BFDA916AA1A307"
+				type: "kill"
+				icon: "minecraft:blaze_rod"
+				entity: "minecraft:blaze"
+				value: 1L
+			}]
+			rewards: [{
+				id: "741A3C65591186D0"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Nether Minerals"
+			icon: "minecraft:quartz"
+			x: -1.5d
+			y: 0.0d
+			description: ["Reasonably abundant resources found in the Nether"]
+			dependencies: ["2F3DC24163F0BF02"]
+			id: "44071016E3A34737"
+			tasks: [
+				{
+					id: "5C736493850D13A8"
+					type: "item"
+					item: "minecraft:quartz"
+				}
+				{
+					id: "59D7192562244CFC"
+					type: "item"
+					item: "minecraft:glowstone_dust"
+				}
+			]
+			rewards: [{
+				id: "4F71E3F7A2A88693"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+	]
+}
