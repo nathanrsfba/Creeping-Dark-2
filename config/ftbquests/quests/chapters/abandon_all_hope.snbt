@@ -124,7 +124,7 @@
 			title: "Nether Minerals"
 			icon: "minecraft:quartz"
 			x: -1.5d
-			y: 0.0d
+			y: -1.5d
 			description: ["Reasonably abundant resources found in the Nether"]
 			dependencies: ["2F3DC24163F0BF02"]
 			id: "44071016E3A34737"
@@ -142,6 +142,53 @@
 			]
 			rewards: [{
 				id: "4F71E3F7A2A88693"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Cinnamon Roll"
+			icon: "minecraft:ancient_debris"
+			x: -1.5d
+			y: 0.0d
+			description: ["Metal ores found in the Nether. You'll need them to get into the Twilight Forest"]
+			dependencies: ["2F3DC24163F0BF02"]
+			id: "278A37E838C22763"
+			tasks: [
+				{
+					id: "2AA900CB3F8ADFDA"
+					type: "item"
+					item: "tconstruct:cobalt_ore"
+				}
+				{
+					id: "1110BB2A079EBFBE"
+					type: "item"
+					item: "minecraft:ancient_debris"
+				}
+			]
+			rewards: [{
+				id: "23147B63EF1AAE1A"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Hot Alloy"
+			x: -1.5d
+			y: 1.5d
+			description: [
+				""
+				"A hard metal made from Nether materials. You can make it with the Tinker's Construct smeltery, the Create Mixer, or the Immersive Engineering alloy kiln"
+			]
+			dependencies: ["278A37E838C22763"]
+			id: "269946FBB801DA69"
+			tasks: [{
+				id: "23D90498269CEEB9"
+				type: "item"
+				item: "tconstruct:manyullyn_ingot"
+			}]
+			rewards: [{
+				id: "24445F14146C0D1C"
 				type: "ftbmoney:money"
 				ftb_money: 8L
 			}]

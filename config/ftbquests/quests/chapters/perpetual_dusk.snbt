@@ -4,15 +4,17 @@
 	order_index: 2
 	filename: "perpetual_dusk"
 	title: "Perpetual Dusk"
+	icon: "twilightforest:twilight_portal_miniature_structure"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Into the Forest"
 			icon: "twilightforest:twilight_portal_miniature_structure"
-			x: 0.0d
+			x: -1.5d
 			y: -2.0d
-			description: ["Create a 2x2 pool of water, surround it with plants (flowers, grass, saplings, whatever), and throw in a diamond"]
+			description: ["Create a 2x2 pool of water, surround it with plants (flowers, grass, saplings, whatever), and throw in the manyullyn"]
+			dependencies: ["269946FBB801DA69"]
 			id: "10D720ABFDEBCFD0"
 			tasks: [{
 				id: "3A8D2A477583D50D"
@@ -27,7 +29,7 @@
 		}
 		{
 			title: "Certus"
-			x: -1.5d
+			x: 0.0d
 			y: -2.0d
 			description: ["You'll need Certus Quarts to unlock Thermal Expansion, RFTools, and Applied Energistics"]
 			dependencies: ["10D720ABFDEBCFD0"]
@@ -85,8 +87,8 @@
 		}
 		{
 			title: "Moo."
-			x: 1.5d
-			y: -0.5d
+			x: 0.0d
+			y: 1.0d
 			description: ["Find the Labyrinth within the Twilight Swamp. Traverse the maze and find the Minoshroom, and kill him. Eat one of the Meef Stroganoff to gain access to the Hydra."]
 			dependencies: ["192034BC8E8ED283"]
 			id: "6F7A8C44C396EC20"
@@ -106,8 +108,8 @@
 		{
 			title: "Labors of Hercules"
 			icon: "twilightforest:hydra_trophy"
-			x: 3.0d
-			y: -0.5d
+			x: -1.5d
+			y: 1.0d
 			description: ["You will need to obtain some of the Fiery Blood of the Hydra. Find him in his lair in the Fire Swamp. Kill him."]
 			dependencies: ["6F7A8C44C396EC20"]
 			id: "1DB4F0166A54BBD0"
