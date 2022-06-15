@@ -10,7 +10,7 @@
 	quests: [
 		{
 			x: 0.0d
-			y: 0.0d
+			y: -3.0d
 			description: ["To create the portal to the Deep Dark, take some khnumite and diamond, sculpt it into a face, and put it in the arc furnace. Then, add some tropical gemstones, and a chunk o head."]
 			dependencies: [
 				"010B862B28B3AD36"
@@ -58,7 +58,7 @@
 				""
 				"You could buy the blueprint from the appropriate villager, and make it in the engineer's workbench."
 				""
-				"Or, you can make them using the metal press. Just throw four HOP graphite ingots onto it with a rod press, though they have only half the durability."
+				"Or, you can make them using the metal press. Just throw four HOP graphite ingots onto it with a rod press, though they have less durability when made with this method"
 				""
 				"You need to add all four at once, so simpler automation methods (like a hopper) might not work."
 			]
@@ -76,16 +76,104 @@
 				}
 				count: 3L
 			}]
+			rewards: [{
+				id: "31923C05402D6967"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
 		}
 		{
 			x: -1.5d
 			y: -3.0d
+			description: ["Take that graphite dust and toss it in a furnace."]
+			dependencies: ["06C6BDFC0153A9CE"]
 			id: "2C032DF843BD3AB8"
 			tasks: [{
 				id: "0EFE3F555A230175"
 				type: "item"
 				item: "immersiveengineering:ingot_hop_graphite"
 				count: 12L
+			}]
+			rewards: [{
+				id: "1A0EC839D28A9F98"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "HOP to it"
+			x: -3.0d
+			y: -3.0d
+			description: ["To make graphite dust, you'll need to make an industrial squeezer. Consult the engineer's manual for details."]
+			dependencies: ["279035402C823388"]
+			id: "06C6BDFC0153A9CE"
+			tasks: [{
+				id: "36DBA65AE8036148"
+				type: "item"
+				item: "immersiveengineering:dust_hop_graphite"
+				count: 12L
+			}]
+			rewards: [{
+				id: "237A4E254E96164D"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Coke Dust"
+			x: -4.5d
+			y: -3.0d
+			subtitle: "Don't breathe this!"
+			description: [
+				"Next, you'll need to crush that coke into dust."
+				""
+				"For that, you'll need to make a crusher -- See the Engineer's Manual for details"
+			]
+			dependencies: ["509A694EE337900D"]
+			id: "279035402C823388"
+			tasks: [{
+				id: "10F0D86B6C6E422B"
+				type: "item"
+				item: "immersiveengineering:dust_coke"
+				count: 96L
+			}]
+			rewards: [{
+				id: "4B8CD1075996E6BD"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Coca Cola"
+			x: -6.0d
+			y: -3.0d
+			description: [
+				"In order to make the portal to the Deep Dark, you'll need an Arc Furnace. And in order to run it, you'll need to make graphite electrodes from a source of carbon."
+				""
+				"First, you need to make coal coke. You can either build the IE coke oven (Consult the Engineer's Manual for details), or you could make the pyrolyzer from Thermal Expansion."
+				""
+				"Both methods will also generate Creosote Oil, a substance you'll need for making treated wood"
+			]
+			dependencies: ["293397734B10193E"]
+			id: "509A694EE337900D"
+			tasks: [{
+				id: "674E3ADF7C91D0DF"
+				type: "item"
+				title: "Coal Coke"
+				icon: "immersiveengineering:coal_coke"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:coal_coke"
+					}
+				}
+				count: 96L
+			}]
+			rewards: [{
+				id: "1E6EA042F7207404"
+				type: "ftbmoney:money"
+				ftb_money: 8L
 			}]
 		}
 	]

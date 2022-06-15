@@ -199,7 +199,7 @@
 				""
 				"Place an artifact into it, give it some lava, and get some shards out."
 				""
-				"You can craft the shards into godforge blocks, which can then be broken to summon a random artifact"
+				"You can craft the shards into godforge blocks, which can then be broken with a Nebu Hammer to summon a random artifact"
 			]
 			dependencies: ["3A43286DD666084C"]
 			id: "6FF22030A615DD44"

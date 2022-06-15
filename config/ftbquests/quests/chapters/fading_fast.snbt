@@ -450,7 +450,10 @@
 				""
 				"The earliest method to make steel is the Immersive Engineering blast furnace. Later on you can use the Induction Smelter or Energetic Infuser"
 			]
-			dependencies: ["5E527BA2C154DB72"]
+			dependencies: [
+				"5E527BA2C154DB72"
+				"1892A05444FBBCA6"
+			]
 			id: "4874E61F350DDBE8"
 			tasks: [{
 				id: "07F4CBC998CE4137"
