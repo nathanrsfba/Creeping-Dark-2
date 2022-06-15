@@ -1,0 +1,165 @@
+{
+	id: "05A8FB9AB339729F"
+	group: ""
+	order_index: 4
+	filename: "holiday"
+	title: "On Holiday"
+	icon: "tropicraft:drink_mixer"
+	subtitle: ["The Tropics"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Shake it, baby"
+			icon: "tropicraft:drink_mixer"
+			x: -0.5d
+			y: -3.5d
+			description: [
+				"Find some coconut and pineapple, cut them into chunks, then place both of them in the drink mixer, and then a bamboo mug."
+				""
+				"(Right click the *base* of the mixer to add items)"
+				""
+				"All of the above materials can usually be found in jungles, and sometimes other warm biomes as well. Look for tropical gardens in jungles as well; they sometimes yield pineapples."
+				""
+				"If you're having trouble find a jungle, you can make a Nature's Compass. Also, you can by coconuts and pineapples by crafting a market block"
+			]
+			dependencies: ["21FF3228E8EF9757"]
+			id: "40CEEC76E90FCEB9"
+			tasks: [
+				{
+					id: "2D2D04000A082B89"
+					type: "item"
+					item: "tropicraft:drink_mixer"
+				}
+				{
+					id: "2E73E5A10388A3B6"
+					type: "item"
+					item: "tropicraft:coconut_chunk"
+				}
+				{
+					id: "40DD4A364AF038B3"
+					type: "item"
+					item: "tropicraft:pineapple_cubes"
+				}
+				{
+					id: "12FB513EDB68B17A"
+					type: "item"
+					item: "tropicraft:bamboo_mug"
+				}
+				{
+					id: "6401C08F890F46C8"
+					type: "item"
+					item: "tropicraft:pina_colada"
+				}
+			]
+			rewards: [{
+				id: "77565BA6899957E9"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Tropical Wealth"
+			icon: "tropicraft:azurite_gem"
+			x: -2.0d
+			y: -0.5d
+			description: ["You can find these valuable gems underground in the Tropics"]
+			dependencies: ["03CDBB73D9EF5666"]
+			id: "6F37A222BF792667"
+			tasks: [
+				{
+					id: "1814EE1FEE9ECADE"
+					type: "item"
+					item: "tropicraft:azurite_gem"
+				}
+				{
+					id: "7E5F611B2130048C"
+					type: "item"
+					item: "tropicraft:eudialyte_gem"
+				}
+				{
+					id: "3C87B14FB4E60A67"
+					type: "item"
+					item: "tropicraft:zircon_gem"
+				}
+			]
+			rewards: [{
+				id: "63E6682B843E884E"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Chunky"
+			x: -0.5d
+			y: -0.5d
+			description: [
+				"You can find this volcanic rock in several ways."
+				""
+				"1. Break one of the Moai heads the natives have scattered around the realm. Careful; there's lava inside to deter looters!"
+				"2. Naturally occuring in volcanoes. Unsurprisingly, these are full of lava as well."
+				"3. Kill one of the Moai creatures. They're made of rock, so you'll need the appropriate tool to damage them..."
+			]
+			dependencies: ["03CDBB73D9EF5666"]
+			id: "010B862B28B3AD36"
+			tasks: [{
+				id: "0005D127490AC426"
+				type: "item"
+				item: "tropicraft:chunk"
+			}]
+			rewards: [{
+				id: "405C104776B96468"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "The Heads Have Eyes"
+			x: 1.0d
+			y: -0.5d
+			description: [
+				"In the Tropics, you'll find a giant spherical dungeon split in two."
+				""
+				"Inside, you will find one of the Moai creatures"
+				""
+				"Kill it, and take its eye, and keep it safe"
+				""
+				"If you're not careful, it might turn into another Moai creature."
+			]
+			dependencies: ["03CDBB73D9EF5666"]
+			id: "2C6212FE3010B715"
+			tasks: [{
+				id: "7BB78CD9B5DC8A8F"
+				type: "item"
+				item: "tropicraft:eih_spawn_egg"
+			}]
+			rewards: [{
+				id: "537B75F810C53F68"
+				type: "ftbmoney:money"
+				ftb_money: 512L
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			description: [
+				"The Tropics is ... well, a tropical paradise."
+				""
+				"But it is not without its own dangers..."
+			]
+			dependencies: ["40CEEC76E90FCEB9"]
+			id: "03CDBB73D9EF5666"
+			tasks: [{
+				id: "0BAF8A357594093B"
+				type: "dimension"
+				title: "Enter The Tropics"
+				dimension: "tropicraft:tropics"
+			}]
+			rewards: [{
+				id: "70BC29DD783B96A0"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+	]
+}

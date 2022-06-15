@@ -1,0 +1,92 @@
+{
+	id: "2AC143E4959666BD"
+	group: ""
+	order_index: 5
+	filename: "rock_bottom"
+	title: "Rock Bottom"
+	icon: "minecraft:bedrock"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["To create the portal to the Deep Dark, take some khnumite and diamond, sculpt it into a face, and put it in the arc furnace. Then, add some tropical gemstones, and a chunk o head."]
+			dependencies: [
+				"010B862B28B3AD36"
+				"6F37A222BF792667"
+				"7D872EC31BEB7EEE"
+				"3BC9799CAEB1B04E"
+				"40FFD1B49A3998F1"
+			]
+			id: "0FF40DD0A37CB3C5"
+			tasks: [{
+				id: "5F6993BCA175CC2B"
+				type: "item"
+				item: "ddd:teleporter"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			description: [
+				"A massive, multiblock smelting machine."
+				""
+				"Refer to the appropriate chapter in the Engineer's Manual to learn how. And maybe build a projector to help you."
+			]
+			dependencies: ["4874E61F350DDBE8"]
+			id: "3BC9799CAEB1B04E"
+			tasks: [{
+				id: "09B6623D0BD8604D"
+				type: "advancement"
+				title: "Build the Arc Furnace"
+				advancement: "immersiveengineering:main/mb_arcfurnace"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "5A9211AEDE51A574"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Electric"
+			x: -1.5d
+			y: -1.5d
+			description: [
+				"You'll need three of these to run the arc furnace. There's a couple different ways to make them."
+				""
+				"You could buy the blueprint from the appropriate villager, and make it in the engineer's workbench."
+				""
+				"Or, you can make them using the metal press. Just throw four HOP graphite ingots onto it with a rod press, though they have only half the durability."
+				""
+				"You need to add all four at once, so simpler automation methods (like a hopper) might not work."
+			]
+			dependencies: ["2C032DF843BD3AB8"]
+			id: "40FFD1B49A3998F1"
+			tasks: [{
+				id: "302083E6D861E4CB"
+				type: "item"
+				item: {
+					id: "immersiveengineering:graphite_electrode"
+					Count: 1b
+					tag: {
+						graphDmg: 0
+					}
+				}
+				count: 3L
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			id: "2C032DF843BD3AB8"
+			tasks: [{
+				id: "0EFE3F555A230175"
+				type: "item"
+				item: "immersiveengineering:ingot_hop_graphite"
+				count: 12L
+			}]
+		}
+	]
+}

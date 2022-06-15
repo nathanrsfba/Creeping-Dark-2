@@ -1,0 +1,263 @@
+{
+	id: "3494001021D3B8EF"
+	group: ""
+	order_index: 3
+	filename: "oasis"
+	title: "Oasis"
+	icon: "atum:sand"
+	subtitle: ["Thermal Expansion and Atum"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Scary"
+			x: 2.5d
+			y: -3.0d
+			description: ["Melt down three gold ingots, pipe it into a fluid encapsulator, and place a diamond into it"]
+			dependencies: [
+				"29F77D2A5CE88E5A"
+				"4E8D8D86FB876C67"
+			]
+			dependency_requirement: "one_completed"
+			id: "3058BBE40DDFE25A"
+			tasks: [{
+				id: "34BA60FC6D31F44A"
+				type: "item"
+				item: "atum:scarab"
+			}]
+			rewards: [{
+				id: "430468604446E68C"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Capsule"
+			x: 1.0d
+			y: -3.0d
+			description: ["A device that can move fluid into (or out of) items"]
+			dependencies: ["46728B0B301999BD"]
+			id: "29F77D2A5CE88E5A"
+			tasks: [{
+				id: "3FCBD2FFB6143597"
+				type: "item"
+				item: "thermal:machine_bottler"
+			}]
+			rewards: [{
+				id: "792D89DCEDD0EF8F"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Based on the play by Arthur Milller"
+			x: 1.0d
+			y: -1.5d
+			description: ["A device that can melt down items into molten liquid"]
+			dependencies: ["46728B0B301999BD"]
+			id: "4E8D8D86FB876C67"
+			tasks: [{
+				id: "406044402DCD9F4D"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+			rewards: [{
+				id: "6509BD4622CF8AAE"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Machine Parts"
+			icon: "thermal:machine_frame"
+			x: -0.5d
+			y: -3.0d
+			subtitle: "...we did not have the parts"
+			description: ["Parts required for nearly all Thermal Expansion machines"]
+			dependencies: ["525980C7534BF5CF"]
+			id: "46728B0B301999BD"
+			tasks: [
+				{
+					id: "24C6A5819FA66C63"
+					type: "item"
+					item: "thermal:machine_frame"
+				}
+				{
+					id: "2B8CD09C4DD502C1"
+					type: "item"
+					item: "thermal:rf_coil"
+				}
+			]
+			rewards: [{
+				id: "10D2F26BC2A61A5C"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Into The Desert"
+			icon: "atum:sand"
+			x: 4.0d
+			y: -3.0d
+			description: [
+				"You will need to venture into Atum, a realm of endless desert"
+				""
+				"To build the portal to Atum:"
+				""
+				"1. Place a 5x5 block of sandstone"
+				"2. Place a 1-block thick 'ring' of sandstone on top of it, and fill it with water"
+				"3. Place a 2-block tall pillar of sandstone at each corner"
+				"4. Finally, throw the scarab into the water."
+				""
+				"Then... jump in!"
+				""
+				"You'll want to sleep in a bed near the portal; if you die, you'll respawn in the Atum realm... totally helpless."
+			]
+			dependencies: ["3058BBE40DDFE25A"]
+			id: "6C2AF811528E76F4"
+			tasks: [{
+				id: "769BBE102A43A5DC"
+				type: "dimension"
+				title: "Enter the realm of Atum"
+				dimension: "atum:atum"
+			}]
+			rewards: [{
+				id: "34D28CC3ABC954D7"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Phire and Brimstone"
+			x: 4.0d
+			y: -1.5d
+			description: ["Gather up some of this volcanic rock, which is found in blobs underground"]
+			dependencies: ["6C2AF811528E76F4"]
+			id: "21FF3228E8EF9757"
+			tasks: [{
+				id: "79815F86118ACEF3"
+				type: "item"
+				item: "atum:porphyry"
+			}]
+			rewards: [{
+				id: "10A548F70F24EA56"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "*cough*"
+			x: 7.0d
+			y: -3.0d
+			description: [
+				"You will need to take an artifact held by the Pharaoh, in the realm of Atum"
+				""
+				"Search the sands of Atum for a pyramid. Dig out the bottom of the 'stairs' until you find a doorway. Navigate the dungeon within until you find the sarcophagus."
+				""
+				"Place four Nebu Torches around the corners of the sarcophagus (or, if they're already there, relight them with a torch). Then, open the sarcophagus to bring the Pharaoh to life."
+				""
+				"Once he's dead, take the artifact he drops"
+			]
+			dependencies: ["3A43286DD666084C"]
+			id: "39BC3B2996B173EA"
+			tasks: [{
+				id: "16BD8C58E3AA1A12"
+				type: "kill"
+				icon: "atum:sarcophagus"
+				entity: "atum:pharaoh"
+				value: 1L
+			}]
+			rewards: [{
+				id: "419C43B4DD600D20"
+				type: "ftbmoney:money"
+				ftb_money: 4096L
+			}]
+		}
+		{
+			title: "Nebu"
+			x: 5.5d
+			y: -3.0d
+			description: ["Search underground for this gold-like ore, then smelt it into nuggets"]
+			dependencies: ["6C2AF811528E76F4"]
+			id: "3A43286DD666084C"
+			tasks: [{
+				id: "431B5ECD125F20D8"
+				type: "item"
+				item: "atum:nebu_drop"
+			}]
+			rewards: [{
+				id: "4A9508C259717EC2"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			description: [
+				"This furnace is hot enough to melt down artifacts bestowed onto Pharaohs by the Gods themselves."
+				""
+				"Place an artifact into it, give it some lava, and get some shards out."
+				""
+				"You can craft the shards into godforge blocks, which can then be broken to summon a random artifact"
+			]
+			dependencies: ["3A43286DD666084C"]
+			id: "6FF22030A615DD44"
+			tasks: [{
+				id: "7C4D49737B9D5D97"
+				type: "item"
+				item: "atum:godforge"
+			}]
+			rewards: [{
+				id: "14D63BB1B7CF36F2"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "God Shards"
+			x: 7.0d
+			y: -1.5d
+			description: ["Melt down the artifact you get to make Godshards. Save one for opening the End"]
+			dependencies: [
+				"6FF22030A615DD44"
+				"39BC3B2996B173EA"
+			]
+			id: "745057CC111A531E"
+			tasks: [{
+				id: "5E9E251AC69CADD1"
+				type: "item"
+				title: "Godshard"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "atum:godshards"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5701F908DDAD0226"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			description: ["You can find this soft, dirt-like material buried deep underground in Atum"]
+			dependencies: ["6C2AF811528E76F4"]
+			id: "7D872EC31BEB7EEE"
+			tasks: [{
+				id: "6DBF10FEA3D777A9"
+				type: "item"
+				item: "atum:khnumite"
+			}]
+			rewards: [{
+				id: "4DD8F9EE7194A79A"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+	]
+}
