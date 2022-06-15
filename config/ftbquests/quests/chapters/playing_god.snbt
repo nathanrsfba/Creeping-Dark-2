@@ -1,0 +1,234 @@
+{
+	id: "21F430DF9A9E9B9A"
+	group: ""
+	order_index: 6
+	filename: "playing_god"
+	title: "Playing God"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Framed!"
+			x: 1.0d
+			y: -3.0d
+			description: ["The base of most RFTools machines"]
+			dependencies: ["525980C7534BF5CF"]
+			id: "335F491FB4CC579C"
+			tasks: [{
+				id: "7496AC6FA98AF8E4"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
+			}]
+			rewards: [{
+				id: "314CCF1F2C332442"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Enscribbler"
+			icon: "rftoolsdim:enscriber"
+			x: 1.0d
+			y: -1.5d
+			subtitle: "MystCraft? Never heard of it."
+			description: [
+				"With this technology, you will have the power to create your own universes."
+				""
+				"Make an empty tab, put it in the encriber, give it a name, and hit Store. You'll get back a dimension tab for a brand new dimension."
+				""
+				"You can also create some dimlets to control how your new world generates. Craft the 'Technology Guide' and read up on dimensions for details."
+				""
+				"If you just want to create a random world, just leave it blank. Or, throw in some digit dimlets to create new random worlds."
+			]
+			dependencies: ["335F491FB4CC579C"]
+			id: "4BFA2FC3D193C993"
+			tasks: [
+				{
+					id: "1F2484D049E6322D"
+					type: "item"
+					item: "rftoolsdim:enscriber"
+				}
+				{
+					id: "2BB4731664A34477"
+					type: "item"
+					item: "rftoolsdim:empty_dimension_tab"
+				}
+			]
+			rewards: [{
+				id: "001254AC8940C39D"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Transmat"
+			icon: "rftoolsutility:matter_transmitter"
+			x: -0.5d
+			y: -1.5d
+			description: ["Instantaneously teleport from one place to another."]
+			dependencies: ["335F491FB4CC579C"]
+			id: "214503FF9A5D2B27"
+			tasks: [
+				{
+					id: "7D49E5A97E4C323D"
+					type: "item"
+					item: "rftoolsutility:matter_transmitter"
+				}
+				{
+					id: "7A4D17F295CF13F5"
+					type: "item"
+					item: "rftoolsutility:matter_receiver"
+				}
+				{
+					id: "44E0AF4B12771016"
+					type: "item"
+					item: "rftoolsutility:dialing_device"
+				}
+			]
+		}
+		{
+			title: "Genesis"
+			x: 2.5d
+			y: -3.0d
+			description: [
+				"Once you've made a dimension tab, drop it into this device (along with a not-insignificant amount of power), and it will build your new world according to its specification."
+				""
+				"Make sure to give it plenty of power before trying to explore it. If it runs out of power while you're inside, you'll die quite quickly."
+			]
+			dependencies: ["4BFA2FC3D193C993"]
+			id: "77FC6B4F862C94F4"
+			tasks: [{
+				id: "7F60C721DA07EBE3"
+				type: "item"
+				item: "rftoolsdim:dimension_builder"
+			}]
+			rewards: [{
+				id: "7A8FD232A35DDA33"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "...and back again"
+			x: 2.5d
+			y: -1.5d
+			description: [
+				"Before you go off gallivanting around new universes, you need to make sure you have a way to return home, possibly in a hurry!"
+				""
+				"You have several options, some of which you've already crafted just to get to this point."
+				""
+				"Place a matter receiver in your base, plug it into power. Make an extra matter transmitter, dial it to the receiver in your base, charge it up good, and take it with you. Place it down in the new world and use it to return home."
+				""
+				"Better yet, make a Charged Porter. Shift-right-click on your base receiver to link the two together. Keep it charged up (A simple dimensional cell will do the job) and on you at all times, and use it to return home from anywhere."
+				""
+				"Or, if you have another method already prepared (waystone, Mekanism teleporter, etc) feel free to use that."
+			]
+			dependencies: ["77FC6B4F862C94F4"]
+			id: "454B2D6562D94CDA"
+			tasks: [{
+				id: "475DE29F098A077B"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Unusual Patterns"
+			x: 4.0d
+			y: -3.0d
+			description: [
+				"Now that you've created your new world, it's time to go explore it."
+				""
+				"Create a matter transmitter, use the dialing device to link it to the receiver in your new world, and jump in!"
+				""
+				"As you explore this strange new world, you'll see little shacks with dimlets you can use for further world building. Mine the walls out of one, as you'll need bits of it to progress."
+			]
+			dependencies: ["454B2D6562D94CDA"]
+			id: "7F817E6B13869EA7"
+			tasks: [{
+				id: "361226BC63E6108A"
+				type: "item"
+				item: "rftoolsdim:dimensional_pattern2_block"
+			}]
+			rewards: [{
+				id: "2C17B257BCFDEB1F"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "All That Glitters"
+			icon: "gaiadimension:keystone_block"
+			x: 4.0d
+			y: -1.5d
+			description: [
+				"Once you've found the dimensional pattern blocks, you can create the portal to Gaia."
+				""
+				"Use the keystone blocks to build a portal, similar to a nether portal. Then light it with a Glint and Steel."
+			]
+			dependencies: ["7F817E6B13869EA7"]
+			id: "5B55158B4458E8C2"
+			tasks: [
+				{
+					id: "2AC237ABD2AB6599"
+					type: "item"
+					item: "gaiadimension:keystone_block"
+				}
+				{
+					id: "7EF6E49435FEAE92"
+					type: "item"
+					item: {
+						id: "gaiadimension:glint_and_gold"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Crystal Dream"
+			icon: "gaiadimension:sugilite"
+			x: 4.0d
+			y: 0.0d
+			description: ["Gaia is a mystical realm where crystals grow like plants"]
+			dependencies: ["5B55158B4458E8C2"]
+			id: "3D10F957E278033D"
+			tasks: [{
+				id: "2D71EB519B5CB16D"
+				type: "dimension"
+				title: "Enter the Realm of Gaia"
+				dimension: "gaiadimension:gaia_dimension"
+			}]
+			rewards: [{
+				id: "362C81976929B85B"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Mal"
+			x: 4.0d
+			y: 1.5d
+			description: [
+				"In the Gaia dimension, you will find the Malachite Guard Tower."
+				""
+				"Find it, climb to the top, kill the guard's drones, then kill him."
+			]
+			dependencies: ["3D10F957E278033D"]
+			id: "7DC1795645E76024"
+			tasks: [{
+				id: "761A6919B9FB078C"
+				type: "kill"
+				icon: {
+					id: "gaiadimension:malachite_guard_baton"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "gaiadimension:malachite_guard"
+				value: 1L
+			}]
+		}
+	]
+}

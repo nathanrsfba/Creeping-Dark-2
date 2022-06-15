@@ -145,8 +145,8 @@
 		}
 		{
 			title: "Coca Cola"
-			x: -6.0d
-			y: -3.0d
+			x: -4.5d
+			y: -1.5d
 			description: [
 				"In order to make the portal to the Deep Dark, you'll need an Arc Furnace. And in order to run it, you'll need to make graphite electrodes from a source of carbon."
 				""
@@ -174,6 +174,68 @@
 				id: "1E6EA042F7207404"
 				type: "ftbmoney:money"
 				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Wizard of Osmium"
+			x: 1.5d
+			y: -1.5d
+			description: ["The basic material of Mekanism machines"]
+			dependencies: ["3EF45E7F56DB7530"]
+			id: "141F407562B4006D"
+			tasks: [{
+				id: "2F0BCAF5BDDFD76F"
+				type: "item"
+				item: "mekanism:osmium_ore"
+			}]
+			rewards: [{
+				id: "2049F2B0810357B8"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "How Deep Is Your Dark?"
+			icon: "minecraft:bedrock"
+			x: 1.5d
+			y: -3.0d
+			description: [
+				"The Deep Dark is a realm, deep underground, where the darkness itself is alive."
+				""
+				"And angry."
+			]
+			dependencies: ["0FF40DD0A37CB3C5"]
+			id: "3EF45E7F56DB7530"
+			tasks: [{
+				id: "4930A29E83CEFE66"
+				type: "dimension"
+				title: "Enter the Deep Dark"
+				dimension: "ddd:deep_dark"
+			}]
+			rewards: [{
+				id: "3A179D7EEEB67091"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Maybe She'll Help"
+			icon: "minecraft:cobweb"
+			x: 3.0d
+			y: -3.0d
+			description: [
+				"Hidden away in the Deep Dark is a giant spider in a glass dome."
+				""
+				"Find her, kill her, and pluck out her eye."
+				""
+				"She moves fast. You might want to be ready for that."
+			]
+			dependencies: ["3EF45E7F56DB7530"]
+			id: "670334F58E28FCF9"
+			tasks: [{
+				id: "6BD1E4CCD5C70627"
+				type: "item"
+				item: "contenttweaker:evil_eye"
 			}]
 		}
 	]
