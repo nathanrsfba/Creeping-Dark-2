@@ -146,16 +146,43 @@
 				id: "28FBBF72F23AA5B4"
 				type: "item"
 				item: {
-					id: "simplybackpacks:commonbackpack"
+					id: "projectred-exploration:white_backpack"
 					Count: 1b
 					tag: {
 						RepairCost: 0
-						UUID: [I;
-							1791596
-							-948157642
-							-1140448117
-							41383064
-						]
+						baginv: {
+							items: [
+								{
+									index: 0
+									id: "mekanismtools:stone_paxel"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									index: 1
+									id: "minecraft:oak_log"
+									Count: 64b
+								}
+								{
+									index: 2
+									id: "minecraft:cobblestone"
+									Count: 64b
+								}
+								{
+									index: 3
+									id: "minecraft:torch"
+									Count: 64b
+								}
+								{
+									index: 4
+									id: "minecraft:apple"
+									Count: 64b
+								}
+							]
+							itemsCount: 27
+						}
 						display: {
 							Name: "{\"text\":\"Anti-Treepunching Bag\"}"
 						}
