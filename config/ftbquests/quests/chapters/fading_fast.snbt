@@ -373,8 +373,6 @@
 			description: [
 				"You'll need a way to generate RF power to run most of the machines you'll need."
 				""
-				"To submit energy for the quest: Craft a Task Screen, right-click on it, select this task, then pipe energy into it."
-				""
 				"Early on, you can make a water wheel using Immersive Engineering. Later on, you can make Thermal Expansion dynamos."
 				""
 				"For more power generation, you might want to look into Advanced Generators, or even a nuclear reactor"
@@ -382,14 +380,8 @@
 			dependencies: ["5E527BA2C154DB72"]
 			id: "2448BDDAD50EFD1F"
 			tasks: [{
-				id: "3682E34405C1A3BE"
-				type: "forge_energy"
-				value: 1000L
-			}]
-			rewards: [{
-				id: "3B154E5DDDCE7DA5"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				id: "5ACC66FE4ED72780"
+				type: "checkmark"
 			}]
 		}
 		{
