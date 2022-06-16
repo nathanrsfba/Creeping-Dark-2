@@ -70,3 +70,6 @@ whitelist.json
 
 # Windows links
 *.lnk
+
+# Links to other repos
+/drop
