@@ -185,6 +185,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "233BEA9AB65C3C85"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
 		}
 		{
 			title: "Crystal Dream"

@@ -203,6 +203,8 @@
 				"The Deep Dark is a realm, deep underground, where the darkness itself is alive."
 				""
 				"And angry."
+				""
+				"Before you go in: You will need to bring a method to take you home again. Simplest way is probably to just make a second portal block and bring it with you."
 			]
 			dependencies: ["0FF40DD0A37CB3C5"]
 			id: "3EF45E7F56DB7530"
