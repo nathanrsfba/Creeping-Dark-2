@@ -4,6 +4,7 @@
 	order_index: 6
 	filename: "playing_god"
 	title: "Playing God"
+	icon: "rftoolsbase:dimensionalshard"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -228,6 +229,127 @@
 				}
 				entity: "gaiadimension:malachite_guard"
 				value: 1L
+			}]
+			rewards: [{
+				id: "748793742F9E023B"
+				type: "ftbmoney:money"
+				ftb_money: 4096L
+			}]
+		}
+		{
+			title: "Shiny Crystals"
+			x: 1.0d
+			y: 0.0d
+			description: ["Put a pyrite block in the middle of the restructurer, put some pyrite in the top left, and a bunch of pink essense in the top right"]
+			dependencies: ["7DD5DC817DB4F2EC"]
+			id: "68ED84AB3F8173FB"
+			tasks: [{
+				id: "1773F9C9365834B1"
+				type: "item"
+				item: "gaiadimension:bismuth_crystal"
+			}]
+			rewards: [{
+				id: "260C4C489BE831D3"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Fool's Gold"
+			x: 2.5d
+			y: 0.0d
+			description: ["Found in blocks of ores underground"]
+			dependencies: ["3D10F957E278033D"]
+			id: "7DD5DC817DB4F2EC"
+			tasks: [{
+				id: "3B21624A9D7B245F"
+				type: "item"
+				item: "gaiadimension:pyrite"
+			}]
+			rewards: [{
+				id: "6AF2E8A3EB8B9877"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Muck"
+			x: 2.5d
+			y: 1.5d
+			description: ["Kill some of the slimes that spawn underground in the Gaia realm"]
+			dependencies: ["3D10F957E278033D"]
+			id: "2192184DC147FFAC"
+			tasks: [{
+				id: "2C95AF90D13E7F3F"
+				type: "item"
+				item: "gaiadimension:sweet_muckball"
+			}]
+			rewards: [{
+				id: "5453BBFD83A7D599"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Crystal Alchemy"
+			x: 1.0d
+			y: 1.5d
+			description: [
+				"Transmutes items into other things"
+				""
+				"Requires both a 'shining' fuel (such as pink essense or aura residue) and a 'glittering' fuel (such as pyrite or muckballs)"
+			]
+			dependencies: [
+				"2192184DC147FFAC"
+				"6D6DBFB1A116B126"
+				"68ED84AB3F8173FB"
+				"0A21CA066C145334"
+			]
+			id: "29D31800F2835226"
+			tasks: [{
+				id: "33AFE9943E9CD663"
+				type: "item"
+				item: "gaiadimension:restructurer"
+			}]
+			rewards: [{
+				id: "41B1B29807B45B63"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.0d
+			description: ["Dig up some of the stone that makes up Gaia, then smelt it"]
+			dependencies: ["3D10F957E278033D"]
+			id: "6D6DBFB1A116B126"
+			tasks: [{
+				id: "5413C128C089D864"
+				type: "item"
+				item: "gaiadimension:gaia_stone"
+			}]
+			rewards: [{
+				id: "62AD035C2A08BF41"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Essential Materials"
+			x: -0.5d
+			y: 3.0d
+			description: ["...and then smelt it again"]
+			dependencies: ["6D6DBFB1A116B126"]
+			id: "0A21CA066C145334"
+			tasks: [{
+				id: "272934F8A3294CEF"
+				type: "item"
+				item: "gaiadimension:pink_essence"
+			}]
+			rewards: [{
+				id: "09BFEE858250DF8F"
+				type: "ftbmoney:money"
+				ftb_money: 8L
 			}]
 		}
 	]
