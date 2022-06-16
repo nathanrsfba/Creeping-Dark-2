@@ -9,26 +9,27 @@
 
 /* Recipe for the end orb */
 
+val a = <item:minecraft:air>;
+val b = <item:gaiadimension:bismuth_crystal>;
+val e = <item:contenttweaker:evil_eye>;
 val f = <item:twilightforest:fiery_blood>;
-val t = <item:soulbound:torturedsoul>;
-val s = <item:minecraft:nether_star>;
+val g = <tag:items:atum:godshards>;
+val h = <item:tropicraft:eih_spawn_egg>;
+val l = <item:contenttweaker:shadow_flesh>;
+val m = <tag:items:creepingdark2:malachite>;
 val n = <item:blue_skies:nature_arc>;
 val p = <item:blue_skies:poison_arc>;
-val g = <tag:items:atum:godshards>;
-val w = <item:dark_world:wither_fruit>;
-val l = <item:contenttweaker:shadow_flesh>;
-val e = <item:contenttweaker:evil_eye>;
 val q = <item:contenttweaker:quartz_bone>;
-val m = <tag:items:creepingdark2:malachite>;
-val b = <item:gaiadimension:bismuth_crystal>;
-val a = <item:minecraft:air>;
+val s = <item:minecraft:nether_star>;
+val t = <item:soulbound:torturedsoul>;
+val w = <item:dark_world:wither_fruit>;
 
 <recipetype:astralsorcery:altar>.addRecipe(
 /* Name     */ "end_orb", 
 /* Altar    */ "CONSTELLATION", 
 /* Output   */ <item:contenttweaker:end_orb>,
 /* Recipe   */ [
-[b, a, a, a, a],
+[b, a, a, a, h],
 [a, f, t, s, a],
 [a, n, p, g, a],
 [a, w, l, e, a],
