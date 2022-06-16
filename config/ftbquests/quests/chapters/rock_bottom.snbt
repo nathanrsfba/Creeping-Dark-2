@@ -239,6 +239,11 @@
 				type: "item"
 				item: "contenttweaker:evil_eye"
 			}]
+			rewards: [{
+				id: "3DB6E26BA037A3EF"
+				type: "ftbmoney:money"
+				ftb_money: 512L
+			}]
 		}
 	]
 }
