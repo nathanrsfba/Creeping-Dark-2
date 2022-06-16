@@ -1,0 +1,21 @@
+{
+	id: "5B1E0FB61BCB298C"
+	group: ""
+	order_index: 11
+	filename: "the_fall_of_night"
+	title: "Hidden Amongst The Shadows"
+	icon: "ars_nouveau:mana_gem"
+	subtitle: ["Ars Nouveau and the Dark World"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 1.0d
+		y: 3.5d
+		id: "70F5E218E5388837"
+		tasks: [{
+			id: "5A5D351365AAC861"
+			type: "item"
+			item: "contenttweaker:shadow_flesh"
+		}]
+	}]
+}

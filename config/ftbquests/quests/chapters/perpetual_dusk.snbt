@@ -5,6 +5,7 @@
 	filename: "perpetual_dusk"
 	title: "Perpetual Dusk"
 	icon: "twilightforest:twilight_portal_miniature_structure"
+	subtitle: ["The Twilight Forest"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

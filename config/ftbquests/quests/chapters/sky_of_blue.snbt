@@ -1,9 +1,9 @@
 {
 	id: "2A5A2B83419E30AD"
 	group: ""
-	order_index: 7
+	order_index: 9
 	filename: "sky_of_blue"
-	title: "Sky of Blue"
+	title: "Ever After"
 	icon: {
 		id: "blue_skies:zeal_lighter"
 		Count: 1b
@@ -11,6 +11,7 @@
 			Damage: 0
 		}
 	}
+	subtitle: ["The Everbright and Everdawn"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

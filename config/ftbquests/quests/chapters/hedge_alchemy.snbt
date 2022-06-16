@@ -1,0 +1,21 @@
+{
+	id: "0E527DAEDE03CC86"
+	group: ""
+	order_index: 10
+	filename: "hedge_alchemy"
+	title: "Hedge Alchemy"
+	icon: "botania:white_mystical_flower"
+	subtitle: ["Botania"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.5d
+		y: 0.0d
+		id: "00F68527376FC0A7"
+		tasks: [{
+			id: "2AE9D69635B4EF64"
+			type: "item"
+			item: "botania:life_essence"
+		}]
+	}]
+}

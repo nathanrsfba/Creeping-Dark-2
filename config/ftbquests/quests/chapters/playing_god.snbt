@@ -1,10 +1,11 @@
 {
 	id: "21F430DF9A9E9B9A"
 	group: ""
-	order_index: 6
+	order_index: 5
 	filename: "playing_god"
 	title: "Playing God"
 	icon: "rftoolsbase:dimensionalshard"
+	subtitle: ["RFTools and the Gaia Dimension"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -246,7 +247,10 @@
 			x: 1.0d
 			y: 0.0d
 			description: ["Put a pyrite block in the middle of the restructurer, put some pyrite in the top left, and a bunch of pink essense in the top right"]
-			dependencies: ["7DD5DC817DB4F2EC"]
+			dependencies: [
+				"7DD5DC817DB4F2EC"
+				"29D31800F2835226"
+			]
 			id: "68ED84AB3F8173FB"
 			tasks: [{
 				id: "1773F9C9365834B1"
@@ -281,13 +285,13 @@
 			title: "Muck"
 			x: 2.5d
 			y: 1.5d
-			description: ["Kill some of the slimes that spawn underground in the Gaia realm"]
+			description: ["Search Gaia for a Purple Agate Swamp. Mine up some Gummy Glitter. Or maybe kill some of those slimes and make your own."]
 			dependencies: ["3D10F957E278033D"]
 			id: "2192184DC147FFAC"
 			tasks: [{
-				id: "2C95AF90D13E7F3F"
+				id: "04C673DDF02E7A2D"
 				type: "item"
-				item: "gaiadimension:sweet_muckball"
+				item: "gaiadimension:gummy_glitter_block"
 			}]
 			rewards: [{
 				id: "5453BBFD83A7D599"
@@ -307,7 +311,6 @@
 			dependencies: [
 				"2192184DC147FFAC"
 				"6D6DBFB1A116B126"
-				"68ED84AB3F8173FB"
 				"0A21CA066C145334"
 			]
 			id: "29D31800F2835226"

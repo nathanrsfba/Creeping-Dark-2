@@ -1,0 +1,21 @@
+{
+	id: "7B23E5B57D8FF6F3"
+	group: ""
+	order_index: 8
+	filename: "beyond_the_veil"
+	title: "Beyond The Veil"
+	icon: "mekanism:alloy_atomic"
+	subtitle: ["Mekanism and the Soulbound Dimension"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.5d
+		y: 0.0d
+		id: "3BD788299365ADC9"
+		tasks: [{
+			id: "599F791B2EAE3ED0"
+			type: "item"
+			item: "soulbound:torturedsoul"
+		}]
+	}]
+}

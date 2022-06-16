@@ -1,0 +1,21 @@
+{
+	id: "0EC2D990ED046FAD"
+	group: ""
+	order_index: 12
+	filename: "star_bright"
+	title: "Star Bright"
+	icon: "astralsorcery:wand"
+	subtitle: ["Astral Sorcery and the End"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: -0.5d
+		y: 0.5d
+		id: "7E53EAE5BFA52CFA"
+		tasks: [{
+			id: "472DC9D07FA00FB8"
+			type: "item"
+			item: "contenttweaker:end_orb"
+		}]
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	id: "64CAC9E50C558069"
+	group: ""
+	order_index: 6
+	filename: "mc_squared"
+	title: "MC Squared"
+	icon: "appliedenergistics2:1k_cell_component"
+	subtitle: ["Applied Energistics"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: -0.5d
+		id: "00B31105EE8EDA9C"
+		tasks: [{
+			id: "3A9239D09AD91C4C"
+			type: "item"
+			item: "appliedenergistics2:singularity"
+		}]
+	}]
+}

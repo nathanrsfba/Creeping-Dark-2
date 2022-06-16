@@ -1,10 +1,11 @@
 {
 	id: "2AC143E4959666BD"
 	group: ""
-	order_index: 5
+	order_index: 7
 	filename: "rock_bottom"
 	title: "Rock Bottom"
 	icon: "minecraft:bedrock"
+	subtitle: ["Immersive Engineering and the Deep Dark"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

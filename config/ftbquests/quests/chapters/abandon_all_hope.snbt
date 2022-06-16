@@ -5,6 +5,7 @@
 	filename: "abandon_all_hope"
 	title: "Abandon All Hope"
 	icon: "minecraft:netherrack"
+	subtitle: ["The Nether"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
