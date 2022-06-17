@@ -8,14 +8,423 @@
 	subtitle: ["Mekanism and the Soulbound Dimension"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: 0.5d
-		y: 0.0d
-		id: "3BD788299365ADC9"
-		tasks: [{
-			id: "599F791B2EAE3ED0"
-			type: "item"
-			item: "soulbound:torturedsoul"
-		}]
-	}]
+	quests: [
+		{
+			x: 0.5d
+			y: 0.0d
+			description: [
+				"As part of opening the end, you will need a Tortured Soul, which can only be gotten from the Wraith."
+				""
+				"Take the soul cage and place it on the ground, and give it a redstone signal to summon the wraith. You'll want to do this by remote control -- the summoning process is a bit ... explosive."
+				""
+				"Important notes about the fight:"
+				""
+				"* Beware of lightning."
+				"* When he's low on health, he turns transparent when you hit him. Do *not* hit him while he's transparent, as he will regenerate health quickly if you do"
+				"* Once he's dead, grab the loot quickly... then run. His death throes are ...  also explosive."
+				""
+			]
+			dependencies: ["7B473B838F0AABC4"]
+			id: "3BD788299365ADC9"
+			tasks: [{
+				id: "599F791B2EAE3ED0"
+				type: "item"
+				item: "soulbound:torturedsoul"
+			}]
+			rewards: [{
+				id: "36C91961FEEC6193"
+				type: "ftbmoney:money"
+				ftb_money: 4096L
+			}]
+		}
+		{
+			title: "Met Allergic"
+			x: -6.5d
+			y: -7.0d
+			description: ["The first step to almost all Mekanism machinery"]
+			dependencies: ["141F407562B4006D"]
+			id: "647F8D4E4F926FE2"
+			tasks: [{
+				id: "61DDDD334EA0BC87"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+			rewards: [{
+				id: "14DDD6C64CAE866D"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			dependencies: [
+				"1DBCDF94330A74D7"
+				"77876AC507B77005"
+			]
+			id: "7B473B838F0AABC4"
+			tasks: [{
+				id: "7EAC49DF8645F87C"
+				type: "item"
+				item: "soulbound:soulcage"
+			}]
+		}
+		{
+			title: "Blood for the Blood God"
+			icon: "soulbound:bottleofblood"
+			x: -1.0d
+			y: -1.5d
+			description: ["Make yourself a broken bottle... and sacrifice some of your own blood"]
+			dependencies: ["08F6CA25EB79BEB6"]
+			id: "1DBCDF94330A74D7"
+			tasks: [
+				{
+					id: "075B46EB40DE960A"
+					type: "item"
+					item: "soulbound:brokenglassbottle"
+				}
+				{
+					id: "29A125CF925AB038"
+					type: "item"
+					item: "soulbound:bottleofblood"
+				}
+			]
+			rewards: [{
+				id: "45FD212B2008ED19"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Rotten Meat"
+			icon: "soulbound:amalgameat_raw"
+			x: 2.0d
+			y: -1.5d
+			description: ["Kill some of the 'animals' of this decayed real, then mix their meat together"]
+			dependencies: ["08F6CA25EB79BEB6"]
+			id: "77876AC507B77005"
+			tasks: [
+				{
+					id: "76C9BB9B1F26491D"
+					type: "item"
+					item: "soulbound:stoutflesh"
+				}
+				{
+					id: "4CA5640EA57C6DA7"
+					type: "item"
+					item: "soulbound:flaresteak"
+				}
+				{
+					id: "1545912D27E3C188"
+					type: "item"
+					item: "soulbound:wandererflesh"
+				}
+				{
+					id: "7E8548FB90246CE0"
+					type: "item"
+					item: "soulbound:amalgameat_raw"
+				}
+			]
+			rewards: [{
+				id: "381D9397864A46A4"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Afterlife"
+			x: 2.0d
+			y: -6.5d
+			description: [
+				"In order to enter the Soulbound dimension, first, you need to find a spirit tree."
+				""
+				"These may be found dotted around the world. They have an odd, almost sickly appearance, glow in the dark, and grow on a stone platform."
+				""
+				"Once you have found a tree, you will need to start cutting it down. The logs that make up the tree will release restless spirits that will attack you. Killing them will release their soul, in the form of a pearl-like object. It might be useful to bring a bag to put them in, as holding onto them can cause some unpleasant effects..."
+				""
+				"Also, grab some of the leaves while you're at it."
+			]
+			id: "2BEACA4DB75CCCCF"
+			tasks: [{
+				id: "2531ECA0DCF9298A"
+				type: "item"
+				item: "soulbound:soulpiece"
+			}]
+			rewards: [{
+				id: "618DE110C7C177D7"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Bad Teeth"
+			x: 2.0d
+			y: -5.0d
+			description: ["After you've harvested the tree, you'll need to make decay blocks, using the souls you have harvested, along with some netherrack and nether wart. Your best bet is to put a single soul aside, and make the rest into decay."]
+			dependencies: ["2BEACA4DB75CCCCF"]
+			id: "3AC503CEBCA5EE02"
+			tasks: [{
+				id: "2BC2326D33846903"
+				type: "item"
+				item: "soulbound:soul_decay"
+			}]
+		}
+		{
+			title: "A Sense of Dread"
+			x: -1.0d
+			y: -5.0d
+			description: [
+				"Once you've made some decay, you'll need to make at least 10 blocks of infused dreadstone. Then, use it to build a portal, in the same fashion of a nether portal."
+				""
+				"If you find youself without enough souls, you can turn any type of log into spirit logs, using soul sand and ghost wood leaves, then place them and break them to spawn more spirits. And if that's not enough, find and harvest another spirit tree."
+			]
+			dependencies: [
+				"3AC503CEBCA5EE02"
+				"7A3D821CBFE255D9"
+			]
+			id: "6C7B3E6ECA47EA9E"
+			tasks: [{
+				id: "5F1DAADE26083E4F"
+				type: "item"
+				item: "soulbound:guildeddreadstone"
+			}]
+			rewards: [{
+				id: "0D94FAF1475B2143"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			description: ["Once you have a pacified soul, you can use it to make a lighter to activate the portal"]
+			dependencies: ["0E983B73B5095C98"]
+			id: "058408DBC6D55360"
+			tasks: [{
+				id: "05E36E0AB73A5B12"
+				type: "item"
+				item: {
+					id: "soulbound:soulbound"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "638A309762B789AE"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "...to the other side"
+			icon: "soulbound:decay_block"
+			x: 0.5d
+			y: -3.5d
+			dependencies: [
+				"6C7B3E6ECA47EA9E"
+				"058408DBC6D55360"
+			]
+			id: "08F6CA25EB79BEB6"
+			tasks: [{
+				id: "32B303EECDA870DA"
+				type: "dimension"
+				title: "Enter the Soulbound Dimension"
+				dimension: "soulbound:soulbound"
+			}]
+		}
+		{
+			title: "Buried Treasure"
+			x: -1.0d
+			y: -6.5d
+			description: ["You can find this rare metal buried deep underground. It vibrates under its own natural energy, allowing you to find it when it's nearby."]
+			id: "7A3D821CBFE255D9"
+			tasks: [{
+				id: "5BFE4B50FF06D7AB"
+				type: "item"
+				item: "soulbound:ancient_ingot"
+			}]
+			rewards: [{
+				id: "3D718BBD37640A27"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Calming"
+			x: -7.0d
+			y: -0.5d
+			description: [
+				"Teach that angry soul a lesson. Drop it into the chemical oxidizer and vaporize it."
+				""
+				"Then pipe the gas from the oxidizer into the crystallizer to get a less angry soul"
+			]
+			dependencies: [
+				"29F055A237CEAB5F"
+				"2DB877292FA538A0"
+			]
+			id: "0E983B73B5095C98"
+			tasks: [{
+				id: "7B03BE55E4BF8045"
+				type: "item"
+				item: "soulbound:puresoul"
+			}]
+			rewards: [{
+				id: "654ECA94262C0A32"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Dissolution"
+			x: -8.0d
+			y: -2.0d
+			description: ["Breaks items down into dissolved gas"]
+			dependencies: ["2F3CFBEBB6058213"]
+			id: "29F055A237CEAB5F"
+			tasks: [{
+				id: "0B6AF4C5205321E0"
+				type: "item"
+				item: "mekanism:chemical_oxidizer"
+			}]
+			rewards: [{
+				id: "358F9E804CDE2E0B"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Ressolution"
+			x: -6.5d
+			y: -2.0d
+			description: ["Condense dissolved gas down into items"]
+			dependencies: [
+				"1756744C95983361"
+				"71F9815549866AF2"
+				"4CBF39162C14A625"
+			]
+			id: "2DB877292FA538A0"
+			tasks: [{
+				id: "6EE5EEB4E5318DC8"
+				type: "item"
+				item: "mekanism:chemical_crystallizer"
+			}]
+			rewards: [{
+				id: "1C790754591DCB48"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			x: -8.0d
+			y: -6.0d
+			dependencies: ["647F8D4E4F926FE2"]
+			id: "2F3CFBEBB6058213"
+			tasks: [{
+				id: "4A6FF5E32CE9D29C"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -6.0d
+			dependencies: ["647F8D4E4F926FE2"]
+			id: "669EAE86BD4E64C4"
+			tasks: [{
+				id: "7DCDFAFF27081659"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -5.0d
+			dependencies: [
+				"2F3CFBEBB6058213"
+				"669EAE86BD4E64C4"
+			]
+			id: "71F9815549866AF2"
+			tasks: [
+				{
+					id: "1E0135FF2D0CE3CB"
+					type: "item"
+					item: "mekanism:advanced_control_circuit"
+				}
+				{
+					id: "020FEFC0D856E3FC"
+					type: "item"
+					item: "mekanism:elite_control_circuit"
+				}
+				{
+					id: "4C530068566E39A3"
+					type: "item"
+					item: "mekanism:ultimate_control_circuit"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			dependencies: ["669EAE86BD4E64C4"]
+			id: "59EFA2D08300922D"
+			tasks: [{
+				id: "1668F3AF0FD6E168"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.5d
+			dependencies: [
+				"59EFA2D08300922D"
+				"3F4AA97CE68090DD"
+			]
+			id: "4CBF39162C14A625"
+			tasks: [{
+				id: "05F07EB5C02DC11B"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -6.5d
+			dependencies: ["647F8D4E4F926FE2"]
+			id: "3F4AA97CE68090DD"
+			tasks: [{
+				id: "7A64C56671A5F58F"
+				type: "item"
+				item: "mekanism:dust_refined_obsidian"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.5d
+			dependencies: [
+				"71F9815549866AF2"
+				"669EAE86BD4E64C4"
+			]
+			dependency_requirement: "all_started"
+			id: "24FA95F7ED9FB981"
+			tasks: [{
+				id: "0D2008C8558EBFC0"
+				type: "item"
+				item: "mekanism:osmium_compressor"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.0d
+			dependencies: ["24FA95F7ED9FB981"]
+			id: "1756744C95983361"
+			tasks: [{
+				id: "5D3D56B0CA3BD751"
+				type: "item"
+				item: "mekanism:ingot_refined_obsidian"
+			}]
+		}
+	]
 }

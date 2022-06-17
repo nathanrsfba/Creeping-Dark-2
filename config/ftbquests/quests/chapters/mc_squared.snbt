@@ -8,14 +8,264 @@
 	subtitle: ["Applied Energistics"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: 0.0d
-		y: -0.5d
-		id: "00B31105EE8EDA9C"
-		tasks: [{
-			id: "3A9239D09AD91C4C"
-			type: "item"
-			item: "appliedenergistics2:singularity"
-		}]
-	}]
+	quests: [
+		{
+			x: -4.0d
+			y: -0.5d
+			description: [
+				"Drop a 64k storage unit into this, and start piping garbage into it, and eventually it'll collapse onto itself."
+				""
+				"Make sure to set the mode to Singularity."
+				""
+				"The quickest way to fill this up is probably to make a terrifyingly large RFTools quarry"
+			]
+			dependencies: [
+				"78AFE95C7107BE1A"
+				"709F51B2A81E98AC"
+			]
+			id: "00B31105EE8EDA9C"
+			tasks: [{
+				id: "3A9239D09AD91C4C"
+				type: "item"
+				item: "appliedenergistics2:singularity"
+			}]
+			rewards: [{
+				id: "6B48EA23D1B58FA6"
+				type: "ftbmoney:money"
+				ftb_money: 512L
+			}]
+		}
+		{
+			title: "Crystal Smoothie"
+			x: -9.0d
+			y: -4.5d
+			description: [
+				"Once you've found some Certus, you'll want to make some Fluix. It's an essential part of most AE2 machines."
+				""
+				"To do this, simply put some certus, nether quartz, and redstone into an induction smelter."
+				""
+				"Charged certus does not generate in the world anymore, but isn't necessary to make Fluix with this method. However, once you have fluix, you can make a charger to make charged certus, which you'll need if you want to make a meteorite compass."
+			]
+			dependencies: ["525980C7534BF5CF"]
+			id: "661C3ADD8CD53DC8"
+			tasks: [{
+				id: "03FE211E65906383"
+				type: "item"
+				item: "appliedenergistics2:fluix_crystal"
+			}]
+			rewards: [{
+				id: "4048E968F311FC41"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "The Sky Is Falling"
+			icon: "appliedenergistics2:silicon_press"
+			x: -7.5d
+			y: -5.5d
+			description: [
+				"The good news: You don't have go hunting all over the countryside for meteorites anymore. You just need to find one. You can duplicate whatever press(es) you find and convert them into the others using sky stone dust."
+				""
+				"If you're having trouble finding even a single meteor, build a meteorite compass."
+			]
+			dependencies: ["661C3ADD8CD53DC8"]
+			id: "04BB88CCFD22FD5D"
+			tasks: [
+				{
+					id: "0DF9F4680BE243D4"
+					type: "item"
+					item: "appliedenergistics2:silicon_press"
+				}
+				{
+					id: "616FB02A429788DF"
+					type: "item"
+					item: "appliedenergistics2:calculation_processor_press"
+				}
+				{
+					id: "5FB93D8C2BAE7913"
+					type: "item"
+					item: "appliedenergistics2:engineering_processor_press"
+				}
+				{
+					id: "29560D176EB477D7"
+					type: "item"
+					item: "appliedenergistics2:logic_processor_press"
+				}
+			]
+			rewards: [{
+				id: "356C1D0ADAA765C9"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Scribe"
+			x: -7.5d
+			y: -3.5d
+			description: ["You'll need these to make ME circuits. Unlike most AE2 machines, these run on regular RF power, instead of being plugged into an ME network"]
+			dependencies: ["661C3ADD8CD53DC8"]
+			id: "12AA3121C032D235"
+			tasks: [{
+				id: "6CAB3E24B0DF9F9D"
+				type: "item"
+				item: "appliedenergistics2:inscriber"
+			}]
+			rewards: [{
+				id: "709E0985BD01AEEA"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "80386"
+			icon: "appliedenergistics2:calculation_processor"
+			x: -6.0d
+			y: -4.5d
+			description: ["You'll need lots of these for various ME devices."]
+			dependencies: [
+				"04BB88CCFD22FD5D"
+				"12AA3121C032D235"
+				"6AA250BB33C01A93"
+			]
+			dependency_requirement: "all_started"
+			id: "22DFE135B335DC62"
+			tasks: [
+				{
+					id: "4FF86054B101EA63"
+					type: "item"
+					item: "appliedenergistics2:engineering_processor"
+				}
+				{
+					id: "69E38C2A10C18F8E"
+					type: "item"
+					item: "appliedenergistics2:logic_processor"
+				}
+				{
+					id: "6E542C85764FD1F8"
+					type: "item"
+					item: "appliedenergistics2:calculation_processor"
+				}
+			]
+			rewards: [{
+				id: "429E58E23F9904E2"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Cyber Controller"
+			x: -6.0d
+			y: -2.0d
+			description: ["You'll need an ME controller in order to connect more than 8 devices in an ME network."]
+			dependencies: [
+				"22DFE135B335DC62"
+				"1849475B9321745E"
+			]
+			id: "3E99180740DE61A5"
+			tasks: [{
+				id: "4DF42C1EB0F6289C"
+				type: "item"
+				item: "appliedenergistics2:controller"
+			}]
+			rewards: [{
+				id: "319577D030900384"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Implant Ore"
+			x: -6.0d
+			y: -6.5d
+			description: ["You'll need silicon to make energistics circuitry. You get it by smelting quartz dust (either type)"]
+			id: "6AA250BB33C01A93"
+			tasks: [{
+				id: "4E253ED2F7C0D46A"
+				type: "item"
+				item: "appliedenergistics2:silicon"
+			}]
+			rewards: [{
+				id: "429331732D03948E"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Purity"
+			x: -7.5d
+			y: -2.0d
+			description: [
+				"You can turn nether quartz, certus, and fluix crystals into pure versions by crushing them to dust, and then placing it in the induction smelter with some sand."
+				""
+				"This yields two pure crystals per crystal, can can be used in (and required for, in some cases) crafting most AE2 machines."
+			]
+			dependencies: ["661C3ADD8CD53DC8"]
+			id: "1849475B9321745E"
+			tasks: [{
+				id: "42F08A5B0A775CEE"
+				type: "item"
+				item: "appliedenergistics2:purified_fluix_crystal"
+			}]
+			rewards: [{
+				id: "7311F1D3DE9F1ED3"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Black Hole in a Box"
+			x: -9.0d
+			y: -0.5d
+			description: ["With this, you can compress scrap matter into some useful things."]
+			dependencies: ["661C3ADD8CD53DC8"]
+			id: "709F51B2A81E98AC"
+			tasks: [{
+				id: "3703D43B178240E0"
+				type: "item"
+				item: "appliedenergistics2:condenser"
+			}]
+			rewards: [{
+				id: "104ED553BE5950CD"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Kilobytes"
+			x: -4.0d
+			y: -2.5d
+			description: ["Store a lot of stuff in an ME system"]
+			dependencies: ["752E2B6F7C3D1ACF"]
+			id: "78AFE95C7107BE1A"
+			tasks: [{
+				id: "18BAA59680611DE6"
+				type: "item"
+				item: "appliedenergistics2:64k_cell_component"
+			}]
+			rewards: [{
+				id: "2174A5468D8938E9"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Kilobyte"
+			x: -4.0d
+			y: -4.5d
+			description: ["Store stuff in an ME system"]
+			dependencies: ["22DFE135B335DC62"]
+			id: "752E2B6F7C3D1ACF"
+			tasks: [{
+				id: "638069266C551BBA"
+				type: "item"
+				item: "appliedenergistics2:1k_cell_component"
+			}]
+			rewards: [{
+				id: "372674EF1FEDE67A"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+	]
 }
