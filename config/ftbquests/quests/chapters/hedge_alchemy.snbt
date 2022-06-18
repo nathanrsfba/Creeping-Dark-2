@@ -8,14 +8,353 @@
 	subtitle: ["Botania"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: 0.5d
-		y: 0.0d
-		id: "00F68527376FC0A7"
-		tasks: [{
-			id: "2AE9D69635B4EF64"
-			type: "item"
-			item: "botania:life_essence"
-		}]
-	}]
+	quests: [
+		{
+			x: 0.5d
+			y: -3.5d
+			description: [
+				"As part of the ritual to open the End, you will need the spirit of a Gaia Guardian."
+				""
+				"The updated Lexica will give you all the gory details."
+			]
+			dependencies: ["24C9D8F02EEA776F"]
+			id: "00F68527376FC0A7"
+			tasks: [{
+				id: "2AE9D69635B4EF64"
+				type: "item"
+				item: "botania:life_essence"
+			}]
+			rewards: [{
+				id: "486182CC4A300386"
+				type: "ftbmoney:money"
+				ftb_money: 4096L
+			}]
+		}
+		{
+			title: "Flower Child"
+			x: 0.5d
+			y: -5.5d
+			description: [
+				"Search the world to find some mystical flowers."
+				""
+				"Or brew up some Floral Fertilizer and grow your own."
+			]
+			id: "1C90CBC8B332AFEF"
+			tasks: [{
+				id: "7B3624841A483A3A"
+				type: "item"
+				item: "botania:white_mystical_flower"
+			}]
+			rewards: [{
+				id: "43EB6D6C4A9B0B08"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Not a pharmacy"
+			x: 2.5d
+			y: -5.5d
+			description: [
+				"The start of the Botania tech tree is the Petal Apothecary."
+				""
+				"Consult the Lexica to learn more."
+			]
+			dependencies: ["1C90CBC8B332AFEF"]
+			id: "723ACEEAE39C669F"
+			tasks: [{
+				id: "2EE3CD2F420E3A10"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+			rewards: [{
+				id: "5C8B19E8A5E7ED47"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Fire!"
+			x: 2.5d
+			y: -3.5d
+			description: ["One of the most basic mana-generating flowers, this generates man by burning solid fuels"]
+			dependencies: ["723ACEEAE39C669F"]
+			id: "7E075524688AD532"
+			tasks: [{
+				id: "34D9FEEFE5A82C44"
+				type: "item"
+				item: "botania:endoflame"
+			}]
+			rewards: [{
+				id: "58973990D64A686E"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.5d
+			description: [
+				"A lot of Botania constructs require livingwood and livingrock... for which you'll need a Pure Daisy to create."
+				""
+				"Throw some water into the apothecary, throw in four white petals, and finally throw in some seeds."
+			]
+			dependencies: ["723ACEEAE39C669F"]
+			id: "52F3BB0723A0AA76"
+			tasks: [{
+				id: "3069CE8878A9B21B"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+			rewards: [{
+				id: "252A047099FC1045"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Living Dead Trees"
+			icon: "botania:livingrock"
+			x: 6.5d
+			y: -5.5d
+			description: ["Plonk some logs and/or stone down adjacent (including diagonally) to the Pure Daisy and wait a minute."]
+			dependencies: ["52F3BB0723A0AA76"]
+			id: "72CCC20E2593E7E0"
+			tasks: [
+				{
+					id: "3A5D713ABE254325"
+					type: "item"
+					item: "botania:livingwood"
+				}
+				{
+					id: "63A16F1820D79271"
+					type: "item"
+					item: "botania:livingrock"
+				}
+			]
+			rewards: [{
+				id: "698F441F90E0488A"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Magic Wand"
+			x: 4.5d
+			y: -3.5d
+			description: ["Basically, Botania's version of a wrench."]
+			dependencies: [
+				"72CCC20E2593E7E0"
+				"3A5D713ABE254325"
+			]
+			dependency_requirement: "all_started"
+			id: "4ECE17C73F35E68E"
+			tasks: [{
+				id: "34B680ED23F268AC"
+				type: "item"
+				item: {
+					id: "botania:twig_wand"
+					Count: 1b
+					tag: {
+						color1: 0
+						color2: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "1B107576B2689D9C"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Spread 'Em"
+			x: 6.5d
+			y: -3.5d
+			description: ["The Mana Spreader transports mana over short distances"]
+			dependencies: [
+				"72CCC20E2593E7E0"
+				"3A5D713ABE254325"
+			]
+			dependency_requirement: "all_started"
+			id: "610A5269C90BFA8E"
+			tasks: [{
+				id: "723023350BFC4607"
+				type: "item"
+				item: "botania:mana_spreader"
+			}]
+			rewards: [{
+				id: "09B242AD320046A4"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Not for swimming"
+			x: 8.5d
+			y: -3.5d
+			description: ["The Mana Pool is used to store mana"]
+			dependencies: [
+				"72CCC20E2593E7E0"
+				"63A16F1820D79271"
+			]
+			dependency_requirement: "all_started"
+			id: "3114475CF5A51FB9"
+			tasks: [{
+				id: "217BBB4AA52E021D"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+			rewards: [{
+				id: "1D4AE6D01051550A"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Ingots from Heaven"
+			icon: "botania:manasteel_ingot"
+			x: 6.5d
+			y: -1.5d
+			description: ["Some very common mana-infused resources"]
+			dependencies: [
+				"7E075524688AD532"
+				"4ECE17C73F35E68E"
+				"610A5269C90BFA8E"
+				"3114475CF5A51FB9"
+			]
+			id: "7C6B8D5113EB44AA"
+			tasks: [
+				{
+					id: "5A92D8150C3AA246"
+					type: "item"
+					item: "botania:manasteel_ingot"
+				}
+				{
+					id: "49EAE879EFDED736"
+					type: "item"
+					item: "botania:mana_pearl"
+				}
+				{
+					id: "0CAA51B2571DAE1D"
+					type: "item"
+					item: "botania:mana_diamond"
+				}
+			]
+			rewards: [{
+				id: "536214EEE1F18ADE"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Altared State"
+			x: 4.5d
+			y: -1.5d
+			description: ["The next tier of technology requires Runes. And that requires a Runic Altar"]
+			dependencies: ["7C6B8D5113EB44AA"]
+			dependency_requirement: "all_started"
+			id: "52322CF37B9634E0"
+			tasks: [{
+				id: "408774DE247E13C2"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+		}
+		{
+			title: "Terrasteel"
+			icon: "botania:terrasteel_ingot"
+			x: 2.5d
+			y: -1.5d
+			description: [
+				"A magical alloy that needs a bunch of mana to create."
+				""
+				"Create a checkerboard pattern out of livingrock and lapis blocks, plonk the agglomeration plate on top, then place a spark above it and a mana pool."
+				""
+				"To create terrasteel, fill the mana pool at least half full, then drop a mana diamond, mana pearl, and manasteel on the plate and stand back."
+			]
+			dependencies: ["52322CF37B9634E0"]
+			id: "592948D6F557E9DD"
+			tasks: [
+				{
+					id: "2236F245F241ED97"
+					type: "item"
+					item: "botania:livingrock"
+					count: 5L
+				}
+				{
+					id: "20CDF1E49398795C"
+					type: "item"
+					item: "minecraft:lapis_block"
+					count: 4L
+				}
+				{
+					id: "3534E05EB3EBF7CF"
+					type: "item"
+					item: "botania:terra_plate"
+				}
+				{
+					id: "638C9A2DC56DA5B1"
+					type: "item"
+					item: "botania:spark"
+					count: 2L
+				}
+				{
+					id: "50F302AA4340F9A5"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+				}
+			]
+			rewards: [{
+				id: "7DCA0F3F8D32C5FE"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Elven Gateway"
+			icon: "botania:alfheim_portal"
+			x: 0.5d
+			y: -1.5d
+			description: [
+				"The Elven Gateway will open a portal to Alfheim, allowing you to trade with the Elves for rare and valuable resources."
+				""
+				"Read the Lexica Botania to learn how to build the structure."
+				""
+				"Once you've opened the portal, throw the book in to receive some of the collected knowledge of the Elves"
+			]
+			dependencies: ["592948D6F557E9DD"]
+			id: "24C9D8F02EEA776F"
+			tasks: [
+				{
+					id: "1B2491052405C451"
+					type: "item"
+					item: "botania:livingwood"
+					count: 8L
+				}
+				{
+					id: "0337B13272F7FD48"
+					type: "item"
+					item: "botania:glimmering_livingwood"
+					count: 3L
+				}
+				{
+					id: "489D40A83E1F5CD1"
+					type: "item"
+					item: "botania:alfheim_portal"
+				}
+				{
+					id: "282AA53E2C4A1E55"
+					type: "item"
+					item: "botania:natura_pylon"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "1712E3882B1C7641"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+	]
 }

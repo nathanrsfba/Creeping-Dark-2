@@ -300,9 +300,9 @@
 			y: -2.0d
 			description: ["Condense dissolved gas down into items"]
 			dependencies: [
-				"1756744C95983361"
 				"71F9815549866AF2"
 				"4CBF39162C14A625"
+				"24FA95F7ED9FB981"
 			]
 			id: "2DB877292FA538A0"
 			tasks: [{
@@ -317,8 +317,14 @@
 			}]
 		}
 		{
+			title: "Circuitous"
 			x: -8.0d
 			y: -6.0d
+			description: [
+				"Circuitry used in simple Mekanism machines."
+				""
+				"Drop two redstone and an osmium ingot into the infuser to make one."
+			]
 			dependencies: ["647F8D4E4F926FE2"]
 			id: "2F3CFBEBB6058213"
 			tasks: [{
@@ -326,10 +332,17 @@
 				type: "item"
 				item: "mekanism:basic_control_circuit"
 			}]
+			rewards: [{
+				id: "221DF61542880BE6"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
 		}
 		{
+			title: "Enrichment"
 			x: -5.0d
 			y: -6.0d
+			description: ["Toss a piece of redstone and iron into the infuser"]
 			dependencies: ["647F8D4E4F926FE2"]
 			id: "669EAE86BD4E64C4"
 			tasks: [{
@@ -337,10 +350,18 @@
 				type: "item"
 				item: "mekanism:alloy_infused"
 			}]
+			rewards: [{
+				id: "0E29C26ED67C0CC6"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
 		}
 		{
+			title: "Upgradement"
+			icon: "mekanism:ultimate_control_circuit"
 			x: -6.5d
 			y: -5.0d
+			description: ["Circuitry used in not-so-simple Mekanism machines"]
 			dependencies: [
 				"2F3CFBEBB6058213"
 				"669EAE86BD4E64C4"
@@ -363,10 +384,21 @@
 					item: "mekanism:ultimate_control_circuit"
 				}
 			]
+			rewards: [{
+				id: "529FC50B25A6AEBD"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
 		}
 		{
+			title: "Reinforcement"
 			x: -4.0d
 			y: -4.0d
+			description: [
+				"Crush two diamonds, and put it into the infuser with an enriched alloy."
+				""
+				"Better yet, make an enrichment chamber, toss a diamond in it, and put the resulting compressed diamond into the infuser with *four* infused alloys."
+			]
 			dependencies: ["669EAE86BD4E64C4"]
 			id: "59EFA2D08300922D"
 			tasks: [{
@@ -374,10 +406,17 @@
 				type: "item"
 				item: "mekanism:alloy_reinforced"
 			}]
+			rewards: [{
+				id: "3AAD40B84EF0C08A"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
 		}
 		{
+			title: "Atomization"
 			x: -3.5d
 			y: -2.5d
+			description: ["Put four refined obsidian dusts and one reinforced alloy into the infuser. (Or, one compressed obsidian and two alloys)"]
 			dependencies: [
 				"59EFA2D08300922D"
 				"3F4AA97CE68090DD"
@@ -388,10 +427,17 @@
 				type: "item"
 				item: "mekanism:alloy_atomic"
 			}]
+			rewards: [{
+				id: "1753254C79852809"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
 		}
 		{
+			title: "Refinement"
 			x: -3.0d
 			y: -6.5d
+			description: ["Crush some obsidian, and put the dust into the infuser with a crushed diamond. (Or, again, make compressed diamond in the enrichment chamber to make eight times as much)"]
 			dependencies: ["647F8D4E4F926FE2"]
 			id: "3F4AA97CE68090DD"
 			tasks: [{
@@ -399,10 +445,22 @@
 				type: "item"
 				item: "mekanism:dust_refined_obsidian"
 			}]
+			rewards: [{
+				id: "02B35C15FDB14EB0"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
 		}
 		{
+			title: "Rock Hard Ingots"
+			icon: "mekanism:ingot_refined_obsidian"
 			x: -5.0d
 			y: -4.5d
+			description: [
+				"Make an osmium compressor, then throw in some refined obsidian and osmium."
+				""
+				"Unfortunately, compressed obsidian will not work with this process."
+			]
 			dependencies: [
 				"71F9815549866AF2"
 				"669EAE86BD4E64C4"
@@ -410,20 +468,14 @@
 			dependency_requirement: "all_started"
 			id: "24FA95F7ED9FB981"
 			tasks: [{
-				id: "0D2008C8558EBFC0"
-				type: "item"
-				item: "mekanism:osmium_compressor"
-			}]
-		}
-		{
-			x: -5.0d
-			y: -3.0d
-			dependencies: ["24FA95F7ED9FB981"]
-			id: "1756744C95983361"
-			tasks: [{
-				id: "5D3D56B0CA3BD751"
+				id: "0057B78B272395C4"
 				type: "item"
 				item: "mekanism:ingot_refined_obsidian"
+			}]
+			rewards: [{
+				id: "21CA9C2ECA353F97"
+				type: "ftbmoney:money"
+				ftb_money: 8L
 			}]
 		}
 	]
