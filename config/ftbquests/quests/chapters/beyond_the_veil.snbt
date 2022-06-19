@@ -10,8 +10,8 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.5d
-			y: 0.0d
+			x: 1.5d
+			y: 1.0d
 			description: [
 				"As part of opening the end, you will need a Tortured Soul, which can only be gotten from the Wraith."
 				""
@@ -56,11 +56,13 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -1.5d
+			x: 1.5d
+			y: -0.5d
+			description: ["A box ... with something nasty insude"]
 			dependencies: [
 				"1DBCDF94330A74D7"
 				"77876AC507B77005"
+				"7A7949B043B58B00"
 			]
 			id: "7B473B838F0AABC4"
 			tasks: [{
@@ -68,14 +70,19 @@
 				type: "item"
 				item: "soulbound:soulcage"
 			}]
+			rewards: [{
+				id: "274B8796C2E2B6DA"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
 		}
 		{
 			title: "Blood for the Blood God"
 			icon: "soulbound:bottleofblood"
 			x: -1.0d
-			y: -1.5d
+			y: -0.5d
 			description: ["Make yourself a broken bottle... and sacrifice some of your own blood"]
-			dependencies: ["08F6CA25EB79BEB6"]
+			dependencies: ["7667C8E419EBB402"]
 			id: "1DBCDF94330A74D7"
 			tasks: [
 				{
@@ -98,8 +105,8 @@
 		{
 			title: "Rotten Meat"
 			icon: "soulbound:amalgameat_raw"
-			x: 2.0d
-			y: -1.5d
+			x: 4.0d
+			y: -0.5d
 			description: ["Kill some of the 'animals' of this decayed real, then mix their meat together"]
 			dependencies: ["08F6CA25EB79BEB6"]
 			id: "77876AC507B77005"
@@ -168,6 +175,11 @@
 				type: "item"
 				item: "soulbound:soul_decay"
 			}]
+			rewards: [{
+				id: "0D3394929C698E8B"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
 		}
 		{
 			title: "A Sense of Dread"
@@ -222,6 +234,7 @@
 			icon: "soulbound:decay_block"
 			x: 0.5d
 			y: -3.5d
+			description: ["Cross the veil, to the other side, where the undead live again"]
 			dependencies: [
 				"6C7B3E6ECA47EA9E"
 				"058408DBC6D55360"
@@ -232,6 +245,11 @@
 				type: "dimension"
 				title: "Enter the Soulbound Dimension"
 				dimension: "soulbound:soulbound"
+			}]
+			rewards: [{
+				id: "0860B917F5DE8CB9"
+				type: "ftbmoney:money"
+				ftb_money: 64L
 			}]
 		}
 		{
@@ -474,6 +492,40 @@
 			}]
 			rewards: [{
 				id: "21CA9C2ECA353F97"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			description: ["Generated in pillars in foul deserts"]
+			dependencies: ["08F6CA25EB79BEB6"]
+			id: "7667C8E419EBB402"
+			tasks: [{
+				id: "087FA8D804245D30"
+				type: "item"
+				item: "soulbound:ichorcrystal"
+			}]
+			rewards: [{
+				id: "291CE7EC311B205F"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			description: ["Found in blobs under the surface in sapphire plains"]
+			dependencies: ["08F6CA25EB79BEB6"]
+			id: "7A7949B043B58B00"
+			tasks: [{
+				id: "2F8D264D826AF496"
+				type: "item"
+				item: "soulbound:palestone"
+			}]
+			rewards: [{
+				id: "7FC7BB6460EAB6A5"
 				type: "ftbmoney:money"
 				ftb_money: 8L
 			}]
