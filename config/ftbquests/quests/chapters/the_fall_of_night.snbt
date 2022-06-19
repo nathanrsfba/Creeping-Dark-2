@@ -260,7 +260,7 @@
 			}]
 		}
 		{
-			title: "Custists"
+			title: "Cultists"
 			x: -0.5d
 			y: 1.0d
 			description: ["A device for performing magical rituals"]
