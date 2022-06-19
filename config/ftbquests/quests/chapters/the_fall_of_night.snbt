@@ -3,19 +3,327 @@
 	group: ""
 	order_index: 11
 	filename: "the_fall_of_night"
-	title: "Hidden Amongst The Shadows"
+	title: "Realm of Shadows"
 	icon: "ars_nouveau:mana_gem"
 	subtitle: ["Ars Nouveau and the Dark World"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: 1.0d
-		y: 3.5d
-		id: "70F5E218E5388837"
-		tasks: [{
-			id: "5A5D351365AAC861"
-			type: "item"
-			item: "contenttweaker:shadow_flesh"
-		}]
-	}]
+	quests: [
+		{
+			x: 5.0d
+			y: -0.5d
+			description: ["In the darkness of the shadow world, you will find the Surgeon, hiding in his horned tower. Kill him, and peel the very flesh from his bones"]
+			dependencies: ["42C108B4C4C25373"]
+			id: "70F5E218E5388837"
+			tasks: [{
+				id: "5A5D351365AAC861"
+				type: "item"
+				item: "contenttweaker:shadow_flesh"
+			}]
+			rewards: [{
+				id: "1CEA183F486D3565"
+				type: "ftbmoney:money"
+				ftb_money: 512L
+			}]
+		}
+		{
+			title: "Into the Shadows"
+			x: 3.0d
+			y: -0.5d
+			description: ["Build a portal out of soul sand, in the same shape as a nether portal. Then light it with the igniter"]
+			dependencies: ["22D8E6E4B3C7B099"]
+			id: "42C108B4C4C25373"
+			tasks: [{
+				id: "302EEFE7A5B509CE"
+				type: "dimension"
+				title: "Enter the Dark World"
+				dimension: "dark_world:dark_dimension"
+			}]
+			rewards: [{
+				id: "2307E701962BE449"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Dark Flame"
+			icon: {
+				id: "dark_world:dark_dimension"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.0d
+			y: -0.5d
+			description: ["Place the sand, soul, and glyph on the pedestals, and place the torch in the Apparatus"]
+			dependencies: [
+				"339BE3C37C384ADE"
+				"3EB1F46B11C52215"
+			]
+			id: "22D8E6E4B3C7B099"
+			tasks: [
+				{
+					id: "449A5BF771A062A4"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+				{
+					id: "46EF336A8DD01AAB"
+					type: "item"
+					item: "minecraft:soul_soil"
+				}
+				{
+					id: "18B01D7C2B3B3595"
+					type: "item"
+					item: "ars_nouveau:glyph_ignite"
+				}
+				{
+					id: "1EC5A71E5CEF85D8"
+					type: "item"
+					item: "minecraft:soul_torch"
+				}
+				{
+					id: "6D5A656639F49818"
+					type: "item"
+					item: {
+						id: "dark_world:dark_dimension"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "22AC493751EA1FCE"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Crunch"
+			icon: { id: "ars_nouveau:glyph_ignite", Count: 2b }
+			x: -0.5d
+			y: -2.0d
+			description: ["Place some magic clay into the press, then add in the lighter"]
+			dependencies: ["111EF84EB0F800F6"]
+			id: "339BE3C37C384ADE"
+			tasks: [
+				{
+					id: "7928F85D735D8126"
+					type: "item"
+					item: "ars_nouveau:magic_clay"
+				}
+				{
+					id: "74DB2E0FEB890A0C"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "00FFC2DAF4143F93"
+					type: "item"
+					item: "ars_nouveau:glyph_ignite"
+				}
+			]
+			rewards: [{
+				id: "5008BC8D46EB3A77"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Magical Stamp"
+			x: -2.5d
+			y: -2.0d
+			shape: "circle"
+			description: ["Makes magical glyphs for creating new spells"]
+			dependencies: ["6C439855A968C105"]
+			id: "111EF84EB0F800F6"
+			tasks: [{
+				id: "1121C6E8816AD23D"
+				type: "item"
+				item: "ars_nouveau:glyph_press"
+			}]
+			rewards: [{
+				id: "6B3B088C39D92D03"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Poor Man's Infusion"
+			icon: "ars_nouveau:enchanting_apparatus"
+			x: -0.5d
+			y: -0.5d
+			description: [
+				"An arcane construct for making magical items."
+				""
+				"Place the apparatus on top of the core, and place the pedestals down nearby"
+			]
+			dependencies: ["6E46E8DF59E838D6"]
+			id: "3EB1F46B11C52215"
+			tasks: [
+				{
+					id: "4AB87D512E3B97FC"
+					type: "item"
+					item: "ars_nouveau:enchanting_apparatus"
+				}
+				{
+					id: "7002D346625CCDC2"
+					type: "item"
+					item: "ars_nouveau:arcane_core"
+				}
+				{
+					id: "5DBC38C9398D30BF"
+					type: "item"
+					item: "ars_nouveau:arcane_pedestal"
+					count: 3L
+				}
+			]
+			rewards: [{
+				id: "52B2D527F3920C32"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Use The Source"
+			x: -4.5d
+			y: 1.0d
+			description: ["A mystical gemstone with magical properties"]
+			id: "047028D469D6F80D"
+			tasks: [{
+				id: "236B576F02864F37"
+				type: "item"
+				item: "ars_nouveau:mana_gem"
+			}]
+			rewards: [{
+				id: "56B808D5BA1062C5"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			x: -4.5d
+			y: -0.5d
+			description: ["Stone infused with magical energies"]
+			dependencies: ["047028D469D6F80D"]
+			id: "6E46E8DF59E838D6"
+			tasks: [{
+				id: "4B350E2B87ECD02F"
+				type: "item"
+				item: "ars_nouveau:arcane_stone"
+			}]
+			rewards: [{
+				id: "5C930E4D6025C50B"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Liquid Magic"
+			icon: "ars_nouveau:mana_jar"
+			x: -4.5d
+			y: -2.0d
+			description: [
+				"Some magical processes require Source energy to complete. This jar can store it."
+				""
+				"You'll need a way to generate source energy to fill it with. The Volcanic Sourcelink is the simplest one. It generates source by burning solid fuels."
+				""
+				"It can also generate enough heat to melt the stone around it, so be careful..."
+			]
+			dependencies: ["6E46E8DF59E838D6"]
+			id: "6C439855A968C105"
+			tasks: [
+				{
+					id: "4C691115A259EECD"
+					type: "item"
+					item: "ars_nouveau:mana_jar"
+				}
+				{
+					id: "7E7719EF5260E001"
+					type: "item"
+					item: "ars_nouveau:volcanic_accumulator"
+				}
+			]
+			rewards: [{
+				id: "6D6B623B7A5D2703"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Custists"
+			x: -0.5d
+			y: 1.0d
+			description: ["A device for performing magical rituals"]
+			dependencies: [
+				"3EB1F46B11C52215"
+				"047028D469D6F80D"
+			]
+			id: "6A8C5BB3A32414F1"
+			tasks: [{
+				id: "5CBF5CCA3A145607"
+				type: "item"
+				item: "ars_nouveau:ritual"
+			}]
+			rewards: [{
+				id: "35CA44060A8309B3"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Wild Thing"
+			icon: "ars_nouveau:wilden_tribute"
+			x: 1.0d
+			y: 1.0d
+			description: [
+				"Use the tablet to light the brazier, drop the horn, spike, and wing on it, then activate it."
+				""
+				"And be well-prepared for combat."
+			]
+			dependencies: ["6A8C5BB3A32414F1"]
+			id: "585248C8327CA6B2"
+			tasks: [
+				{
+					id: "5F2E0981352D5206"
+					type: "item"
+					item: "ars_nouveau:ritual_wilden_summon"
+				}
+				{
+					id: "66833197D6DBD4F6"
+					type: "item"
+					item: "ars_nouveau:wilden_spike"
+				}
+				{
+					id: "11213939D0979B03"
+					type: "item"
+					item: "ars_nouveau:wilden_horn"
+				}
+				{
+					id: "48F45CEDEC5874D4"
+					type: "item"
+					item: "ars_nouveau:wilden_wing"
+				}
+				{
+					id: "0817D474BC0F2A56"
+					type: "item"
+					item: "ars_nouveau:wilden_tribute"
+				}
+			]
+			rewards: [{
+				id: "593DD38FBDF1C2C7"
+				type: "ftbmoney:money"
+				ftb_money: 4096L
+			}]
+		}
+	]
 }
