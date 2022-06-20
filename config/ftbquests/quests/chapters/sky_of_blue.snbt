@@ -150,10 +150,15 @@
 			dependencies: ["56008290B4D3BB93"]
 			id: "492D60B4C61D5F45"
 			tasks: [{
-				id: "4115F4B7AA418934"
-				type: "kill"
-				entity: "blue_skies:summoner"
-				value: 1L
+				id: "20ACA8D2DE9AADDF"
+				type: "item"
+				item: {
+					id: "blue_skies:ethereal_arc"
+					Count: 1b
+					tag: {
+						ArcLevel: 0
+					}
+				}
 			}]
 			rewards: [{
 				id: "63566F714F7AFA64"
@@ -180,10 +185,15 @@
 			dependencies: ["5674F44364647A22"]
 			id: "5783AFF25E9D825D"
 			tasks: [{
-				id: "6ADA83C0B305AA0D"
-				type: "kill"
-				entity: "blue_skies:alchemist"
-				value: 1L
+				id: "471D0925DFEF9DD2"
+				type: "item"
+				item: {
+					id: "blue_skies:dusk_arc"
+					Count: 1b
+					tag: {
+						ArcLevel: 0
+					}
+				}
 			}]
 			rewards: [{
 				id: "3DF6D4006F73E78E"
@@ -206,10 +216,15 @@
 			dependencies: ["5783AFF25E9D825D"]
 			id: "376D07AC2F8D14CB"
 			tasks: [{
-				id: "08154ABD458A000E"
-				type: "kill"
-				entity: "blue_skies:arachnarch"
-				value: 1L
+				id: "677A58FC1199F889"
+				type: "item"
+				item: {
+					id: "blue_skies:poison_arc"
+					Count: 1b
+					tag: {
+						ArcLevel: 0
+					}
+				}
 			}]
 			rewards: [{
 				id: "686FCDDE244BFE7E"
@@ -232,10 +247,15 @@
 			dependencies: ["492D60B4C61D5F45"]
 			id: "2BB2919393888FC2"
 			tasks: [{
-				id: "3A204703AD653B3B"
-				type: "kill"
-				entity: "blue_skies:starlit_crusher"
-				value: 1L
+				id: "22BA68491D2AF548"
+				type: "item"
+				item: {
+					id: "blue_skies:nature_arc"
+					Count: 1b
+					tag: {
+						ArcLevel: 0
+					}
+				}
 			}]
 		}
 	]

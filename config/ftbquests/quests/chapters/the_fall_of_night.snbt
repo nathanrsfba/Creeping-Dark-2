@@ -10,6 +10,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Dark Doctor"
 			x: 5.0d
 			y: -0.5d
 			description: ["In the darkness of the shadow world, you will find the Surgeon, hiding in his horned tower. Kill him, and peel the very flesh from his bones"]

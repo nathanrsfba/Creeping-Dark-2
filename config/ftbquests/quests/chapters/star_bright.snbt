@@ -8,14 +8,335 @@
 	subtitle: ["Astral Sorcery and the End"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: -0.5d
-		y: 0.5d
-		id: "7E53EAE5BFA52CFA"
-		tasks: [{
-			id: "472DC9D07FA00FB8"
-			type: "item"
-			item: "contenttweaker:end_orb"
-		}]
-	}]
+	quests: [
+		{
+			title: "The Key To It All"
+			x: -2.5d
+			y: -5.5d
+			description: [
+				"Finally, you have everything you need to access the End."
+				""
+				"Craft the End Orb from all the materials and artifacts you've gathered. Once you've held it in your hands, the End will open up to you. You can even pass the orb on to others, to open the end to them as well."
+				""
+				"Find a stronghold, open the portal, go in."
+			]
+			dependencies: [
+				"1B3FBE189D08A282"
+				"598716F76FC20B98"
+				"31D2E82F3E5DEB5F"
+				"1DB4F0166A54BBD0"
+				"745057CC111A531E"
+				"2C6212FE3010B715"
+				"7DC1795645E76024"
+				"68ED84AB3F8173FB"
+				"00B31105EE8EDA9C"
+				"670334F58E28FCF9"
+				"3BD788299365ADC9"
+				"376D07AC2F8D14CB"
+				"2BB2919393888FC2"
+				"00F68527376FC0A7"
+				"70F5E218E5388837"
+				"585248C8327CA6B2"
+			]
+			id: "7E53EAE5BFA52CFA"
+			tasks: [{
+				id: "472DC9D07FA00FB8"
+				type: "item"
+				item: "contenttweaker:end_orb"
+			}]
+			rewards: [{
+				id: "640C93FF99259926"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			x: -0.5d
+			y: -9.0d
+			description: ["These mystical gems can be found among the sand in bodies of water"]
+			id: "188511FCC17A75EC"
+			tasks: [{
+				id: "6357F55463BB45F9"
+				type: "item"
+				item: "astralsorcery:aquamarine"
+			}]
+			rewards: [{
+				id: "13CE2A0D1B11C406"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Have you seen my marbles?"
+			x: 1.5d
+			y: -9.0d
+			description: ["Marble comes in a few different forms. A chisel (from Chisel, and not Chisels and Bits) can easily convert between them."]
+			id: "6F504C30C0D02051"
+			tasks: [{
+				id: "5DB0F68230229038"
+				type: "item"
+				item: "astralsorcery:marble_raw"
+			}]
+			rewards: [{
+				id: "1A354B44E6271898"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Mystic Shrine"
+			x: 3.5d
+			y: -9.0d
+			description: ["Search the world for a starlight shrine made of marble. Dig into it to find a mystic crystal, and some loot."]
+			id: "037CBF2CA49EAA7E"
+			tasks: [{
+				id: "7D668525027E777C"
+				type: "item"
+				item: {
+					id: "astralsorcery:constellation_paper"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "2BBC852E6E2E10B3"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -7.5d
+			description: ["The 'wrench' of Astral Sorcery"]
+			dependencies: [
+				"188511FCC17A75EC"
+				"6F504C30C0D02051"
+			]
+			id: "212CAAD13178CED8"
+			tasks: [{
+				id: "14DFB39403B37EC8"
+				type: "item"
+				item: "astralsorcery:wand"
+			}]
+			rewards: [{
+				id: "77FB942841B961D2"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Bright and Shiny"
+			x: 3.5d
+			y: -7.5d
+			description: [
+				"The beginnings of Astral crafting."
+				""
+				"First, find a shrine that still has a view of the sky. Then clear the space directly above the collector crystal so it has a clear view of the sky."
+				""
+				"Then, plonk a crafting table down inside, and let the crystal do the rest."
+				""
+				"You'll need starlight for this and many Astral devices. If a device isn't receiving enough starlight, you can try moving it to a different place in the world, or higher in altitude."
+				""
+				"You'll need an unobstructed view of the sky, which can be tricky when the sky is covered by disease. But there are other dimensions with clear skies..."
+			]
+			dependencies: ["037CBF2CA49EAA7E"]
+			id: "45AEBE15E5E5C298"
+			tasks: [{
+				id: "7CFE7D2A1E0DD049"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
+			}]
+			rewards: [{
+				id: "6BF07EE89DD64A57"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Rocky"
+			x: 1.5d
+			y: -5.5d
+			description: ["Hold the wand in your hand and walk around at night until you see sparkles in the ground. Then dig. Deep."]
+			dependencies: ["212CAAD13178CED8"]
+			id: "214447F273A6C711"
+			tasks: [{
+				id: "4934292508FAE5C7"
+				type: "item"
+				item: {
+					id: "astralsorcery:rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:purity"
+										pLevel: 1
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:tool.efficiency"
+										pLevel: 1
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "3DDBD4FBA461DF1F"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Liquid Photons"
+			x: 3.5d
+			y: -5.5d
+			description: [
+				"Make a light well and stick some aquamarine in it, and light itself will condense into a liquid."
+				""
+				"Yeah. I don't know how that works either."
+			]
+			dependencies: [
+				"45AEBE15E5E5C298"
+				"214447F273A6C711"
+			]
+			id: "2A11DFE02CF80D79"
+			tasks: [{
+				id: "36F7E710F7C2EEFB"
+				type: "item"
+				item: "astralsorcery:well"
+			}]
+			rewards: [{
+				id: "0F933E2BD2F1E391"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			title: "Starlight Crafting"
+			x: 1.5d
+			y: -3.5d
+			description: [
+				"The third tier of Astral crafting."
+				""
+				"This crafting altar is actually part of a multiblock structure. Consult the Astral Tome to see how to build it."
+				""
+				"(The ritual actually upgrades the Luminous crafting table in place. Just pick it up to complete the quest.)"
+			]
+			dependencies: ["2A11DFE02CF80D79"]
+			id: "695DCE6B07AFFD8F"
+			tasks: [{
+				id: "4E179CC5B1005496"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
+			}]
+			rewards: [{
+				id: "3CDFD98B92175091"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Missing Link"
+			x: -0.5d
+			y: -3.5d
+			description: ["Link Astral devices and resources to each other"]
+			dependencies: [
+				"695DCE6B07AFFD8F"
+				"025C937E2E5328CD"
+			]
+			id: "4747BA02663BCF54"
+			tasks: [{
+				id: "678104BE96B59C89"
+				type: "item"
+				item: "astralsorcery:linking_tool"
+			}]
+			rewards: [{
+				id: "70A56B59E64123A6"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Otherworldly Crafting"
+			x: -2.5d
+			y: -7.5d
+			description: [
+				"The next tier of Astral crafting, and the one you need to make the key to the End."
+				""
+				"(As before, you need to pick up the altar to get quest credit. It also requires a new multiblock structure. As always, consult the Tome)"
+			]
+			dependencies: ["28130A77579AEC1B"]
+			id: "1B3FBE189D08A282"
+			tasks: [{
+				id: "08C992616D2A8B6F"
+				type: "item"
+				item: "astralsorcery:altar_constellation"
+			}]
+			rewards: [{
+				id: "252EBC3EC6A79EF3"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Ziggy"
+			x: -0.5d
+			y: -7.5d
+			description: ["Make a starmetal cuttiung tool, throw some of the ingots on the ground, and start smacking them"]
+			dependencies: ["025C937E2E5328CD"]
+			id: "28130A77579AEC1B"
+			tasks: [{
+				id: "42C6966DB49AAEC3"
+				type: "item"
+				item: "astralsorcery:stardust"
+			}]
+			rewards: [{
+				id: "03053B13D982EB77"
+				type: "ftbmoney:money"
+				ftb_money: 64L
+			}]
+		}
+		{
+			title: "Out of this World"
+			x: -0.5d
+			y: -5.5d
+			description: ["Find a shrine that still has a view of the sky. Clear out the space above it so the crystal has a view of the sky. Then stick some iron ore in it and link it to the collector crystal"]
+			id: "025C937E2E5328CD"
+			tasks: [{
+				id: "006402F4A0A680F5"
+				type: "item"
+				item: "astralsorcery:starmetal_ore"
+			}]
+		}
+		{
+			title: "The Cure"
+			x: -2.5d
+			y: -3.5d
+			description: ["Find her. Kill her. Place her egg in the world to end the plague."]
+			dependencies: ["7E53EAE5BFA52CFA"]
+			id: "75B3E2EF94B0509C"
+			tasks: [{
+				id: "71B798DF5AC6A5B4"
+				type: "item"
+				item: "minecraft:dragon_egg"
+			}]
+			rewards: [{
+				id: "4C85EE2E73CDB6F5"
+				type: "ftbmoney:money"
+				ftb_money: 4096L
+			}]
+		}
+	]
 }
