@@ -9,31 +9,35 @@
 
 /* Recipe for the end orb */
 
-val a = <item:minecraft:air>;
-val b = <item:gaiadimension:bismuth_crystal>;
-val e = <item:contenttweaker:evil_eye>;
-val f = <item:twilightforest:fiery_blood>;
-val g = <tag:items:atum:godshards>;
-val h = <item:tropicraft:eih_spawn_egg>;
-val l = <item:contenttweaker:shadow_flesh>;
-val m = <tag:items:creepingdark2:malachite>;
-val n = <item:blue_skies:nature_arc>;
-val p = <item:blue_skies:poison_arc>;
-val q = <item:contenttweaker:quartz_bone>;
-val s = <item:minecraft:nether_star>;
-val t = <item:soulbound:torturedsoul>;
-val w = <item:dark_world:wither_fruit>;
+val __ = <item:minecraft:air>;
+val XX = <item:minecraft:air>;
+val bi = <item:gaiadimension:bismuth_crystal>;
+val ee = <item:contenttweaker:evil_eye>;
+val eh = <item:tropicraft:eih_spawn_egg>;
+val fb = <item:twilightforest:fiery_blood>;
+val ga = <item:botania:life_essence>;
+val gs = <tag:items:atum:godshards>;
+val ma = <tag:items:creepingdark2:malachite>;
+val na = <item:blue_skies:nature_arc>;
+val ns = <item:minecraft:nether_star>;
+val pa = <item:blue_skies:poison_arc>;
+val qb = <item:contenttweaker:quartz_bone>;
+val sf = <item:contenttweaker:shadow_flesh>;
+val si = <item:appliedenergistics2:singularity>;
+val ts = <item:soulbound:torturedsoul>;
+val wf = <item:dark_world:wither_fruit>;
+val wt = <item:ars_nouveau:wilden_tribute>;
 
 <recipetype:astralsorcery:altar>.addRecipe(
 /* Name     */ "end_orb", 
 /* Altar    */ "CONSTELLATION", 
 /* Output   */ <item:contenttweaker:end_orb>,
 /* Recipe   */ [
-[b, a, a, a, h],
-[a, f, t, s, a],
-[a, n, p, g, a],
-[a, w, l, e, a],
-[q, a, a, a, m]],
+    [ee, bi, XX, ga, eh],
+    [__, gs, ns, ma, __],
+    [XX, fb, si, qb, XX],
+    [__, sf, wf, ts, __],
+    [na, __, XX, wt, pa]],
 /* Duration */ 200,
 /* Starlight*/ 50);
 
