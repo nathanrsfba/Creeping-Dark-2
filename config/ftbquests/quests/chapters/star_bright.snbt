@@ -144,9 +144,9 @@
 			dependencies: ["037CBF2CA49EAA7E"]
 			id: "45AEBE15E5E5C298"
 			tasks: [{
-				id: "7CFE7D2A1E0DD049"
+				id: "6BFAF6ED6C4DD4B2"
 				type: "item"
-				item: "astralsorcery:altar_attunement"
+				item: "astralsorcery:altar_discovery"
 			}]
 			rewards: [{
 				id: "6BF07EE89DD64A57"
