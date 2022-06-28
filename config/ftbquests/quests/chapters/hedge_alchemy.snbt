@@ -26,8 +26,8 @@
 			}]
 			rewards: [{
 				id: "486182CC4A300386"
-				type: "ftbmoney:money"
-				ftb_money: 4096L
+				type: "item"
+				item: "contenttweaker:coin_platinum"
 			}]
 		}
 		{
@@ -47,8 +47,8 @@
 			}]
 			rewards: [{
 				id: "43EB6D6C4A9B0B08"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -69,8 +69,8 @@
 			}]
 			rewards: [{
 				id: "5C8B19E8A5E7ED47"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -87,8 +87,8 @@
 			}]
 			rewards: [{
 				id: "58973990D64A686E"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -108,8 +108,8 @@
 			}]
 			rewards: [{
 				id: "252A047099FC1045"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -134,8 +134,8 @@
 			]
 			rewards: [{
 				id: "698F441F90E0488A"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -163,8 +163,8 @@
 			}]
 			rewards: [{
 				id: "1B107576B2689D9C"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -185,8 +185,8 @@
 			}]
 			rewards: [{
 				id: "09B242AD320046A4"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -207,8 +207,8 @@
 			}]
 			rewards: [{
 				id: "1D4AE6D01051550A"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -243,8 +243,8 @@
 			]
 			rewards: [{
 				id: "536214EEE1F18ADE"
-				type: "ftbmoney:money"
-				ftb_money: 64L
+				type: "item"
+				item: "contenttweaker:coin_silver"
 			}]
 		}
 		{
@@ -259,6 +259,11 @@
 				id: "408774DE247E13C2"
 				type: "item"
 				item: "botania:runic_altar"
+			}]
+			rewards: [{
+				id: "039FA61F2141007D"
+				type: "item"
+				item: "contenttweaker:coin_silver"
 			}]
 		}
 		{
@@ -307,8 +312,8 @@
 			]
 			rewards: [{
 				id: "7DCA0F3F8D32C5FE"
-				type: "ftbmoney:money"
-				ftb_money: 64L
+				type: "item"
+				item: "contenttweaker:coin_silver"
 			}]
 		}
 		{
@@ -352,8 +357,8 @@
 			]
 			rewards: [{
 				id: "1712E3882B1C7641"
-				type: "ftbmoney:money"
-				ftb_money: 64L
+				type: "item"
+				item: "contenttweaker:coin_silver"
 			}]
 		}
 	]

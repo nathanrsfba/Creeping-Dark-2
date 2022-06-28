@@ -121,8 +121,8 @@
 			]
 			rewards: [{
 				id: "1CF531443BD325FA"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -286,8 +286,8 @@
 			]
 			rewards: [{
 				id: "2ACEC5387E1BF44A"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -304,8 +304,8 @@
 			}]
 			rewards: [{
 				id: "2A9202D81613E62E"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -388,8 +388,8 @@
 			]
 			rewards: [{
 				id: "2E2C9C1503430CC4"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -455,8 +455,8 @@
 			]
 			rewards: [{
 				id: "63B1B63D33287BD2"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -487,6 +487,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "41BDF7044E2D79A7"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
 		}
 		{
 			title: "Radio-Activity"
@@ -509,8 +514,8 @@
 			}]
 			rewards: [{
 				id: "23764F5EC2098CEF"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -552,8 +557,8 @@
 			]
 			rewards: [{
 				id: "654DC38420E4615C"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -595,8 +600,8 @@
 			]
 			rewards: [{
 				id: "37363C2F98BF8576"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -614,8 +619,8 @@
 			}]
 			rewards: [{
 				id: "51948BCE8DA5F0D0"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -643,8 +648,8 @@
 			}]
 			rewards: [{
 				id: "39AE3FCBF2B4ADD2"
-				type: "ftbmoney:money"
-				ftb_money: 512L
+				type: "item"
+				item: "contenttweaker:coin_gold"
 			}]
 		}
 	]

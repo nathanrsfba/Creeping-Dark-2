@@ -31,8 +31,8 @@
 			}]
 			rewards: [{
 				id: "6B48EA23D1B58FA6"
-				type: "ftbmoney:money"
-				ftb_money: 512L
+				type: "item"
+				item: "contenttweaker:coin_gold"
 			}]
 		}
 		{
@@ -55,8 +55,8 @@
 			}]
 			rewards: [{
 				id: "4048E968F311FC41"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -95,8 +95,8 @@
 			]
 			rewards: [{
 				id: "356C1D0ADAA765C9"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -113,8 +113,8 @@
 			}]
 			rewards: [{
 				id: "709E0985BD01AEEA"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -149,8 +149,8 @@
 			]
 			rewards: [{
 				id: "429E58E23F9904E2"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -170,8 +170,8 @@
 			}]
 			rewards: [{
 				id: "319577D030900384"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -187,8 +187,8 @@
 			}]
 			rewards: [{
 				id: "429331732D03948E"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -209,8 +209,8 @@
 			}]
 			rewards: [{
 				id: "7311F1D3DE9F1ED3"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -227,8 +227,8 @@
 			}]
 			rewards: [{
 				id: "104ED553BE5950CD"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -245,8 +245,8 @@
 			}]
 			rewards: [{
 				id: "2174A5468D8938E9"
-				type: "ftbmoney:money"
-				ftb_money: 64L
+				type: "item"
+				item: "contenttweaker:coin_silver"
 			}]
 		}
 		{
@@ -263,8 +263,8 @@
 			}]
 			rewards: [{
 				id: "372674EF1FEDE67A"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 	]

@@ -23,8 +23,8 @@
 			}]
 			rewards: [{
 				id: "1CEA183F486D3565"
-				type: "ftbmoney:money"
-				ftb_money: 512L
+				type: "item"
+				item: "contenttweaker:coin_gold"
 			}]
 		}
 		{
@@ -42,8 +42,8 @@
 			}]
 			rewards: [{
 				id: "2307E701962BE449"
-				type: "ftbmoney:money"
-				ftb_money: 64L
+				type: "item"
+				item: "contenttweaker:coin_silver"
 			}]
 		}
 		{
@@ -98,8 +98,8 @@
 			]
 			rewards: [{
 				id: "22AC493751EA1FCE"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -135,8 +135,8 @@
 			]
 			rewards: [{
 				id: "5008BC8D46EB3A77"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -154,8 +154,8 @@
 			}]
 			rewards: [{
 				id: "6B3B088C39D92D03"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -190,8 +190,8 @@
 			]
 			rewards: [{
 				id: "52B2D527F3920C32"
-				type: "ftbmoney:money"
-				ftb_money: 64L
+				type: "item"
+				item: "contenttweaker:coin_silver"
 			}]
 		}
 		{
@@ -207,8 +207,8 @@
 			}]
 			rewards: [{
 				id: "56B808D5BA1062C5"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -224,8 +224,8 @@
 			}]
 			rewards: [{
 				id: "5C930E4D6025C50B"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -256,8 +256,8 @@
 			]
 			rewards: [{
 				id: "6D6B623B7A5D2703"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -277,8 +277,8 @@
 			}]
 			rewards: [{
 				id: "35CA44060A8309B3"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -322,8 +322,8 @@
 			]
 			rewards: [{
 				id: "593DD38FBDF1C2C7"
-				type: "ftbmoney:money"
-				ftb_money: 4096L
+				type: "item"
+				item: "contenttweaker:coin_platinum"
 			}]
 		}
 	]

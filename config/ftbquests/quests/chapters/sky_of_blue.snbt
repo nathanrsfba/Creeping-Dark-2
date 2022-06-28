@@ -41,8 +41,8 @@
 			}]
 			rewards: [{
 				id: "7D5F39473A7B795A"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -62,8 +62,8 @@
 			}]
 			rewards: [{
 				id: "1D0727FB19654C90"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -82,8 +82,8 @@
 			}]
 			rewards: [{
 				id: "7208CA53CEF7171E"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -102,8 +102,8 @@
 			}]
 			rewards: [{
 				id: "2160837520974B6D"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -127,8 +127,8 @@
 			}]
 			rewards: [{
 				id: "5284BF85508C1A8C"
-				type: "ftbmoney:money"
-				ftb_money: 8L
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 		{
@@ -162,8 +162,8 @@
 			}]
 			rewards: [{
 				id: "63566F714F7AFA64"
-				type: "ftbmoney:money"
-				ftb_money: 512L
+				type: "item"
+				item: "contenttweaker:coin_gold"
 			}]
 		}
 		{
@@ -197,8 +197,8 @@
 			}]
 			rewards: [{
 				id: "3DF6D4006F73E78E"
-				type: "ftbmoney:money"
-				ftb_money: 512L
+				type: "item"
+				item: "contenttweaker:coin_gold"
 			}]
 		}
 		{
@@ -228,8 +228,8 @@
 			}]
 			rewards: [{
 				id: "686FCDDE244BFE7E"
-				type: "ftbmoney:money"
-				ftb_money: 4096L
+				type: "item"
+				item: "contenttweaker:coin_platinum"
 			}]
 		}
 		{
@@ -256,6 +256,11 @@
 						ArcLevel: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "15388B74259D87C9"
+				type: "item"
+				item: "contenttweaker:coin_platinum"
 			}]
 		}
 	]
