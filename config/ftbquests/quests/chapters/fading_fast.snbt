@@ -555,11 +555,33 @@
 					value: 1L
 				}
 			]
-			rewards: [{
-				id: "654DC38420E4615C"
-				type: "item"
-				item: "contenttweaker:coin_bronze"
-			}]
+			rewards: [
+				{
+					id: "654DC38420E4615C"
+					type: "item"
+					item: "contenttweaker:coin_bronze"
+				}
+				{
+					id: "5DDD687CB46F18A8"
+					type: "item"
+					item: "minecraft:leather"
+				}
+				{
+					id: "0678D984AEE41F64"
+					type: "item"
+					item: "minecraft:feather"
+				}
+				{
+					id: "31F6270E128B6C62"
+					type: "item"
+					item: "minecraft:porkchop"
+				}
+				{
+					id: "7A51E4698AC04AFB"
+					type: "item"
+					item: "minecraft:white_wool"
+				}
+			]
 		}
 		{
 			title: "Hunt!"
@@ -598,11 +620,38 @@
 					value: 1L
 				}
 			]
-			rewards: [{
-				id: "37363C2F98BF8576"
-				type: "item"
-				item: "contenttweaker:coin_bronze"
-			}]
+			rewards: [
+				{
+					id: "37363C2F98BF8576"
+					type: "item"
+					item: "contenttweaker:coin_bronze"
+				}
+				{
+					id: "22EC4D1A2D92D877"
+					type: "item"
+					item: "minecraft:rotten_flesh"
+				}
+				{
+					id: "6F499A8C77904483"
+					type: "item"
+					item: "minecraft:bone"
+				}
+				{
+					id: "332824AB1DEBA306"
+					type: "item"
+					item: "minecraft:string"
+				}
+				{
+					id: "1DA07C323DA5EEE1"
+					type: "item"
+					item: "minecraft:spider_eye"
+				}
+				{
+					id: "279F5B683B626439"
+					type: "item"
+					item: "minecraft:gunpowder"
+				}
+			]
 		}
 		{
 			title: "End!"
@@ -617,11 +666,18 @@
 				entity: "minecraft:enderman"
 				value: 1L
 			}]
-			rewards: [{
-				id: "51948BCE8DA5F0D0"
-				type: "item"
-				item: "contenttweaker:coin_bronze"
-			}]
+			rewards: [
+				{
+					id: "51948BCE8DA5F0D0"
+					type: "item"
+					item: "contenttweaker:coin_bronze"
+				}
+				{
+					id: "326FB22AA0D5583C"
+					type: "item"
+					item: "minecraft:ender_pearl"
+				}
+			]
 		}
 		{
 			title: "Forget Me Not"

@@ -95,11 +95,18 @@
 				entity: "minecraft:ghast"
 				value: 1L
 			}]
-			rewards: [{
-				id: "2247E9FBCDAE8CF3"
-				type: "item"
-				item: "contenttweaker:coin_bronze"
-			}]
+			rewards: [
+				{
+					id: "2247E9FBCDAE8CF3"
+					type: "item"
+					item: "contenttweaker:coin_bronze"
+				}
+				{
+					id: "0F31C91E635F831A"
+					type: "item"
+					item: "minecraft:ghast_tear"
+				}
+			]
 		}
 		{
 			title: "Blaze A Trail"
@@ -115,11 +122,18 @@
 				entity: "minecraft:blaze"
 				value: 1L
 			}]
-			rewards: [{
-				id: "741A3C65591186D0"
-				type: "item"
-				item: "contenttweaker:coin_bronze"
-			}]
+			rewards: [
+				{
+					id: "741A3C65591186D0"
+					type: "item"
+					item: "contenttweaker:coin_bronze"
+				}
+				{
+					id: "723A8B0A69EB16A6"
+					type: "item"
+					item: "minecraft:blaze_rod"
+				}
+			]
 		}
 		{
 			title: "Nether Minerals"
