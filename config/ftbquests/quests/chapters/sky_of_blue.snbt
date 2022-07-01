@@ -243,7 +243,13 @@
 			}
 			x: 0.5d
 			y: 1.5d
-			description: ["Once you defeat the summoner, look for the Nature Dungeon, and the Starlit Crusher within"]
+			description: [
+				"Once you defeat the summoner, look for the Nature Dungeon, and the Starlit Crusher within"
+				""
+				"Highly recommended (in fact, essentially essential) for this fight will be a Soulbound Spear (which you'll probably have acquired as loot by now) and a diopsite axe."
+				""
+				"To kill him, you'll need to chop down the wall surrounding him with an axe, throw the spear at him to stun him, then wail away at him with the axe while he's stunned. Then, retreat to the corners of the room, heal if you need to, and attack again when your spear is recharged."
+			]
 			dependencies: ["492D60B4C61D5F45"]
 			id: "2BB2919393888FC2"
 			tasks: [{
