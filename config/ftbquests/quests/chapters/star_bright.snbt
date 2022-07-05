@@ -343,5 +343,22 @@
 				item: "contenttweaker:coin_platinum"
 			}]
 		}
+		{
+			title: "RTFM (Astral Edition)"
+			x: -2.5d
+			y: -9.0d
+			description: ["A Guidebook to Astral Sorcery"]
+			id: "1B193199EB921672"
+			tasks: [{
+				id: "0685677A436A3F0D"
+				type: "item"
+				item: "astralsorcery:tome"
+			}]
+			rewards: [{
+				id: "2BC7EF37C31CDF43"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
 	]
 }

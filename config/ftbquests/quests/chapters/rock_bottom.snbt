@@ -151,7 +151,7 @@
 		}
 		{
 			title: "Coca Cola"
-			x: -4.5d
+			x: -3.0d
 			y: -1.5d
 			description: [
 				"In order to make the portal to the Deep Dark, you'll need an Arc Furnace. And in order to run it, you'll need to make graphite electrodes from a source of carbon."
@@ -249,6 +249,23 @@
 				id: "3DB6E26BA037A3EF"
 				type: "item"
 				item: "contenttweaker:coin_gold"
+			}]
+		}
+		{
+			title: "RTFM (Engineering Edition)"
+			x: -4.5d
+			y: -1.5d
+			description: ["A guidebook for Immersive Engineering"]
+			id: "2793FFC88A6B076C"
+			tasks: [{
+				id: "693A0F3764B5655B"
+				type: "item"
+				item: "immersiveengineering:manual"
+			}]
+			rewards: [{
+				id: "14DBB214438643BB"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
 			}]
 		}
 	]

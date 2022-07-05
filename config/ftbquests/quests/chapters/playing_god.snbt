@@ -365,5 +365,22 @@
 				item: "contenttweaker:coin_bronze"
 			}]
 		}
+		{
+			title: "RTFM (Technological Edition)"
+			x: -0.5d
+			y: -3.0d
+			description: ["A guidebook for RFTools and friends (including XNet)"]
+			id: "7A41E4036642FC7B"
+			tasks: [{
+				id: "711D14573A6D419A"
+				type: "item"
+				item: "rftoolsbase:manual"
+			}]
+			rewards: [{
+				id: "276228FA1ADA2064"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
 	]
 }

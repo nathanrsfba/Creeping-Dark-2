@@ -326,5 +326,22 @@
 				item: "contenttweaker:coin_platinum"
 			}]
 		}
+		{
+			title: "RTFM (New Edition)"
+			x: -6.5d
+			y: -0.5d
+			description: ["A guidebook to Ars Nouveau"]
+			id: "6254A4D2E32F4FE4"
+			tasks: [{
+				id: "2630AA519D3F95AC"
+				type: "item"
+				item: "ars_nouveau:worn_notebook"
+			}]
+			rewards: [{
+				id: "67A12CC8274CA141"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
 	]
 }

@@ -125,5 +125,32 @@
 				item: "contenttweaker:coin_platinum"
 			}]
 		}
+		{
+			title: "RTFM (Twilit Edition)"
+			x: -3.5d
+			y: -0.5d
+			description: [
+				"A guidebook for the Twilight Forest."
+				""
+				"As the name shows, it may not be entirely complete."
+			]
+			id: "05C8534D0BCBA894"
+			tasks: [{
+				id: "5E58392130ADA962"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "twilightforest:guide"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4A02C64F51BF9344"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
 	]
 }

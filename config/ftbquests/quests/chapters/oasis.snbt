@@ -259,5 +259,28 @@
 				item: "contenttweaker:coin_bronze"
 			}]
 		}
+		{
+			title: "RTFM (Thermal Edition)"
+			x: -0.5d
+			y: -1.5d
+			description: ["A guidebook for Thermal Expansion and friends"]
+			id: "4E8478A8B3838DF9"
+			tasks: [{
+				id: "4588878F15B20E46"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "thermal:guidebook"
+					}
+				}
+			}]
+			rewards: [{
+				id: "6FE96450A8068D86"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
 	]
 }

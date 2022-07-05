@@ -361,5 +361,21 @@
 				item: "contenttweaker:coin_silver"
 			}]
 		}
+		{
+			title: "RTFM (Botanical Edition)"
+			x: -1.5d
+			y: -3.5d
+			description: ["A guidebook to Botania"]
+			id: "013E4021A9281F74"
+			tasks: [{
+				id: "17E987C686B714AD"
+				type: "item"
+				item: {
+					id: "botania:lexicon"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
 	]
 }
