@@ -1,0 +1,311 @@
+{
+	id: "4DC96A54D8794955"
+	group: ""
+	order_index: 12
+	filename: "round_and_round"
+	title: "Round and Round"
+	icon: "create:cogwheel"
+	subtitle: ["Create (and additions)"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 2.0d
+			description: ["Charge the chromatic alloy up using a tesla coil, powered up with Forge Energy (I.E. RF), placed above a depot"]
+			dependencies: [
+				"440688F3ED547B85"
+				"0DA57A43C0401DD6"
+			]
+			id: "4AA796EC213CEF75"
+			tasks: [{
+				id: "341E117A8C2020BD"
+				type: "item"
+				item: "createaddition:overcharged_alloy"
+			}]
+			rewards: [{
+				id: "7DE42ECD8700AC2A"
+				type: "item"
+				item: "contenttweaker:coin_gold"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			description: ["Place some rose quarts, glowstone, and obsidian dust into a basin equipped with a mixer and a blaze burner. Then feed the blaze some cake."]
+			dependencies: [
+				"760A11B52C1D6FAA"
+				"57861DBC95853A29"
+			]
+			id: "440688F3ED547B85"
+			tasks: [{
+				id: "65312FF1C6942F99"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "413A235AAE3521B0"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			title: "High Voltage Naughty Boy Time"
+			x: 0.0d
+			y: -4.0d
+			description: [
+				"Charges things up."
+				""
+				"Lightning bolts not guaranteed."
+			]
+			dependencies: ["46A1C6F7CAA2848C"]
+			id: "0DA57A43C0401DD6"
+			tasks: [{
+				id: "6FBB03F4AC4AF042"
+				type: "item"
+				item: "createaddition:tesla_coil"
+			}]
+			rewards: [{
+				id: "4698AEF583CB3021"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			title: "Will It Blend?"
+			icon: "create:mechanical_mixer"
+			x: -4.0d
+			y: -1.0d
+			description: ["Mixes stuff up. With optional heat source"]
+			id: "3A1AC6B5BA0AEA94"
+			tasks: [
+				{
+					id: "37B82A3FC301DFF2"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "43A08A069E2E153E"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+			rewards: [{
+				id: "73F6518E1C8433BC"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			title: "Fire in a Box"
+			x: -2.5d
+			y: 0.5d
+			description: [
+				"Take an empty blaze burner into the nether, then right click a blaze to capture it."
+				""
+				"Then stick it under a basin to use as a heater"
+			]
+			id: "760A11B52C1D6FAA"
+			tasks: [{
+				id: "2DBC1F89FE7464EF"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+			rewards: [{
+				id: "6AADC2EC9A56945D"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			description: ["Makes blazes burn really hot"]
+			dependencies: [
+				"3A1AC6B5BA0AEA94"
+				"52197ACCDF84AEA8"
+				"5159D58699500171"
+				"3A74BF6DEC02636C"
+			]
+			id: "57861DBC95853A29"
+			tasks: [{
+				id: "732DEAE0241E57CC"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+			rewards: [{
+				id: "0D5887433952CE44"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.5d
+			description: ["Pours liquid onto items"]
+			id: "52197ACCDF84AEA8"
+			tasks: [{
+				id: "476325E225705C58"
+				type: "item"
+				item: "create:spout"
+			}]
+			rewards: [{
+				id: "442ED1B4D6D3F3FB"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			title: "Wheels of Justice"
+			x: -4.0d
+			y: -2.5d
+			description: ["Big wheels that grind things down, and can also process ores"]
+			dependencies: ["46A1C6F7CAA2848C"]
+			id: "5159D58699500171"
+			tasks: [{
+				id: "4F24665BBFA88DED"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+			rewards: [{
+				id: "4022F13A517B2427"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			description: ["An array of these can be used for automated crafting. They can even craft things bigger than the standard 3x3 crafting grid"]
+			dependencies: [
+				"149A525DEA4B46AB"
+				"1D6A78094CC73F24"
+			]
+			id: "46A1C6F7CAA2848C"
+			tasks: [{
+				id: "0AB7EAC94322E18B"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+			rewards: [{
+				id: "38EDFECB46D937C3"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			title: "Budget Gold"
+			x: -4.0d
+			y: -5.5d
+			description: ["An alloy made of copper and zinc. There's a few different ways to make it."]
+			id: "149A525DEA4B46AB"
+			tasks: [{
+				id: "638BE3DDA082CBCA"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+			rewards: [{
+				id: "057710CF3DD81607"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			icon: "create:cogwheel"
+			x: -5.5d
+			y: -4.0d
+			description: ["Transmits kinetic force perpendicular to the axis of rotation. Also can be used to change rotational direction, and connecting different sizes together will change rotation speed"]
+			dependencies: ["4D62B6188B10E877"]
+			id: "37B389454C48EF02"
+			tasks: [
+				{
+					id: "6C0AE8654AA3AA7E"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "6429A10926C56A6D"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+			]
+			rewards: [{
+				id: "02DF2C8FB23CB7F6"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			title: "Rocky Ingots"
+			x: -5.5d
+			y: -5.5d
+			description: ["An alloy, made of both stone and metal, used in many creations"]
+			id: "4D62B6188B10E877"
+			tasks: [{
+				id: "296B6155A4AA312A"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+			rewards: [{
+				id: "70F0E7E48ECE1C07"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.5d
+			description: ["You'll need a method of generating rotational power to run Create machines. This is one of the simpler methods."]
+			dependencies: ["37B389454C48EF02"]
+			id: "1D6A78094CC73F24"
+			tasks: [{
+				id: "57F4A6E7F1579D35"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [{
+				id: "7C88756779A3912F"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			title: "RTFM (Creative Edition)"
+			icon: "minecraft:book"
+			x: -7.0d
+			y: -5.5d
+			description: ["Create doesn't have an ingame manual as-such. Instead, you can learn about almost any Create mechanism by hovering over an item (including in JEI) and holding W to see how it works."]
+			id: "7CACB508ED0CF4D1"
+			tasks: [{
+				id: "7210899620FA84B9"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Despot"
+			x: -1.0d
+			y: -2.5d
+			description: [
+				"A platform for putting items on so machines can work on them."
+				""
+				"You'll need it for things like spouts and tesla coils"
+			]
+			id: "3A74BF6DEC02636C"
+			tasks: [{
+				id: "6812AC14F751B443"
+				type: "item"
+				item: "create:depot"
+			}]
+			rewards: [{
+				id: "321197A882D6656C"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+	]
+}
