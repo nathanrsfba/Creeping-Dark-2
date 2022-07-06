@@ -252,13 +252,10 @@
 			x: -0.5d
 			y: -3.5d
 			description: ["Link Astral devices and resources to each other"]
-			dependencies: [
-				"695DCE6B07AFFD8F"
-				"025C937E2E5328CD"
-			]
+			dependencies: ["695DCE6B07AFFD8F"]
 			id: "4747BA02663BCF54"
 			tasks: [{
-				id: "678104BE96B59C89"
+				id: "0CC4017948AE509A"
 				type: "item"
 				item: "astralsorcery:linking_tool"
 			}]
@@ -312,7 +309,12 @@
 			title: "Out of this World"
 			x: -0.5d
 			y: -5.5d
-			description: ["Find a shrine that still has a view of the sky. Clear out the space above it so the crystal has a view of the sky. Then stick some iron ore in it and link it to the collector crystal"]
+			description: [
+				"Find a shrine that still has a view of the sky. Clear out the space above it so the crystal has a view of the sky. Then stick some iron ore in it and link it to the collector crystal."
+				""
+				"The iron ore needs to be in block form, so you'll need to mine some with silk touch."
+			]
+			dependencies: ["4747BA02663BCF54"]
 			id: "025C937E2E5328CD"
 			tasks: [{
 				id: "006402F4A0A680F5"
