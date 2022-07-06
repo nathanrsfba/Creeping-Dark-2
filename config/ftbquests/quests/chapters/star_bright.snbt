@@ -68,7 +68,7 @@
 		}
 		{
 			title: "Have you seen my marbles?"
-			x: 1.5d
+			x: 3.5d
 			y: -9.0d
 			description: ["Marble comes in a few different forms. A chisel (from Chisel, and not Chisels and Bits) can easily convert between them."]
 			id: "6F504C30C0D02051"
@@ -86,7 +86,7 @@
 		{
 			title: "Mystic Shrine"
 			x: 3.5d
-			y: -9.0d
+			y: -7.0d
 			description: ["Search the world for a starlight shrine made of marble. Dig into it to find a mystic crystal, and some loot."]
 			id: "037CBF2CA49EAA7E"
 			tasks: [{
@@ -108,7 +108,7 @@
 		}
 		{
 			x: 1.5d
-			y: -7.5d
+			y: -9.0d
 			description: ["The 'wrench' of Astral Sorcery"]
 			dependencies: [
 				"188511FCC17A75EC"
@@ -129,7 +129,7 @@
 		{
 			title: "Bright and Shiny"
 			x: 3.5d
-			y: -7.5d
+			y: -5.5d
 			description: [
 				"The beginnings of Astral crafting."
 				""
@@ -157,7 +157,7 @@
 		{
 			title: "Rocky"
 			x: 1.5d
-			y: -5.5d
+			y: -7.0d
 			description: ["Hold the wand in your hand and walk around at night until you see sparkles in the ground. Then dig. Deep."]
 			dependencies: ["212CAAD13178CED8"]
 			id: "214447F273A6C711"
@@ -201,7 +201,7 @@
 		{
 			title: "Liquid Photons"
 			x: 3.5d
-			y: -5.5d
+			y: -3.5d
 			description: [
 				"Make a light well and stick some aquamarine in it, and light itself will condense into a liquid."
 				""
@@ -292,7 +292,10 @@
 			x: -0.5d
 			y: -7.5d
 			description: ["Make a starmetal cuttiung tool, throw some of the ingots on the ground, and start smacking them"]
-			dependencies: ["025C937E2E5328CD"]
+			dependencies: [
+				"025C937E2E5328CD"
+				"287E5B1A1E719A7E"
+			]
 			id: "28130A77579AEC1B"
 			tasks: [{
 				id: "42C6966DB49AAEC3"
@@ -358,6 +361,23 @@
 			}]
 			rewards: [{
 				id: "2BC7EF37C31CDF43"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.5d
+			description: ["Pour a bucket of starlight on the ground, then throw soak some logs in it"]
+			dependencies: ["2A11DFE02CF80D79"]
+			id: "287E5B1A1E719A7E"
+			tasks: [{
+				id: "312F9D2B6AD9D208"
+				type: "item"
+				item: "astralsorcery:infused_wood"
+			}]
+			rewards: [{
+				id: "38DF43D45694916A"
 				type: "item"
 				item: "contenttweaker:coin_bronze"
 			}]
