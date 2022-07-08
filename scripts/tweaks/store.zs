@@ -115,20 +115,20 @@ addShop( <item:rftoolsbase:dimensionalshard>, 1, 2048/32 );
 
 Various food
 
-Paxel
-Builder's wand
-Chisel
-Exchanger
-Revolver? (Kinda sucks)
+Paxel (8)
+Builder's wand: 64
+Chisel: 64
+Exchanger: 8
+Revolver? (Kinda sucks) 64 for item, 8 for ammo
 Mana blaster?
-Backpack
-Kitchen set
-Flamethrower
-RTG replacement?
-Storage tablet
-Jetpack
-Flux cap
+Backpack: 8
+Kitchen set: 64
+Flamethrower: 64
+RTG replacement? 4096
+Storage tablet: 512
+Jetpack: 4096
+Flux cap: 512
 
-Terrasteel armor set
-Refined Obsidian armor set
+Terrasteel armor set: 8192 for set
+Refined Obsidian armor set: 4096 for set
 */
