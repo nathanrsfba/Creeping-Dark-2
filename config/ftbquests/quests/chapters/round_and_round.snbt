@@ -10,6 +10,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "You got ripped off"
 			x: 0.0d
 			y: 2.0d
 			description: ["Charge the chromatic alloy up using a tesla coil, powered up with Forge Energy (I.E. RF), placed above a depot"]
@@ -122,6 +123,7 @@
 			}]
 		}
 		{
+			title: "Hotcakes"
 			x: -2.5d
 			y: -1.0d
 			description: ["Makes blazes burn really hot"]
@@ -144,6 +146,7 @@
 			}]
 		}
 		{
+			title: "Splurt."
 			x: -2.5d
 			y: -2.5d
 			description: ["Pours liquid onto items"]
