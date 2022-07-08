@@ -20,6 +20,7 @@ val gs = <tag:items:atum:godshards>;
 val ma = <tag:items:creepingdark2:malachite>;
 val na = <item:blue_skies:nature_arc>;
 val ns = <item:minecraft:nether_star>;
+val oa = <item:createaddition:overcharged_alloy>;
 val pa = <item:blue_skies:poison_arc>;
 val qb = <item:contenttweaker:quartz_bone>;
 val sf = <item:contenttweaker:shadow_flesh>;
@@ -37,7 +38,7 @@ val wt = <item:ars_nouveau:wilden_tribute>;
     [__, gs, ns, ma, __],
     [XX, fb, si, qb, XX],
     [__, sf, wf, ts, __],
-    [na, __, XX, wt, pa]],
+    [na, oa, XX, wt, pa]],
 /* Duration */ 200,
 /* Starlight*/ 50);
 
