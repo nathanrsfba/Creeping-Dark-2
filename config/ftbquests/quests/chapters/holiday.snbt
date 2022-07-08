@@ -122,9 +122,11 @@
 				""
 				"Inside, you will find one of the Moai creatures"
 				""
-				"Kill it, and take its eye, and keep it safe"
+				"Kill it, and take its eye, and keep it safe."
 				""
 				"If you're not careful, it might turn into another Moai creature."
+				""
+				"(Keeping it secret is optional)"
 			]
 			dependencies: ["03CDBB73D9EF5666"]
 			id: "2C6212FE3010B715"
@@ -140,6 +142,8 @@
 			}]
 		}
 		{
+			title: "Drift Away"
+			icon: "tropicraft:pineapple"
 			x: -0.5d
 			y: -2.0d
 			description: [
@@ -148,6 +152,7 @@
 				"But it is not without its own dangers..."
 			]
 			dependencies: ["40CEEC76E90FCEB9"]
+			hide: false
 			id: "03CDBB73D9EF5666"
 			tasks: [{
 				id: "0BAF8A357594093B"

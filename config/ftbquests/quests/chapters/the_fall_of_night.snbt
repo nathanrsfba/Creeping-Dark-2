@@ -29,6 +29,7 @@
 		}
 		{
 			title: "Into the Shadows"
+			icon: "dark_world:wither_fruit"
 			x: 3.0d
 			y: -0.5d
 			description: ["Build a portal out of soul sand, in the same shape as a nether portal. Then light it with the igniter"]

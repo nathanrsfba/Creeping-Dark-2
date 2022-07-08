@@ -10,6 +10,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Going Down"
 			x: 0.0d
 			y: -3.0d
 			description: ["To create the portal to the Deep Dark, take some khnumite and diamond, sculpt it into a face, and put it in the arc furnace. Then, add some tropical gemstones, and a chunk o head."]
@@ -33,6 +34,7 @@
 			}]
 		}
 		{
+			title: "Stark Industries"
 			x: 0.0d
 			y: -1.5d
 			description: [
@@ -89,6 +91,7 @@
 			}]
 		}
 		{
+			title: "Graphite Ingots"
 			x: -1.5d
 			y: -3.0d
 			description: ["Take that graphite dust and toss it in a furnace."]
