@@ -22,7 +22,71 @@ exceptions. Once you've "unlocked" a mod, it works the way it always has.
 Installation
 ------------
 
-TBD
+GDLauncher is still the officially supported platform, however it can also
+be installed using the CurseForge launcher
+
+### Downloading the pack ###
+
+This will be updated with links to the GitHub repo once it's been created.
+
+### Using GDLauncher ###
+
+* Download and install the launcher from the
+  [GDLauncher Site](https://gdevs.io/)
+* Open the launcher
+* Click the "+" button
+* Select "Import Zip"
+* Select the pack zip file you downloaded
+* Let it download all the pack files
+* When it's done, click "Play" to start Minecraft
+
+### Using Curseforge Launcher ###
+
+* Download and install the launcher from the 
+  [CurseForge Site](https://download.curseforge.com/) if you haven't
+  already.
+* Open the launcher
+* Select Minecraft from the Curseforge app
+* Click "Create Custom Profile"
+* Click the "Import" link
+* Select the pack zip file you downloaded
+* Let it download all the pack files
+* When it's done, click "Play" to start the Minecraft launcher
+
+Server Installation
+-------------------
+
+This was tested with Java 8. Later versions may not work. Server testing is
+ongoing, and should be considered alpha-quality for now.
+
+* Install a copy of Creeping Dark 2 as described above
+* Download the installer for
+  [Minecraft Forge](https://files.minecraftforge.net/net/minecraftforge/forge/)
+  for 1.16, version 36.2.26 or later
+* Run the installer, select "Install Server" and install it somewhere
+* Run the server you just installed. The command line should look something
+  like the following:
+  ```
+  java -Xmx8192M -Xms8192M -jar .\forge-1.16.5-36.2.26.jar --nogui
+  ```
+  Change the name of the .jar file to whichever version you downloaded. If you
+  get memory errors or GC errors, try increasing the memory allocation. Placing
+  the startup command in a batch file/shell script is recommended.
+* Edit eula.txt and agree to the license agreement
+* Open the Creeping Dark 2 installation folder, and copy the following folders
+  to the Forge installation directory:
+  * config
+  * defaultconfig
+  * mods
+  * openloader
+  * scripts
+  * worldshape
+* Overwrite anything that might already be present in the Forge install.
+* Edit server.properties to taste
+  * Enabling "allow-flight" is recommended, as there are legit flight options
+    in the pack.
+* Launch the server again, or upload it to your hosting provider if that's how
+  you're doing it.
 
 Questions
 ---------
@@ -82,6 +146,20 @@ Some highlights:
 * Added Blue Skies, with the Everbright and Everdawn dimensions.
   Not gated, at present
 * Added Create, with a crafting item (Overcharged Alloy) as a final goal
+* The 'shop' is now using the old 'coin' system again, and is much more
+  limited, due to limitations in both FTB Quests and FTB Money. For now, items
+  are 'bought' from the store by crafting them with coins in a crafting table.
+
+The Future
+----------
+
+Depending on upcoming mod support, some of the following may eventually
+appear in Creeping Dark 2:
+
+* Adding and integrating Actually Additions, Aether, and Advanced Rocketry
+  if and when their 1.16 ports are finished
+* Expand the shop, if a suitable shop mod for 1.16 can be found
+* Add a nice title screen
 
 About This Repository
 ---------------------
