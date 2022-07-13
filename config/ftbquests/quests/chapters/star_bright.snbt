@@ -140,6 +140,8 @@
 				"You'll need starlight for this and many Astral devices. If a device isn't receiving enough starlight, you can try moving it to a different place in the world, or higher in altitude."
 				""
 				"You'll need an unobstructed view of the sky, which can be tricky when the sky is covered by disease. But there are other dimensions with clear skies..."
+				""
+				"(Or you can use a beacon to blast away a path to the stars.)"
 			]
 			dependencies: ["037CBF2CA49EAA7E"]
 			id: "45AEBE15E5E5C298"
@@ -313,7 +315,7 @@
 			x: -0.5d
 			y: -5.5d
 			description: [
-				"Find a shrine that still has a view of the sky. Clear out the space above it so the crystal has a view of the sky. Then stick some iron ore in it and link it to the collector crystal."
+				"Find a shrine that still has a view of the sky. (Or use a beacon to *create* a view of the sky.) Clear out the space above it so the crystal has a view of the sky. Then stick some iron ore in it and link it to the collector crystal."
 				""
 				"The iron ore needs to be in block form, so you'll need to mine some with silk touch."
 			]
