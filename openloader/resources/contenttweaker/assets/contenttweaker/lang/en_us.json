@@ -41,10 +41,10 @@
     "item.contenttweaker.quartz_bone":	 "Quartz Bone",
     "item.contenttweaker.shadow_flesh":	 "Shadow Flesh",
 
-    "item.contenttweaker.coin_copper":   "Copper Coin",
-    "item.contenttweaker.coin_bronze":   "Bronze Coin",
-    "item.contenttweaker.coin_silver":   "Silver Coin",
-    "item.contenttweaker.coin_gold":     "Gold Coin",
-    "item.contenttweaker.coin_platinum": "Platinum Coin"
+    "item.contenttweaker.coin_copper":   "Green UU-Matter",
+    "item.contenttweaker.coin_bronze":   "Blue UU-Matter",
+    "item.contenttweaker.coin_silver":   "Red UU-Matter",
+    "item.contenttweaker.coin_gold":     "Purple UU-Matter",
+    "item.contenttweaker.coin_platinum": "Black UU-Matter"
 }
 
