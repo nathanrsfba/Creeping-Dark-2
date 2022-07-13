@@ -55,10 +55,38 @@ function addShop3( item as IItemStack, amt as int, cost as int,
     /* Inputs   */ inputa );
 }
 
+val _ = <item:minecraft:air>;
+val c = <item:contenttweaker:coin_copper>;
+val b = <item:contenttweaker:coin_bronze>;
+
 /* Fun fact:
    Shop item prices are based off EE EMC values */
-addShop( <item:minecraft:dirt>, 32, 1 );
-addShop( <item:minecraft:cobblestone>, 32, 1 );
+
+// Adding a shaped recipe
+craftingTable.addShaped( "uu_dirt", <item:minecraft:dirt> * 32, [
+    [_, _, _],
+    [_, _, _],
+    [_, c, _]
+]);
+
+// Adding a shaped recipe
+craftingTable.addShaped( "uu_stone", <item:minecraft:cobblestone> * 32, [
+    [_, _, _],
+    [_, c, _],
+    [_, _, _]
+]);
+
+
+// Adding a shaped recipe
+craftingTable.addShaped( "uu_wood", <item:minecraft:oak_log>, [
+    [_, c, _],
+    [_, _, _],
+    [_, _, _]
+]);
+
+
+// addShop( <item:minecraft:dirt>, 32, 1 );
+// addShop( <item:minecraft:cobblestone>, 32, 1 );
 addShop( <item:minecraft:sand>, 32, 1 );
 addShop( <item:minecraft:gravel>, 8, 1 );
 addShop( <item:minecraft:clay>, 2, 1 );
@@ -82,7 +110,6 @@ addShop( <item:minecraft:diamond>, 1, 8192/32 );
 addShop( <item:minecraft:emerald>, 1, 16384/32 );
 addShop( <item:minecraft:lapis_lazuli>, 1, 864/32 );
 addShop( <item:minecraft:netherite_scrap>, 1, 16384/32 );
-addShop2( <item:minecraft:oak_log>, 1, 1, <tag:items:minecraft:logs> );
 addShop2( <item:cavesandcliffs:copper_ingot>, 1, 128/32, 
     <tag:items:forge:ingots/copper> );
 addShop2( <item:thermal:tin_ingot>, 1, 256/32, 
