@@ -27,7 +27,9 @@ be installed using the CurseForge launcher
 
 ### Downloading the pack ###
 
-This will be updated with links to the GitHub repo once it's been created.
+You can find the download links on the 
+[Releases](https://github.com/nathanrsfba/Creeping-Dark-2/releases) page.
+Download the .zip file of the latest version (not the source code links) and save it somewhere.
 
 ### Using GDLauncher ###
 
