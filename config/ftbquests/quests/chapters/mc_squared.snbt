@@ -18,6 +18,8 @@
 				"Make sure to set the mode to Singularity."
 				""
 				"Time to get some serious cobblegen going!"
+				""
+				"Also, you can make UU-Matter out of them!"
 			]
 			dependencies: [
 				"78AFE95C7107BE1A"
