@@ -42,6 +42,9 @@ for tag in <item:pamhc2trees:orangeitem>.getDefinition().getTags() {
 for tag in <item:pamhc2trees:limeitem>.getDefinition().getTags() {
     tag.add( <item:tropicraft:lime> );
 }
+for tag in <item:pamhc2trees:papayaitem>.getDefinition().getTags() {
+    tag.add( <item:tropicraft:papaya> );
+}
 for tag in <item:pamhc2trees:grapefruititem>.getDefinition().getTags() {
     tag.add( <item:tropicraft:grapefruit> );
 }
