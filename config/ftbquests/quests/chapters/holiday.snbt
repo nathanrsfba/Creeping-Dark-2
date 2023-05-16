@@ -150,6 +150,8 @@
 				"The Tropics is ... well, a tropical paradise."
 				""
 				"But it is not without its own dangers..."
+				""
+				"To get there, craft a (Tropicraft) chair, sit down, and drink a Pina Colada during sunset."
 			]
 			dependencies: ["40CEEC76E90FCEB9"]
 			hide: false
