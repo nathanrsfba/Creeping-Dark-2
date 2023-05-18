@@ -41,6 +41,8 @@
 				"A massive, multiblock smelting machine."
 				""
 				"Refer to the appropriate chapter in the Engineer's Manual to learn how. And maybe build a projector to help you."
+				""
+				"If you have Mekanism steel blocks and they're not working, just drop two of them side by side in a crafting table to convert them to IE steel blocks"
 			]
 			dependencies: ["4874E61F350DDBE8"]
 			id: "3BC9799CAEB1B04E"
