@@ -530,5 +530,17 @@
 				item: "contenttweaker:coin_bronze"
 			}]
 		}
+		{
+			title: "RTFM (Soulful Edition)"
+			x: -2.0d
+			y: -4.0d
+			description: ["A guidebook with information about this strange afterlife"]
+			id: "0348DCFEBB0C25B9"
+			tasks: [{
+				id: "14511EDB6B1CCD09"
+				type: "item"
+				item: "soulbound:guidebookitem"
+			}]
+		}
 	]
 }
