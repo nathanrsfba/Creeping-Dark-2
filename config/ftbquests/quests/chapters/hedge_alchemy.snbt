@@ -16,6 +16,8 @@
 				"As part of the ritual to open the End, you will need the spirit of a Gaia Guardian."
 				""
 				"The updated Lexica will give you all the gory details."
+				""
+				"...except for the fact that you need an 11 block radius of flat space around the beacon base. For some reason, *that* gory detail wasn't mentioned."
 			]
 			dependencies: ["24C9D8F02EEA776F"]
 			id: "00F68527376FC0A7"
