@@ -93,11 +93,6 @@ ongoing, and should be considered alpha-quality for now.
 Questions
 ---------
 
-Q: RFTools dimensions don't seem to be generating dimensional shard ore  
-A: If the base block of the dimension isn't plain stone, ore generation won't
-occur. (This is part of Minecraft's own oregen mechanics.) Try generating
-more dimensions until you get one with a base material of stone.
-
 Q: When I try to run a standalone server, it runs obscenely slowly  
 A: Try adding the 'nogui' option. The GUI really fucks everything up
 for god knows what reason
@@ -117,11 +112,11 @@ Some highlights:
 * Instead of 'keys', the artifact to open the End (also no longer a 'key')
   is crafted from various items dropped by bosses, or crafted late in
   several mods' tech trees.
-* No Actually Additions. (Yet.)
-* Twilight forest now gated to Manyullyn, instead of AA mats
+* No Actually Additions.
+* Twilight forest now gated to Manyullyn, instead of AA mats.
 * No AE2 spatial dungeon (yet?). A singularity is the final goal.
-* No Hunting Dimension
-* No Mining Dimension
+* No Hunting Dimension.
+* No Mining Dimension.
 * Underground lab moved to overworld, given a bit of 'sciencey' decoration,
   and given a new vestibule
 * Thermal Series now unlocks Atum
@@ -130,38 +125,31 @@ Some highlights:
 * Deep Dark is now provided by a separate mod, since EU doesn't
   exist in 1.16
 * Tropicraft and Atum now unlock Deep Dark using the IE arc furnace
-* Added Gaia Dimension
+* Added Gaia Dimension, a realm of living crystal. It has a boss to kill, and a
+  mineral to find/craft
 * Gaia is unlocked using RFTools, by pillaging blocks from dimlet shacks
 * No EnderIO
 * No Erebus
-* No Advanced Rocketry. (Yet.)
+* No Advanced Rocketry.
 * No Betweenlands
-* Added Soulbound dimension, gated to Mekanism
-* No Aether. (Yet.)
+* Added Soulbound dimension, a decaying afterlife realm. It has a boss to kill.
+* Soulbound is gated to Mekanism, now that Erebus is gone.
+* No Aether.
 * Botania no longer unlocks a dimension, or other magic mods. Gaia Guardian is
   the final boss for this tree.
-* No Thaumcraft.
+* No Thaumcraft. Ars Nouveau is, roughly, its replacement.
 * Added Ars Nouveau. Not gated, currently. The Wilden Chimera boss is part of
   the questline.
-* Added the Dark World, gated to Ars
+* Added the Dark World, a dark and spooky realm. It has a dungeon and miniboss,
+  adapted from the one formerly in the Hunting Dimension.
+* Dark world is gated to Ars Nouveau.
 * Astral Sorcery is no longer gated, at present.
-* Added Blue Skies, with the Everbright and Everdawn dimensions.
-  Not gated, at present
-* Added Create, with a crafting item (Overcharged Alloy) as a final goal
-* The 'shop' is now using the old 'coin' system again, and is much more
-  limited, due to limitations in both FTB Quests and FTB Money. For now, items
-  are 'bought' from the store by crafting them with coins in a crafting table.
-
-The Future
-----------
-
-Depending on upcoming mod support, some of the following may eventually
-appear in Creeping Dark 2:
-
-* Adding and integrating Actually Additions, Aether, and Advanced Rocketry
-  if and when their 1.16 ports are finished
-* Expand the shop, if a suitable shop mod for 1.16 can be found
-* Add a nice title screen
+* Added Blue Skies, with two new time-locked realms in the form of the
+  Everbright and Everdawn. They each have two bosses to kill.  Not gated, at present.
+* Added Create, with a crafting item (Overcharged Alloy) as a final goal.
+* Due to limitations in both FTB Quests and FTB Money, the old 'shop' is gone.
+  Quests rewards are now a form of "UU-Matter", which can be used to duplicate
+  raw materials.
 
 About This Repository
 ---------------------
@@ -178,7 +166,7 @@ License
 This pack and its assets (not including the mods, which are copyright their
 respective authors) are released under the MIT license:
 
-Copyright 2022 Nathan Roberts
+Copyright 2023 Nathan Roberts
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to
