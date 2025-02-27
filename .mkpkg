@@ -1,0 +1,10 @@
+{
+  "overrides": [
+    "config",
+    "defaultconfigs",
+    "mods",
+    "openloader",
+    "scripts",
+    "worldshape"
+  ]
+}
