@@ -7,7 +7,7 @@ val redstone = <item:minecraft:redstone>;
 craftingTable.addShaped( "cc_wired_modem",
 /* Output   */ modem,
 /* Input    */
-    [[stone, stone, stone].
-     [stone, stone, stone].
+    [[stone, stone, stone],
+     [stone, stone, stone],
      [stone, redstone, stone]] );
 
