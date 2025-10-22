@@ -73,3 +73,6 @@ whitelist.json
 
 # Links to other repos
 /drop
+
+# Shell scripts for server use
+/*.sh
