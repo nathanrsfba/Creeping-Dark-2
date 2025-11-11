@@ -7,8 +7,12 @@ import os
 from zipfile import ZipFile, ZIP_DEFLATED
 from pathlib import Path
 from collections import namedtuple
+from re import search
 import sqlite3
 
+ModInfo = namedtuple( 'ModInfo', ('fileName', 'projectID', 'fileID') )
+ConfigInfo = namedtuple( 'ConfigInfo', ('mcVersion', 'loader') )
+    
 def main():
     args = getArgs()
     keep = args.from_manifest
@@ -41,7 +45,7 @@ def main():
     if args.version: manifest['version'] = args.version
         
     print( "Gathering list of files..." )
-    overrides = fileList( *(args.overrides ))
+    overrides = fileList( *(args.overrides), ignore=args.exclude )
 
     if not keep:
         files = overrides
@@ -88,65 +92,138 @@ def getConfig( args ):
     Cabon or Legacy.
     """
 
-    ModInfo = namedtuple( 'ModInfo', ('fileName', 'projectID', 'fileID') )
-    ConfigInfo = namedtuple( 'ConfigInfo', ('mcVersion', 'loader') )
     modFiles = {}
 
+    if( (args.db_path == None or args.instance_json == None) and
+       args.config_json == None and args.minecraftinstance_json == None and
+       not args.from_manifest ):
+        if not detectConfig( args ):
+            print( "Couldn't find launcher configs" )
+            exit( 1 )
+
     if args.config_json:
-        with open( args.config_json ) as f:
-            config = json.load( f )
-
-        for mod in config['mods']:
-            if( 'projectID' in mod ):
-                modInfo = ModInfo(
-                        mod['fileName'], mod['projectID'], mod['fileID'] )
-                modFiles[modInfo.fileName] = modInfo
-
-        loader = config['loader']
-        (mcver, ldver) = loader['loaderVersion'].split( '-' )
-        loaderStr = f"{loader['loaderType']}-{ldver}"
-        config = ConfigInfo( mcver, loaderStr )
+        return getConfigClassic( args )
+    elif args.db_path:
+        return getConfigCarbon( args )
     else:
-        with open( args.instance_json ) as f:
-            config = json.load( f )
-        loader = config["game_configuration"]["version"]["modloaders"][0]
-        (mcver, ldver) = loader['version'].split( '-' )
-        loaderStr = f"{loader['type'].lower()}-{ldver}"
-        config = ConfigInfo( mcver, loaderStr )
+        return getConfigCurseforge( args )
 
-        # A note on how GDLauncher Carbon stores mod information:
-        # Under Legacy, the list of mods was stored in the config.json file.
-        # This included the filename, project ID and file ID for each mod.
-        # In Carbon, this is stored in the GDLauncher config, which is in
-        # `gdl_conf.db` in the `data` directory.
-        #
-        # This is a sqlite3 database which contains most of the GDL config.
-        # Of note here is the `ModFileCache` table, which lists each mod file,
-        # along with a metadata ID. Also of note is the `CurseForgeModCache`
-        # table, which contains the project ID and file ID of the mod on
-        # curseforge; it also contains a metadata ID entry, which will match
-        # the entry in ModFileCache.
-        #
-        # We use the following SQL query to grab the information out of these
-        # tables, and build a list of all mod files that the GDL install is
-        # aware of -- basically every file in every installed instance.
-        #
-        # The rest of the configuration for individual instances is stored in
-        # the `instance.json` file in individual instance folders.
+def detectConfig( args ):
+    """Detect which launcher is in use.
 
-        con = sqlite3.connect( args.db_path )
-        cur = con.cursor()
-        res = cur.execute( """
-                          SELECT ModFileCache.filename,
-                          CurseForgeModCache.projectId,
-                          CurseForgeModCache.fileId
-                          FROM ModFileCache
-                          JOIN CurseForgeModCache
-                          ON ModFileCache.metadataId = CurseForgeModCache.metadataId;
-                          """ )
-        for data in res:
-            info = ModInfo( *data )
-            modFiles[info.fileName] = info
+    args: Arguments, as returned by ArgumentParser. Will be modified with paths
+    to the relevant launcher config files.
+
+    Return: Success as boolean
+    """
+
+    print( "Attempting to autodetect config" )
+    db = Path( '../../../gdl_conf.db' )
+    instance = Path( '../instance.json' )
+    config = Path( 'config.json' )
+    minecraftinstance = Path( 'minecraftinstance.json' )
+
+    if db.exists() and instance.exists():
+        print( "Detected GDL Carbon" )
+        args.instance_json = instance
+        args.db_path = db
+    elif config.exists():
+        print( "Detected GDL Legacy" )
+        args.config_json = config
+    elif minecraftinstance.exists():
+        print( "Detected Curseforge launcher" )
+        args.minecraftinstance_json = minecraftinstance
+    else:
+        return False
+
+    return True
+
+
+def getConfigClassic( args ):
+    """Get configuration from GDLauncher Classic"""
+
+    modFiles = {}
+
+    with open( args.config_json ) as f:
+        config = json.load( f )
+
+    for mod in config['mods']:
+        if( 'projectID' in mod ):
+            modInfo = ModInfo(
+                    mod['fileName'], mod['projectID'], mod['fileID'] )
+            modFiles[modInfo.fileName] = modInfo
+
+    loader = config['loader']
+    (mcver, ldver) = loader['loaderVersion'].split( '-' )
+    loaderStr = f"{loader['loaderType']}-{ldver}"
+    config = ConfigInfo( mcver, loaderStr )
+
+    return (config, modFiles)
+
+def getConfigCarbon( args ):
+    """Get configuration from GDLauncher Carbon"""
+
+    modFiles = {}
+
+    with open( args.instance_json ) as f:
+        config = json.load( f )
+    loader = config["game_configuration"]["version"]["modloaders"][0]
+    (mcver, ldver) = loader['version'].split( '-' )
+    loaderStr = f"{loader['type'].lower()}-{ldver}"
+    config = ConfigInfo( mcver, loaderStr )
+
+    # A note on how GDLauncher Carbon stores mod information:
+    # Under Legacy, the list of mods was stored in the config.json file.
+    # This included the filename, project ID and file ID for each mod.
+    # In Carbon, this is stored in the GDLauncher config, which is in
+    # `gdl_conf.db` in the `data` directory.
+    #
+    # This is a sqlite3 database which contains most of the GDL config.
+    # Of note here is the `ModFileCache` table, which lists each mod file,
+    # along with a metadata ID. Also of note is the `CurseForgeModCache`
+    # table, which contains the project ID and file ID of the mod on
+    # curseforge; it also contains a metadata ID entry, which will match
+    # the entry in ModFileCache.
+    #
+    # We use the following SQL query to grab the information out of these
+    # tables, and build a list of all mod files that the GDL install is
+    # aware of -- basically every file in every installed instance.
+    #
+    # The rest of the configuration for individual instances is stored in
+    # the `instance.json` file in individual instance folders.
+
+    con = sqlite3.connect( args.db_path )
+    cur = con.cursor()
+    res = cur.execute( """
+                      SELECT ModFileCache.filename,
+                      CurseForgeModCache.projectId,
+                      CurseForgeModCache.fileId
+                      FROM ModFileCache
+                      JOIN CurseForgeModCache
+                      ON ModFileCache.metadataId = CurseForgeModCache.metadataId;
+                      """ )
+    for data in res:
+        info = ModInfo( *data )
+        modFiles[info.fileName] = info
+
+    return (config, modFiles)
+
+def getConfigCurseforge( args ):
+    """Get configuration from official Curseforge Client"""
+
+    modFiles = {}
+
+    with open( args.minecraftinstance_json ) as f:
+        config = json.load( f )
+
+    for mod in config['installedAddons']:
+        if( 'addonID' in mod ):
+            modInfo = ModInfo(
+                    mod['fileNameOnDisk'], mod['addonID'], mod['installedFile']['id'] )
+            modFiles[modInfo.fileName] = modInfo
+
+    config = ConfigInfo( config['baseModLoader']['minecraftVersion'], 
+                        config['baseModLoader']['name'] )
 
     return (config, modFiles)
 
@@ -168,13 +245,17 @@ def createManifest():
 
     return manifest
 
-def fileList( *args ):
+def fileList( *args, ignore=None ):
     files = []
     for arg in args:
         if( os.path.isdir( arg )):
             for d in os.walk( arg ):
                 for f in d[2]:
-                    files.append( os.path.join( d[0], f ))
+                    # print( f"{f} =~ {ignore}", file=sys.stderr )
+                    if ignore and search( ignore, f ):
+                        print( "Ignoring", f )
+                    else:
+                        files.append( os.path.join( d[0], f ))
         else:
             files.append( arg )
 
@@ -195,12 +276,17 @@ def getArgs():
             help='Build from manifest without installed instance' )
     parser.add_argument( '-C', '--dump-config', action='store_true',
             help='Dump JSON of current options to stdout' )
+    parser.add_argument( '-x', '--exclude', metavar='REGEX',
+            help='Ignore files matching REGEX' )
+    
     parser.add_argument( '--config-json',
             help='Path to config.json (for GDLaucher Legacy).' )
     parser.add_argument( '--instance-json',
             help='Path to instance.json (for GDLaucher Carbon).' )
     parser.add_argument( '--db-path',
             help='Path to gdl_conf.db (for GDLaucher Carbon).' )
+    parser.add_argument( '--minecraftinstance-json',
+            help='Path to minecraftinstance.json (for Curseforge launcher)' )
     parser.add_argument( 'overrides', nargs='*',
             help='Folders/files to include in the pack' )
 
@@ -223,25 +309,6 @@ def getArgs():
         print( json.dumps( v, indent=2 ))
         exit( 0 )
 
-
-    # The following probably ought to be done in getConfig(), but oh well
-    if( (args.db_path == None or args.instance_json == None) and
-       args.config_json == None and not args.from_manifest ):
-        print( "Attempting to autodetect config" )
-        db = Path( '../../../gdl_conf.db' )
-        instance = Path( '../instance.json' )
-        config = Path( 'config.json' )
-
-        if db.exists() and instance.exists():
-            print( "Detected GDL Carbon" )
-            args.instance_json = instance
-            args.db_path = db
-        elif config.exists():
-            print( "Detected GDL Legacy" )
-            args.config_json = config
-        else:
-            print( "Couldn't find GDLauncher configs" )
-            exit( 1 )
 
     return args
 
