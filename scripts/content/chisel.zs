@@ -9,54 +9,67 @@
 
 import mods.contenttweaker.block.BlockBuilder;
 
-/* Technical */
+val blockNames = [
 
-new BlockBuilder().build( "fanstill" );
-new BlockBuilder().build( "vent" );
-new BlockBuilder().build( "insulationv2" );
-new BlockBuilder().build( "massivefan" );
-new BlockBuilder().build( "fanfast" );
-new BlockBuilder().build( "scaffoldtransparent" );
-new BlockBuilder().build( "fanfasttransparent" );
-new BlockBuilder().build( "industrialrelic" );
-new BlockBuilder().build( "fanstilltransparent" );
-new BlockBuilder().build( "rustyboltedplates" );
-new BlockBuilder().build( "cables" );
-new BlockBuilder().build( "malfunctionfan" );
-new BlockBuilder().build( "massivehexplating" );
-new BlockBuilder().build( "old" );
-new BlockBuilder().build( "grate" );
-new BlockBuilder().build( "graterusty" );
-new BlockBuilder().build( "wires" );
-new BlockBuilder().build( "spinningstuffanim" );
-new BlockBuilder().build( "pipessmall" );
-new BlockBuilder().build( "scaffold" );
-new BlockBuilder().build( "ventglowing" );
-new BlockBuilder().build( "cautiontape" );
-new BlockBuilder().build( "pipeslarge" );
+    /* Technical */
+    "fanstill",
+    "vent",
+    "insulationv2",
+    "massivefan",
+    "fanfast",
+    "scaffoldtransparent",
+    "fanfasttransparent",
+    "industrialrelic",
+    "fanstilltransparent",
+    "rustyboltedplates",
+    "cables",
+    "malfunctionfan",
+    "massivehexplating",
+    "old",
+    "grate",
+    "graterusty",
+    "wires",
+    "spinningstuffanim",
+    "pipessmall",
+    "scaffold",
+    "ventglowing",
+    "cautiontape",
+    "pipeslarge",
+                              
+    /* Technical/New */
+    "scaffoldlarge",
+    "piping",
+    "weatheredorangepanels",
+    "makeshiftpanels",
+    "sturdy",
+    "megacell",
+    "engineering",
+    "weatheredgreenpanels",
+    "exhaustplating",
+
+    /* Laboratory */
+    "clearscreen",
+    "largewall"
+
+    /* These don't seem to have textures, either in 1.12 or 1.16 */
+    /*
+    "wallpads",
+    "rustycover",
+    "hexarmorplating",
+    */
+
+    /* These seem to be incomplete/WIP */
+    /*
+    "tapedrive",
+    "oldetimeyserveranim",
+    */
+];
+
+for block in blockNames {
+    new BlockBuilder()
+        .withHardnessAndResistance( 0.5f )
+        .withHarvestTool( <tooltype:pickaxe> )
+        .build( block );
+}
+
  
-/* These don't seem to have textures, either in 1.12 or 1.16 */
-// new BlockBuilder().build( "wallpads" );
-// new BlockBuilder().build( "rustycover" );
-// new BlockBuilder().build( "hexarmorplating" );
-
-/* Technical/New */
-
-new BlockBuilder().build( "scaffoldlarge" );
-new BlockBuilder().build( "piping" );
-new BlockBuilder().build( "weatheredorangepanels" );
-new BlockBuilder().build( "makeshiftpanels" );
-new BlockBuilder().build( "sturdy" );
-new BlockBuilder().build( "megacell" );
-new BlockBuilder().build( "engineering" );
-new BlockBuilder().build( "weatheredgreenpanels" );
-new BlockBuilder().build( "exhaustplating" );
-
-/* These seem to be incomplete/WIP */
-// new BlockBuilder().build( "tapedrive" );
-// new BlockBuilder().build( "oldetimeyserveranim" );
-
-/* Laboratory */
-new BlockBuilder().build( "clearscreen" );
-new BlockBuilder().build( "largewall" );
-
