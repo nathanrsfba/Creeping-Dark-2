@@ -203,6 +203,7 @@
 				"As you unlock other technologies, you'll find other, and sometimes better methods..."
 			]
 			dependencies: ["5C6B0E20135C98CB"]
+			dependency_requirement: "all_started"
 			id: "6C695A75741E59EF"
 			tasks: [
 				{
@@ -321,6 +322,7 @@
 				"Create has its own system for multiplying ore yield as well, that works slightly differently than the usual crushing machines"
 			]
 			dependencies: ["5C6B0E20135C98CB"]
+			dependency_requirement: "all_started"
 			id: "5E527BA2C154DB72"
 			tasks: [
 				{
@@ -405,6 +407,7 @@
 				"For more power generation, you might want to look into Advanced Generators, or even a nuclear reactor"
 			]
 			dependencies: ["5E527BA2C154DB72"]
+			dependency_requirement: "all_started"
 			id: "2448BDDAD50EFD1F"
 			tasks: [{
 				id: "5ACC66FE4ED72780"
@@ -419,6 +422,7 @@
 			subtitle: "...is my enemoy's enemoy, no more, no less."
 			description: ["Besides steel, there are many other alloys you'll need, which are made from a combination of metals (and sometimes other materials). Here are just a few."]
 			dependencies: ["5E527BA2C154DB72"]
+			dependency_requirement: "all_started"
 			id: "079B29A9A74393D9"
 			tasks: [
 				{
@@ -473,6 +477,7 @@
 				"5E527BA2C154DB72"
 				"1892A05444FBBCA6"
 			]
+			dependency_requirement: "all_started"
 			id: "4874E61F350DDBE8"
 			tasks: [{
 				id: "07F4CBC998CE4137"
