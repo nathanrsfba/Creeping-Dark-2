@@ -50,6 +50,7 @@ config_new_temp.json
 config/worldedit/sessions/
 hs_err_*.log
 ddd_cache.json
+config/jei
 
 # Temporary garbage for my own temporary use
 chistest.txt
