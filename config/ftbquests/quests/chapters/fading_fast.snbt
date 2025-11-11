@@ -143,17 +143,17 @@
 				title: "Introduction"
 			}]
 			rewards: [{
-				id: "28FBBF72F23AA5B4"
+				id: "7178A20C0B27B644"
 				type: "item"
 				item: {
 					id: "projectred-exploration:white_backpack"
 					Count: 1b
 					tag: {
-						RepairCost: 0
-						baginv: {
+						backpack_inventory: {
+							item_count: 5
 							items: [
 								{
-									index: 0
+									slot: 0
 									id: "mekanismtools:stone_paxel"
 									Count: 1b
 									tag: {
@@ -161,28 +161,28 @@
 									}
 								}
 								{
-									index: 1
+									slot: 1
 									id: "minecraft:oak_log"
 									Count: 64b
 								}
 								{
-									index: 2
+									slot: 2
 									id: "minecraft:cobblestone"
 									Count: 64b
 								}
 								{
-									index: 3
+									slot: 3
 									id: "minecraft:torch"
 									Count: 64b
 								}
 								{
-									index: 4
+									slot: 4
 									id: "minecraft:apple"
 									Count: 64b
 								}
 							]
-							itemsCount: 27
 						}
+						RepairCost: 0
 						display: {
 							Name: "{\"text\":\"Anti-Treepunching Bag\"}"
 						}
