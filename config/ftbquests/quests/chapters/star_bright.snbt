@@ -293,7 +293,7 @@
 			title: "Ziggy"
 			x: -0.5d
 			y: -7.5d
-			description: ["Make a starmetal cuttiung tool, throw some of the ingots on the ground, and start smacking them"]
+			description: ["Make a starmetal cutting tool, throw some of the ingots on the ground, and start smacking them"]
 			dependencies: [
 				"025C937E2E5328CD"
 				"287E5B1A1E719A7E"
@@ -370,7 +370,7 @@
 		{
 			x: 1.5d
 			y: -5.5d
-			description: ["Pour a bucket of starlight on the ground, then throw soak some logs in it"]
+			description: ["Pour a bucket of starlight on the ground, then soak some logs in it"]
 			dependencies: ["2A11DFE02CF80D79"]
 			id: "287E5B1A1E719A7E"
 			tasks: [{
