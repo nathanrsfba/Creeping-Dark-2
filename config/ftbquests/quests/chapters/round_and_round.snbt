@@ -33,7 +33,7 @@
 		{
 			x: -1.0d
 			y: 0.5d
-			description: ["Place some rose quarts, glowstone, and obsidian dust into a basin equipped with a mixer and a blaze burner. Then feed the blaze some cake."]
+			description: ["Place some rose quartz, glowstone, and obsidian dust into a basin equipped with a mixer and a blaze burner. Then feed the blaze some cake."]
 			dependencies: [
 				"760A11B52C1D6FAA"
 				"57861DBC95853A29"
