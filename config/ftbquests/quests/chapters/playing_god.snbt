@@ -11,8 +11,8 @@
 	quests: [
 		{
 			title: "Framed!"
-			x: 1.0d
-			y: -3.0d
+			x: -0.5d
+			y: -1.5d
 			description: ["The base of most RFTools machines"]
 			dependencies: ["525980C7534BF5CF"]
 			id: "335F491FB4CC579C"
@@ -42,7 +42,11 @@
 				""
 				"If you just want to create a random world, just leave it blank. Or, throw in some digit dimlets to create new random worlds."
 			]
-			dependencies: ["335F491FB4CC579C"]
+			dependencies: [
+				"335F491FB4CC579C"
+				"3886616364241206"
+			]
+			dependency_requirement: "all_started"
 			id: "4BFA2FC3D193C993"
 			tasks: [
 				{
@@ -66,7 +70,7 @@
 			title: "Transmat"
 			icon: "rftoolsutility:matter_transmitter"
 			x: -0.5d
-			y: -1.5d
+			y: 0.0d
 			description: ["Instantaneously teleport from one place to another."]
 			dependencies: ["335F491FB4CC579C"]
 			id: "214503FF9A5D2B27"
@@ -378,6 +382,23 @@
 			}]
 			rewards: [{
 				id: "276228FA1ADA2064"
+				type: "item"
+				item: "contenttweaker:coin_bronze"
+			}]
+		}
+		{
+			title: "Shart"
+			x: 1.0d
+			y: -3.0d
+			description: ["You can get these shards from ores in both the overworld and the nether."]
+			id: "3886616364241206"
+			tasks: [{
+				id: "2EE39E960F984316"
+				type: "item"
+				item: "rftoolsbase:dimensionalshard"
+			}]
+			rewards: [{
+				id: "7DAF6F9DF444D4E2"
 				type: "item"
 				item: "contenttweaker:coin_bronze"
 			}]
