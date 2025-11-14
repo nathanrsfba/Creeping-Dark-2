@@ -45,6 +45,8 @@
     "item.contenttweaker.coin_bronze":   "Blue UU-Matter",
     "item.contenttweaker.coin_silver":   "Red UU-Matter",
     "item.contenttweaker.coin_gold":     "Purple UU-Matter",
-    "item.contenttweaker.coin_platinum": "Black UU-Matter"
+    "item.contenttweaker.coin_platinum": "Black UU-Matter",
+
+    "gas.crafttweaker.wraith_gas":       "Wraith Gas"
 }
 
