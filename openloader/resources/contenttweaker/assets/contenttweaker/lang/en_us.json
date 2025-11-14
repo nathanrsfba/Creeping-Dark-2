@@ -47,6 +47,16 @@
     "item.contenttweaker.coin_gold":     "Purple UU-Matter",
     "item.contenttweaker.coin_platinum": "Black UU-Matter",
 
-    "gas.crafttweaker.wraith_gas":       "Wraith Gas"
+    "gas.crafttweaker.wraith_gas":       "Wraith Gas",
+
+    "structure.worldshape.creepingdark2.underground_lab":
+        "Underground Lab",
+    "structure.worldshape.creepingdark2.horned_tower":
+        "Horned Tower",
+    "structure.worldshape.creepingdark2.spider_dome":
+        "Spider Dome",
+    "structure.worldshape.creepingdark2.broken_sphere":
+        "Broken Sphere"
+
 }
 
