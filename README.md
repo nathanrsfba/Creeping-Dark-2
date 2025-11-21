@@ -22,14 +22,9 @@ exceptions. Once you've "unlocked" a mod, it works the way it always has.
 Installation
 ------------
 
-GDLauncher is still the officially supported platform, however it can also
-be installed using the CurseForge launcher
+The pack is [now available on CurseForge](https://www.curseforge.com/minecraft/modpacks/creeping-dark-ii). You can install it via the CurseForge launcher, or download the `.zip` file and install it with any CurseForge-compatible launcher.
 
-### Downloading the pack ###
-
-You can find the download links on the 
-[Releases](https://github.com/nathanrsfba/Creeping-Dark-2/releases) page.
-Download the .zip file of the latest version (not the source code links) and save it somewhere.
+Manual installation using GDLauncher or CurseForge (which shouldn't be necessary unless you're installing a Beta or something):
 
 ### Using GDLauncher ###
 
@@ -58,8 +53,11 @@ Download the .zip file of the latest version (not the source code links) and sav
 Server Installation
 -------------------
 
-This was tested with Java 8. Later versions may not work. Server testing is
-ongoing, and should be considered alpha-quality for now.
+The CurseForge project page has a server pack that should contain everything you need to run a server.
+
+If for whatever reason you need to create a server manually:
+
+This was tested with Java 8. Later versions will probably not work.
 
 * Install a copy of Creeping Dark 2 as described above
 * Download the installer for
@@ -96,6 +94,21 @@ Questions
 Q: When I try to run a standalone server, it runs obscenely slowly  
 A: Try adding the 'nogui' option. The GUI really fucks everything up
 for god knows what reason
+
+Changes in v2.0.1
+-----------------
+
+This version is mostly minor bugfixes.
+
+* Updated all mods
+* Removed CarryOn. It's just too easy to activate it accidentally, sometimes losing items in the process.
+* Made Ender Ore less hilariously abundant.
+* Added a couple missing language translation entries. No more crafting `gas.crafttweaker.wraith_gas`.
+* Fixed some quest typos.
+* Clarified some unclear points in a few quests.
+* Fixed blocks added in ContentTweaker breaking when you so much as breathed on them.
+* Deepslate ores now work in the various processing machines.
+* Adjusted the CC: Tweaked modem recipe to not conflict
 
 Changes in v2.0
 ---------------
