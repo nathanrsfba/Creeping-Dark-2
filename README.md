@@ -22,9 +22,12 @@ exceptions. Once you've "unlocked" a mod, it works the way it always has.
 Installation
 ------------
 
-The pack is [now available on CurseForge](https://www.curseforge.com/minecraft/modpacks/creeping-dark-ii). You can install it via the CurseForge launcher, or download the `.zip` file and install it with any CurseForge-compatible launcher.
+The pack is [now available on CurseForge](https://www.curseforge.com/minecraft/modpacks/creeping-dark-ii).
+You can install it via the CurseForge launcher, or download the `.zip` file and
+install it with any CurseForge-compatible launcher.
 
-Manual installation using GDLauncher or CurseForge (which shouldn't be necessary unless you're installing a Beta or something):
+Manual installation using GDLauncher or CurseForge (which shouldn't be
+necessary unless you're installing a Beta or something):
 
 ### Using GDLauncher ###
 
@@ -53,7 +56,8 @@ Manual installation using GDLauncher or CurseForge (which shouldn't be necessary
 Server Installation
 -------------------
 
-The CurseForge project page has a server pack that should contain everything you need to run a server.
+The CurseForge project page has a server pack that should contain everything
+you need to run a server.
 
 If for whatever reason you need to create a server manually:
 
@@ -101,12 +105,15 @@ Changes in v2.0.1
 This version is mostly minor bugfixes.
 
 * Updated all mods
-* Removed CarryOn. It's just too easy to activate it accidentally, sometimes losing items in the process.
+* Removed CarryOn. It's just too easy to activate it accidentally, sometimes
+  losing items in the process.
 * Made Ender Ore less hilariously abundant.
-* Added a couple missing language translation entries. No more crafting `gas.crafttweaker.wraith_gas`.
+* Added a couple missing language translation entries. No more crafting
+  `gas.crafttweaker.wraith_gas`.
 * Fixed some quest typos.
 * Clarified some unclear points in a few quests.
-* Fixed blocks added in ContentTweaker breaking when you so much as breathed on them.
+* Fixed blocks added in ContentTweaker breaking when you so much as breathed on
+  them.
 * Deepslate ores now work in the various processing machines.
 * Adjusted the CC: Tweaked modem recipe to not conflict
 
@@ -158,7 +165,8 @@ Some highlights:
 * Dark world is gated to Ars Nouveau.
 * Astral Sorcery is no longer gated, at present.
 * Added Blue Skies, with two new time-locked realms in the form of the
-  Everbright and Everdawn. They each have two bosses to kill.  Not gated, at present.
+  Everbright and Everdawn. They each have two bosses to kill.  Not gated, at
+  present.
 * Added Create, with a crafting item (Overcharged Alloy) as a final goal.
 * Due to limitations in both FTB Quests and FTB Money, the old 'shop' is gone.
   Quests rewards are now a form of "UU-Matter", which can be used to duplicate
